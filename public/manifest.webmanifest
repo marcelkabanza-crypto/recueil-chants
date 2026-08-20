@@ -1,0 +1,13 @@
+{
+  "name": "Recueil des Chants TESP",
+  "short_name": "Chants TESP",
+  "description": "Recueil des cantiques du Tabernacle Espérance",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0d2b2b",
+  "theme_color": "#0d2b2b",
+  "icons": [
+    { "src": "/images/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/images/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
