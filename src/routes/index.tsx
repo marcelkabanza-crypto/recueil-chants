@@ -4,21 +4,21 @@ import { useMemo, useState } from "react";
 
 import { AppShell } from "@/components/AppShell";
 import { Input } from "@/components/ui/input";
-import { cantiques } from "@/data/cantiques";
+import { useCantiques } from "@/lib/cantiques-store";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Recueil des Chants TESP — Cantiques du Tabernacle Espérance" },
+      { title: "Recueil des Chants TESP — Cantiques du Tabernacle de l'Espérance" },
       {
         name: "description",
         content:
-          "Consultez et recherchez les cantiques du Tabernacle Espérance : numéro, nom et texte complet, hors connexion.",
+          "Consultez et recherchez les cantiques du Tabernacle de l'Espérance : numéro, nom et texte complet, hors connexion.",
       },
       { property: "og:title", content: "Recueil des Chants TESP" },
       {
         property: "og:description",
-        content: "Tous les cantiques du Tabernacle Espérance dans une seule application.",
+        content: "Tous les cantiques du Tabernacle de l'Espérance dans une seule application.",
       },
     ],
   }),
@@ -27,6 +27,7 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   const [q, setQ] = useState("");
+  const { cantiques } = useCantiques();
 
   const results = useMemo(() => {
     const term = q.trim().toLowerCase();
@@ -37,7 +38,7 @@ function Index() {
         String(c.numero) === term ||
         String(c.numero).startsWith(term),
     );
-  }, [q]);
+  }, [q, cantiques]);
 
   return (
     <AppShell title="Recueil des Chants TESP">
