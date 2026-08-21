@@ -17,7 +17,7 @@ const CACHE_KEY = "tesp-cantiques-cache";
 /** Fichier JSON de mise à jour hébergé sur GitHub (raw). */
 export const UPDATE_URL: string =
   (import.meta.env["VITE_CANTIQUES_UPDATE_URL"] as string | undefined) ??
-  "https://raw.githubusercontent.com/marcelkabanza-crypto/recueil-chants/main/cantiques.json";
+  "https://raw.githubusercontent.com/marcelkabanza-crypto/recueil-chants/main/src/data/cantiques.json";
 
 type CacheShape = {
   version: number;
