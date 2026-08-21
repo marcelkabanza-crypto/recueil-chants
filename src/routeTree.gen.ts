@@ -10,33 +10,43 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as CantiqueNumeroRouteImport } from './routes/cantique.$numero'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CantiqueNumeroRoute = CantiqueNumeroRouteImport.update({
+  id: '/cantique/$numero',
+  path: '/cantique/$numero',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/cantique/$numero': typeof CantiqueNumeroRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/cantique/$numero': typeof CantiqueNumeroRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/cantique/$numero': typeof CantiqueNumeroRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/cantique/$numero'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/cantique/$numero'
+  id: '__root__' | '/' | '/cantique/$numero'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  CantiqueNumeroRoute: typeof CantiqueNumeroRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +58,19 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/cantique/$numero': {
+      id: '/cantique/$numero'
+      path: '/cantique/$numero'
+      fullPath: '/cantique/$numero'
+      preLoaderRoute: typeof CantiqueNumeroRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  CantiqueNumeroRoute: CantiqueNumeroRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
