@@ -111,17 +111,20 @@ export function CantiquesProvider({ children }: { children: ReactNode }) {
       const res = await fetch(`${UPDATE_URL}?t=${Date.now()}`, { cache: "no-store" });
       if (!res.ok) return;
       const remote = (await res.json()) as Partial<CacheShape>;
-      if (typeof remote.version !== "number" || !Array.isArray(remote.cantiques)) return;
+      if (!Array.isArray(remote.cantiques)) return;
       const cantiquesDistants = remote.cantiques.filter(isCantique);
       if (cantiquesDistants.length === 0) return;
 
       const current = readCache() ?? baseCache;
-      if (remote.version <= current.version) return;
+      // Comparaison sur le contenu : tout ajout ou toute correction de texte
+      // déclenche la mise à jour, sans avoir à incrémenter un numéro de version.
+      const fusion = merge(current.cantiques, cantiquesDistants);
+      if (signature(fusion) === signature(current.cantiques)) return;
 
       const next: CacheShape = {
-        version: remote.version,
+        version: Math.max(remote.version ?? 0, current.version),
         updatedAt: remote.updatedAt ?? new Date().toISOString(),
-        cantiques: merge(current.cantiques, cantiquesDistants),
+        cantiques: fusion,
       };
       pending.current = next;
       setUpdateAvailable({
