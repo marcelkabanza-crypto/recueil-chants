@@ -203,8 +203,12 @@ export function CantiquesProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     const cached = readCache();
     if (cached && cached.version >= baseCache.version) setCache(cached);
+    // Base locale : on écrit tout de suite le recueil embarqué pour qu'il soit
+    // disponible hors ligne même si l'appareil n'a jamais eu de connexion.
+    else writeCache(baseCache);
     // Vérification en arrière-plan (n'empêche jamais l'affichage hors ligne).
     void checkForUpdate();
+
 
     const onOnline = () => void checkForUpdate();
     window.addEventListener("online", onOnline);

@@ -23,9 +23,13 @@ export default defineConfig({
         devOptions: { enabled: false },
         manifest: false,
         workbox: {
-          globPatterns: ["**/*.{js,css,html,ico,png,svg,woff2}"],
+          globPatterns: ["**/*.{js,css,html,ico,png,svg,woff2,json}"],
+          // L'app est rendue par le serveur : on met en cache la page « / »
+          // dès l'installation pour que toutes les routes fonctionnent hors ligne.
+          additionalManifestEntries: [{ url: "/", revision: `${Date.now()}` }],
           navigateFallback: "/",
           navigateFallbackDenylist: [/^\/~oauth/, /^\/api\//],
+
           runtimeCaching: [
             {
               urlPattern: ({ request, sameOrigin }) =>
