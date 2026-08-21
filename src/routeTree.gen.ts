@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AideRouteImport } from './routes/aide'
+import { Route as ParametresRouteImport } from './routes/parametres'
 import { Route as CantiqueNumeroRouteImport } from './routes/cantique.$numero'
 
 const IndexRoute = IndexRouteImport.update({
@@ -23,6 +24,11 @@ const AideRoute = AideRouteImport.update({
   path: '/aide',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ParametresRoute = ParametresRouteImport.update({
+  id: '/parametres',
+  path: '/parametres',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const CantiqueNumeroRoute = CantiqueNumeroRouteImport.update({
   id: '/cantique/$numero',
   path: '/cantique/$numero',
@@ -32,30 +38,34 @@ const CantiqueNumeroRoute = CantiqueNumeroRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/aide': typeof AideRoute
+  '/parametres': typeof ParametresRoute
   '/cantique/$numero': typeof CantiqueNumeroRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/aide': typeof AideRoute
+  '/parametres': typeof ParametresRoute
   '/cantique/$numero': typeof CantiqueNumeroRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/aide': typeof AideRoute
+  '/parametres': typeof ParametresRoute
   '/cantique/$numero': typeof CantiqueNumeroRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/aide' | '/cantique/$numero'
+  fullPaths: '/' | '/aide' | '/parametres' | '/cantique/$numero'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/aide' | '/cantique/$numero'
-  id: '__root__' | '/' | '/aide' | '/cantique/$numero'
+  to: '/' | '/aide' | '/parametres' | '/cantique/$numero'
+  id: '__root__' | '/' | '/aide' | '/parametres' | '/cantique/$numero'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AideRoute: typeof AideRoute
+  ParametresRoute: typeof ParametresRoute
   CantiqueNumeroRoute: typeof CantiqueNumeroRoute
 }
 
@@ -75,6 +85,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AideRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/parametres': {
+      id: '/parametres'
+      path: '/parametres'
+      fullPath: '/parametres'
+      preLoaderRoute: typeof ParametresRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/cantique/$numero': {
       id: '/cantique/$numero'
       path: '/cantique/$numero'
@@ -88,6 +105,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AideRoute: AideRoute,
+  ParametresRoute: ParametresRoute,
   CantiqueNumeroRoute: CantiqueNumeroRoute,
 }
 export const routeTree = rootRouteImport
