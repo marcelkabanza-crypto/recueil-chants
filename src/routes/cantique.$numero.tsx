@@ -1,25 +1,14 @@
-import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 import { AppShell } from "@/components/AppShell";
 import { Button } from "@/components/ui/button";
-import { cantiques, getCantique } from "@/data/cantiques";
+import { useCantiques } from "@/lib/cantiques-store";
 
 export const Route = createFileRoute("/cantique/$numero")({
-  loader: ({ params }) => {
-    const cantique = getCantique(Number(params.numero));
-    if (!cantique) throw notFound();
-    return { cantique };
-  },
-  head: ({ loaderData }) => {
-    if (!loaderData) {
-      return {
-        meta: [{ title: "Cantique introuvable — TESP" }, { name: "robots", content: "noindex" }],
-      };
-    }
-    const { cantique } = loaderData;
-    const title = `${cantique.numero}. ${cantique.nom} — Recueil TESP`;
-    const description = `Texte du cantique ${cantique.numero} « ${cantique.nom} » du Tabernacle Espérance.`;
+  head: ({ params }) => {
+    const title = `Cantique ${params.numero} — Recueil des Chants TESP`;
+    const description = `Texte complet du cantique ${params.numero} du Tabernacle de l'Espérance.`;
     return {
       meta: [
         { title },
@@ -30,17 +19,23 @@ export const Route = createFileRoute("/cantique/$numero")({
     };
   },
   component: CantiquePage,
-  notFoundComponent: () => (
-    <AppShell title="Cantique introuvable" backTo="/">
-      <p className="text-muted-foreground text-sm">
-        Ce cantique n'existe pas dans le recueil.
-      </p>
-    </AppShell>
-  ),
 });
 
 function CantiquePage() {
-  const { cantique } = Route.useLoaderData();
+  const { numero } = Route.useParams();
+  const { cantiques, getCantique } = useCantiques();
+  const cantique = getCantique(Number(numero));
+
+  if (!cantique) {
+    return (
+      <AppShell title="Cantique introuvable" backTo="/">
+        <p className="text-muted-foreground text-sm">
+          Ce cantique n'existe pas dans le recueil.
+        </p>
+      </AppShell>
+    );
+  }
+
   const index = cantiques.findIndex((c) => c.numero === cantique.numero);
   const prev = cantiques[index - 1];
   const next = cantiques[index + 1];
