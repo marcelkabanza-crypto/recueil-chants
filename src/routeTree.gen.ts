@@ -10,33 +10,102 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AProposRouteImport } from './routes/a-propos'
+import { Route as AideRouteImport } from './routes/aide'
+import { Route as LivreDuConducteurRouteImport } from './routes/livre-du-conducteur'
+import { Route as ParametresRouteImport } from './routes/parametres'
+import { Route as CantiqueNumeroRouteImport } from './routes/cantique.$numero'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AProposRoute = AProposRouteImport.update({
+  id: '/a-propos',
+  path: '/a-propos',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AideRoute = AideRouteImport.update({
+  id: '/aide',
+  path: '/aide',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LivreDuConducteurRoute = LivreDuConducteurRouteImport.update({
+  id: '/livre-du-conducteur',
+  path: '/livre-du-conducteur',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ParametresRoute = ParametresRouteImport.update({
+  id: '/parametres',
+  path: '/parametres',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CantiqueNumeroRoute = CantiqueNumeroRouteImport.update({
+  id: '/cantique/$numero',
+  path: '/cantique/$numero',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/a-propos': typeof AProposRoute
+  '/aide': typeof AideRoute
+  '/livre-du-conducteur': typeof LivreDuConducteurRoute
+  '/parametres': typeof ParametresRoute
+  '/cantique/$numero': typeof CantiqueNumeroRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/a-propos': typeof AProposRoute
+  '/aide': typeof AideRoute
+  '/livre-du-conducteur': typeof LivreDuConducteurRoute
+  '/parametres': typeof ParametresRoute
+  '/cantique/$numero': typeof CantiqueNumeroRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/a-propos': typeof AProposRoute
+  '/aide': typeof AideRoute
+  '/livre-du-conducteur': typeof LivreDuConducteurRoute
+  '/parametres': typeof ParametresRoute
+  '/cantique/$numero': typeof CantiqueNumeroRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/a-propos'
+    | '/aide'
+    | '/livre-du-conducteur'
+    | '/parametres'
+    | '/cantique/$numero'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/a-propos'
+    | '/aide'
+    | '/livre-du-conducteur'
+    | '/parametres'
+    | '/cantique/$numero'
+  id:
+    | '__root__'
+    | '/'
+    | '/a-propos'
+    | '/aide'
+    | '/livre-du-conducteur'
+    | '/parametres'
+    | '/cantique/$numero'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AProposRoute: typeof AProposRoute
+  AideRoute: typeof AideRoute
+  LivreDuConducteurRoute: typeof LivreDuConducteurRoute
+  ParametresRoute: typeof ParametresRoute
+  CantiqueNumeroRoute: typeof CantiqueNumeroRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +117,51 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/a-propos': {
+      id: '/a-propos'
+      path: '/a-propos'
+      fullPath: '/a-propos'
+      preLoaderRoute: typeof AProposRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/aide': {
+      id: '/aide'
+      path: '/aide'
+      fullPath: '/aide'
+      preLoaderRoute: typeof AideRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/livre-du-conducteur': {
+      id: '/livre-du-conducteur'
+      path: '/livre-du-conducteur'
+      fullPath: '/livre-du-conducteur'
+      preLoaderRoute: typeof LivreDuConducteurRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/parametres': {
+      id: '/parametres'
+      path: '/parametres'
+      fullPath: '/parametres'
+      preLoaderRoute: typeof ParametresRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cantique/$numero': {
+      id: '/cantique/$numero'
+      path: '/cantique/$numero'
+      fullPath: '/cantique/$numero'
+      preLoaderRoute: typeof CantiqueNumeroRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AProposRoute: AProposRoute,
+  AideRoute: AideRoute,
+  LivreDuConducteurRoute: LivreDuConducteurRoute,
+  ParametresRoute: ParametresRoute,
+  CantiqueNumeroRoute: CantiqueNumeroRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
