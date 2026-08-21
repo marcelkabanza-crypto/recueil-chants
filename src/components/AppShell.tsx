@@ -174,7 +174,10 @@ export function AppShell({
         <h1 className="font-display truncate text-lg font-semibold">{title}</h1>
       </header>
 
+      <UpdateBanner />
+
       <main className="mx-auto w-full max-w-2xl px-4 py-5">{children}</main>
+
 
       <AlertDialog open={quitOpen} onOpenChange={setQuitOpen}>
         <AlertDialogContent>
