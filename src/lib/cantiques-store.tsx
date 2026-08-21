@@ -14,10 +14,14 @@ import { recueilLocal, type Cantique } from "@/data/cantiques";
 
 const CACHE_KEY = "tesp-cantiques-cache";
 
-/** Fichier JSON de mise à jour hébergé sur GitHub (raw). */
+/**
+ * Fichier de mise à jour. Par défaut : le fichier publié avec l'application
+ * elle-même (`/cantiques.json`). Il suffit donc de modifier les chants dans
+ * Lovable puis de publier : les appareils déjà installés détectent la
+ * différence et proposent la mise à jour.
+ */
 export const UPDATE_URL: string =
-  (import.meta.env["VITE_CANTIQUES_UPDATE_URL"] as string | undefined) ??
-  "https://raw.githubusercontent.com/marcelkabanza-crypto/recueil-chants/main/src/data/cantiques.json";
+  (import.meta.env["VITE_CANTIQUES_UPDATE_URL"] as string | undefined) ?? "/cantiques.json";
 
 type CacheShape = {
   version: number;
