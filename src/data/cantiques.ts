@@ -1,4 +1,6 @@
-import recueil from "./cantiques.json";
+// Source unique : ce fichier est aussi servi tel quel par le site publié
+// (/cantiques.json), ce qui permet la détection de mise à jour après publication.
+import recueil from "../../public/cantiques.json";
 
 export type Cantique = {
   numero: number;
