@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "updatedAt": "2026-08-21",
+  "cantiques": [
+    {
+      "numero": 1,
+      "nom": "Gloire à l'Agneau",
+      "texte": "1. Gloire à l'Agneau qui fut immolé,\nLui seul est digne d'être exalté ;\nSon sang précieux nous a rachetés,\nChantons sa grâce à l'éternité.\n\nRefrain :\nGloire, gloire à l'Agneau de Dieu !\nSon nom demeure au plus haut des cieux ;\nToute la terre entonne ce chant :\nDigne est l'Agneau, le Roi triomphant !\n\n2. Il a porté nos iniquités,\nSur cette croix il fut méprisé ;\nMais le matin du troisième jour,\nIl s'est levé, vainqueur par amour.\n\n3. Bientôt viendra l'appel du réveil,\nLes rachetés monteront au ciel ;\nAlors nos voix, sans fin, sans détour,\nLoueront l'Agneau, notre seul secours."
+    },
+    {
+      "numero": 2,
+      "nom": "Espérance vivante",
+      "texte": "1. Dans la nuit de ce monde obscur,\nBrille une lumière si pure ;\nChrist est l'espérance vivante,\nSa promesse est douce et constante.\n\nRefrain :\nEspérance, ô ferme espérance,\nAncre de l'âme en la souffrance ;\nQuand tout vacille autour de moi,\nJe reste debout par la foi.\n\n2. Les tempêtes peuvent gronder,\nMon Rocher ne peut s'ébranler ;\nSa Parole est mon fondement,\nElle demeure éternellement."
+    },
+    {
+      "numero": 3,
+      "nom": "Conduis-moi, Berger fidèle",
+      "texte": "1. Conduis-moi, Berger fidèle,\nPar les sentiers du désert ;\nTa houlette me rappelle\nQue ton cœur m'est grand ouvert.\n\nRefrain :\nConduis-moi, conduis-moi,\nJour après jour, garde ma foi ;\nDans les vallées comme aux sommets,\nJe marcherai, tu me connais.\n\n2. Près des eaux tranquilles,\nTu restaures mon âme lassée ;\nMême à l'ombre de la mort,\nTa présence est ma paix gardée."
+    },
+    {
+      "numero": 4,
+      "nom": "Viens, Esprit de Dieu",
+      "texte": "1. Viens, Esprit de Dieu, descends,\nSouffle sur ce cœur brûlant ;\nRemplis-nous de ta puissance,\nRenouvelle notre alliance.\n\nRefrain :\nViens, ô Esprit, viens embraser\nL'autel que nous venons dresser ;\nQue ta flamme jamais ne meure\nDans nos vies, à toute heure.\n\n2. Sans toi nos chants sont sans voix,\nSans toi nos pas sont sans foi ;\nMais ton onction nous relève,\nEt notre louange s'élève."
+    },
+    {
+      "numero": 5,
+      "nom": "Le Tabernacle de l'Espérance",
+      "texte": "1. Peuple élu, marche en avant,\nLe Seigneur va devant ;\nSous la nuée le jour, la nuit,\nSa colonne de feu nous conduit.\n\nRefrain :\nTabernacle, maison de sa gloire,\nLieu de louange et de victoire ;\nIci nous chantons d'un seul cœur :\nÉternel, tu es le vainqueur !\n\n2. Que nos familles soient bénies,\nQue nos enfants servent le Christ ;\nQue dans ce lieu de sainteté,\nRègne à jamais sa vérité."
+    },
+    {
+      "numero": 6,
+      "nom": "Quel ami fidèle est Jésus",
+      "texte": "1. Quel ami fidèle et tendre\nNous avons en Jésus-Christ !\nToujours prêt à nous entendre,\nÀ répondre à notre cri.\n\nRefrain :\nIl connaît nos défaillances,\nNos chutes et nos douleurs ;\nApportons-lui nos souffrances,\nIl est l'ami des pécheurs.\n\n2. Quand la route est difficile,\nQuand nos forces s'en vont,\nSa main puissante et tranquille\nNous relève et nous répond."
+    },
+    {
+      "numero": 7,
+      "nom": "Jour de joie éternelle",
+      "texte": "1. Un jour viendra, jour sans nuage,\nOù nous verrons notre Sauveur ;\nPlus de sanglots, plus de naufrage,\nPlus de douleur, plus de labeur.\n\nRefrain :\nÔ jour de joie éternelle,\nJour où l'Époux paraîtra !\nL'Épouse enfin, pure et fidèle,\nDans sa gloire il l'emmènera.\n\n2. Tenons ferme jusqu'à l'aurore,\nGardons la lampe allumée ;\nCar celui qui vient bientôt encore\nRécompense la fidélité."
+    }
+  ]
+}
