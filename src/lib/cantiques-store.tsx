@@ -84,6 +84,11 @@ function merge(base: Cantique[], updates: Cantique[]): Cantique[] {
   return [...map.values()].sort((a, b) => a.numero - b.numero);
 }
 
+/** Empreinte du contenu, pour détecter ajouts et corrections de texte. */
+function signature(list: Cantique[]): string {
+  return list.map((c) => `${c.numero}|${c.nom}|${c.texte.length}`).join("~");
+}
+
 const baseCache: CacheShape = {
   version: recueilLocal.version,
   updatedAt: recueilLocal.updatedAt,
