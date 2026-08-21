@@ -10,16 +10,23 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AuthenticatedRouteRouteImport } from './routes/_authenticated/route'
 import { Route as AProposRouteImport } from './routes/a-propos'
 import { Route as AideRouteImport } from './routes/aide'
+import { Route as AuthRouteImport } from './routes/auth'
 import { Route as LivreDuConducteurRouteImport } from './routes/livre-du-conducteur'
 import { Route as ParametresRouteImport } from './routes/parametres'
+import { Route as AuthenticatedAdministrationRouteImport } from './routes/_authenticated/administration'
 import { Route as CantiqueNumeroRouteImport } from './routes/cantique.$numero'
 import { Route as ListeIdRouteImport } from './routes/liste.$id'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AuthenticatedRouteRoute = AuthenticatedRouteRouteImport.update({
+  id: '/_authenticated',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AProposRoute = AProposRouteImport.update({
@@ -32,6 +39,11 @@ const AideRoute = AideRouteImport.update({
   path: '/aide',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AuthRoute = AuthRouteImport.update({
+  id: '/auth',
+  path: '/auth',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const LivreDuConducteurRoute = LivreDuConducteurRouteImport.update({
   id: '/livre-du-conducteur',
   path: '/livre-du-conducteur',
@@ -42,6 +54,12 @@ const ParametresRoute = ParametresRouteImport.update({
   path: '/parametres',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AuthenticatedAdministrationRoute =
+  AuthenticatedAdministrationRouteImport.update({
+    id: '/administration',
+    path: '/administration',
+    getParentRoute: () => AuthenticatedRouteRoute,
+  } as any)
 const CantiqueNumeroRoute = CantiqueNumeroRouteImport.update({
   id: '/cantique/$numero',
   path: '/cantique/$numero',
@@ -57,8 +75,10 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/a-propos': typeof AProposRoute
   '/aide': typeof AideRoute
+  '/auth': typeof AuthRoute
   '/livre-du-conducteur': typeof LivreDuConducteurRoute
   '/parametres': typeof ParametresRoute
+  '/administration': typeof AuthenticatedAdministrationRoute
   '/cantique/$numero': typeof CantiqueNumeroRoute
   '/liste/$id': typeof ListeIdRoute
 }
@@ -66,18 +86,23 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/a-propos': typeof AProposRoute
   '/aide': typeof AideRoute
+  '/auth': typeof AuthRoute
   '/livre-du-conducteur': typeof LivreDuConducteurRoute
   '/parametres': typeof ParametresRoute
+  '/administration': typeof AuthenticatedAdministrationRoute
   '/cantique/$numero': typeof CantiqueNumeroRoute
   '/liste/$id': typeof ListeIdRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/_authenticated': typeof AuthenticatedRouteRouteWithChildren
   '/a-propos': typeof AProposRoute
   '/aide': typeof AideRoute
+  '/auth': typeof AuthRoute
   '/livre-du-conducteur': typeof LivreDuConducteurRoute
   '/parametres': typeof ParametresRoute
+  '/_authenticated/administration': typeof AuthenticatedAdministrationRoute
   '/cantique/$numero': typeof CantiqueNumeroRoute
   '/liste/$id': typeof ListeIdRoute
 }
@@ -87,8 +112,10 @@ export interface FileRouteTypes {
     | '/'
     | '/a-propos'
     | '/aide'
+    | '/auth'
     | '/livre-du-conducteur'
     | '/parametres'
+    | '/administration'
     | '/cantique/$numero'
     | '/liste/$id'
   fileRoutesByTo: FileRoutesByTo
@@ -96,25 +123,32 @@ export interface FileRouteTypes {
     | '/'
     | '/a-propos'
     | '/aide'
+    | '/auth'
     | '/livre-du-conducteur'
     | '/parametres'
+    | '/administration'
     | '/cantique/$numero'
     | '/liste/$id'
   id:
     | '__root__'
     | '/'
+    | '/_authenticated'
     | '/a-propos'
     | '/aide'
+    | '/auth'
     | '/livre-du-conducteur'
     | '/parametres'
+    | '/_authenticated/administration'
     | '/cantique/$numero'
     | '/liste/$id'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AuthenticatedRouteRoute: typeof AuthenticatedRouteRouteWithChildren
   AProposRoute: typeof AProposRoute
   AideRoute: typeof AideRoute
+  AuthRoute: typeof AuthRoute
   LivreDuConducteurRoute: typeof LivreDuConducteurRoute
   ParametresRoute: typeof ParametresRoute
   CantiqueNumeroRoute: typeof CantiqueNumeroRoute
@@ -128,6 +162,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/_authenticated': {
+      id: '/_authenticated'
+      path: ''
+      fullPath: '/'
+      preLoaderRoute: typeof AuthenticatedRouteRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/a-propos': {
@@ -144,6 +185,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AideRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/auth': {
+      id: '/auth'
+      path: '/auth'
+      fullPath: '/auth'
+      preLoaderRoute: typeof AuthRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/livre-du-conducteur': {
       id: '/livre-du-conducteur'
       path: '/livre-du-conducteur'
@@ -157,6 +205,13 @@ declare module '@tanstack/react-router' {
       fullPath: '/parametres'
       preLoaderRoute: typeof ParametresRouteImport
       parentRoute: typeof rootRouteImport
+    }
+    '/_authenticated/administration': {
+      id: '/_authenticated/administration'
+      path: '/administration'
+      fullPath: '/administration'
+      preLoaderRoute: typeof AuthenticatedAdministrationRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
     }
     '/cantique/$numero': {
       id: '/cantique/$numero'
@@ -175,10 +230,23 @@ declare module '@tanstack/react-router' {
   }
 }
 
+interface AuthenticatedRouteRouteChildren {
+  AuthenticatedAdministrationRoute: typeof AuthenticatedAdministrationRoute
+}
+
+const AuthenticatedRouteRouteChildren: AuthenticatedRouteRouteChildren = {
+  AuthenticatedAdministrationRoute: AuthenticatedAdministrationRoute,
+}
+
+const AuthenticatedRouteRouteWithChildren =
+  AuthenticatedRouteRoute._addFileChildren(AuthenticatedRouteRouteChildren)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AuthenticatedRouteRoute: AuthenticatedRouteRouteWithChildren,
   AProposRoute: AProposRoute,
   AideRoute: AideRoute,
+  AuthRoute: AuthRoute,
   LivreDuConducteurRoute: LivreDuConducteurRoute,
   ParametresRoute: ParametresRoute,
   CantiqueNumeroRoute: CantiqueNumeroRoute,
