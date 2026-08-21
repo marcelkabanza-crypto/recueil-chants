@@ -27,7 +27,9 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog";
+import { UpdateBanner } from "@/components/UpdateBanner";
 import { useAuth } from "@/lib/auth";
+
 
 const navItems = [
   { to: "/", label: "Accueil", icon: Home },
