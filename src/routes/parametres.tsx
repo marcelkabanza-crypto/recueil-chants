@@ -1,11 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Mail, MessageCircle, RotateCcw } from "lucide-react";
+import { Mail, MessageCircle, Moon, RotateCcw, Sun } from "lucide-react";
 
 import { AppShell } from "@/components/AppShell";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Slider } from "@/components/ui/slider";
 import { useSettings } from "@/lib/settings";
+
 
 const WHATSAPP = "243977778889";
 const EMAIL = "esperancetabernacle24@gmail.com";
