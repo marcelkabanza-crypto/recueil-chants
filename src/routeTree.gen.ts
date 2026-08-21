@@ -10,11 +10,17 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AideRouteImport } from './routes/aide'
 import { Route as CantiqueNumeroRouteImport } from './routes/cantique.$numero'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AideRoute = AideRouteImport.update({
+  id: '/aide',
+  path: '/aide',
   getParentRoute: () => rootRouteImport,
 } as any)
 const CantiqueNumeroRoute = CantiqueNumeroRouteImport.update({
@@ -25,27 +31,31 @@ const CantiqueNumeroRoute = CantiqueNumeroRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/aide': typeof AideRoute
   '/cantique/$numero': typeof CantiqueNumeroRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/aide': typeof AideRoute
   '/cantique/$numero': typeof CantiqueNumeroRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/aide': typeof AideRoute
   '/cantique/$numero': typeof CantiqueNumeroRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/cantique/$numero'
+  fullPaths: '/' | '/aide' | '/cantique/$numero'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/cantique/$numero'
-  id: '__root__' | '/' | '/cantique/$numero'
+  to: '/' | '/aide' | '/cantique/$numero'
+  id: '__root__' | '/' | '/aide' | '/cantique/$numero'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AideRoute: typeof AideRoute
   CantiqueNumeroRoute: typeof CantiqueNumeroRoute
 }
 
@@ -56,6 +66,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/aide': {
+      id: '/aide'
+      path: '/aide'
+      fullPath: '/aide'
+      preLoaderRoute: typeof AideRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/cantique/$numero': {
@@ -70,6 +87,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AideRoute: AideRoute,
   CantiqueNumeroRoute: CantiqueNumeroRoute,
 }
 export const routeTree = rootRouteImport
