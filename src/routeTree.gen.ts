@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AProposRouteImport } from './routes/a-propos'
 import { Route as AideRouteImport } from './routes/aide'
 import { Route as LivreDuConducteurRouteImport } from './routes/livre-du-conducteur'
 import { Route as ParametresRouteImport } from './routes/parametres'
@@ -18,6 +19,11 @@ import { Route as CantiqueNumeroRouteImport } from './routes/cantique.$numero'
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AProposRoute = AProposRouteImport.update({
+  id: '/a-propos',
+  path: '/a-propos',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AideRoute = AideRouteImport.update({
@@ -43,6 +49,7 @@ const CantiqueNumeroRoute = CantiqueNumeroRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/a-propos': typeof AProposRoute
   '/aide': typeof AideRoute
   '/livre-du-conducteur': typeof LivreDuConducteurRoute
   '/parametres': typeof ParametresRoute
@@ -50,6 +57,7 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/a-propos': typeof AProposRoute
   '/aide': typeof AideRoute
   '/livre-du-conducteur': typeof LivreDuConducteurRoute
   '/parametres': typeof ParametresRoute
@@ -58,6 +66,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/a-propos': typeof AProposRoute
   '/aide': typeof AideRoute
   '/livre-du-conducteur': typeof LivreDuConducteurRoute
   '/parametres': typeof ParametresRoute
@@ -66,13 +75,24 @@ export interface FileRoutesById {
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
-    '/' | '/aide' | '/livre-du-conducteur' | '/parametres' | '/cantique/$numero'
+    | '/'
+    | '/a-propos'
+    | '/aide'
+    | '/livre-du-conducteur'
+    | '/parametres'
+    | '/cantique/$numero'
   fileRoutesByTo: FileRoutesByTo
   to:
-    '/' | '/aide' | '/livre-du-conducteur' | '/parametres' | '/cantique/$numero'
+    | '/'
+    | '/a-propos'
+    | '/aide'
+    | '/livre-du-conducteur'
+    | '/parametres'
+    | '/cantique/$numero'
   id:
     | '__root__'
     | '/'
+    | '/a-propos'
     | '/aide'
     | '/livre-du-conducteur'
     | '/parametres'
@@ -81,6 +101,7 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AProposRoute: typeof AProposRoute
   AideRoute: typeof AideRoute
   LivreDuConducteurRoute: typeof LivreDuConducteurRoute
   ParametresRoute: typeof ParametresRoute
@@ -94,6 +115,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/a-propos': {
+      id: '/a-propos'
+      path: '/a-propos'
+      fullPath: '/a-propos'
+      preLoaderRoute: typeof AProposRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/aide': {
@@ -129,6 +157,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AProposRoute: AProposRoute,
   AideRoute: AideRoute,
   LivreDuConducteurRoute: LivreDuConducteurRoute,
   ParametresRoute: ParametresRoute,
