@@ -90,13 +90,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { title: "Recueil des Chants TESP" },
       {
         name: "description",
-        content: "Les cantiques du Tabernacle Espérance : numéro, nom et texte complet.",
+        content: "Les cantiques du Tabernacle de l'Espérance : numéro, nom et texte complet.",
       },
       { name: "theme-color", content: "#0d2b2b" },
       { property: "og:title", content: "Recueil des Chants TESP" },
       {
         property: "og:description",
-        content: "Les cantiques du Tabernacle Espérance : numéro, nom et texte complet.",
+        content: "Les cantiques du Tabernacle de l'Espérance : numéro, nom et texte complet.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -150,8 +150,13 @@ function RootComponent() {
   return (
     <QueryClientProvider client={queryClient}>
       <SettingsProvider>
-        {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
-        <Outlet />
+        <AuthProvider>
+          <CantiquesProvider>
+            {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
+            <Outlet />
+            <Toaster />
+          </CantiquesProvider>
+        </AuthProvider>
       </SettingsProvider>
     </QueryClientProvider>
   );

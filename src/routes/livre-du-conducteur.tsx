@@ -19,7 +19,7 @@ export const Route = createFileRoute("/livre-du-conducteur")({
       { property: "og:title", content: "Livre du conducteur — Recueil TESP" },
       {
         property: "og:description",
-        content: "Listes de chants et guide du conducteur du Tabernacle Espérance.",
+        content: "Listes de chants et guide du conducteur du Tabernacle de l'Espérance.",
       },
     ],
   }),
