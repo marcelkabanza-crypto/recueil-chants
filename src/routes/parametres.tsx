@@ -1,11 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Mail, MessageCircle, RotateCcw } from "lucide-react";
+import { Mail, MessageCircle, Moon, RotateCcw, Sun } from "lucide-react";
 
 import { AppShell } from "@/components/AppShell";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Slider } from "@/components/ui/slider";
 import { useSettings } from "@/lib/settings";
+
 
 const WHATSAPP = "243977778889";
 const EMAIL = "esperancetabernacle24@gmail.com";
@@ -30,12 +31,32 @@ export const Route = createFileRoute("/parametres")({
 });
 
 function Parametres() {
-  const { fontFamily, fontScale, setFontFamily, setFontScale, reset } = useSettings();
+  const { fontFamily, fontScale, theme, setFontFamily, setFontScale, setTheme, reset } =
+    useSettings();
 
   return (
     <AppShell title="Paramètres" backTo="/">
       <section className="bg-card shadow-soft rounded-lg border p-4">
+        <h2 className="font-display text-lg font-semibold">Mode d'affichage</h2>
+        <div className="mt-3 grid grid-cols-2 gap-2">
+          <Button
+            variant={theme === "jour" ? "default" : "outline"}
+            onClick={() => setTheme("jour")}
+          >
+            <Sun /> Mode jour
+          </Button>
+          <Button
+            variant={theme === "nuit" ? "default" : "outline"}
+            onClick={() => setTheme("nuit")}
+          >
+            <Moon /> Mode nuit
+          </Button>
+        </div>
+      </section>
+
+      <section className="bg-card shadow-soft mt-4 rounded-lg border p-4">
         <h2 className="font-display text-lg font-semibold">Police du texte</h2>
+
         <div className="mt-3 grid grid-cols-2 gap-2">
           <Button
             variant={fontFamily === "serif" ? "default" : "outline"}

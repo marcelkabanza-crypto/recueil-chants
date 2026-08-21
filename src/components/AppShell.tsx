@@ -4,9 +4,12 @@ import {
   CircleHelp,
   Home,
   Info,
+  LogIn,
   LogOut,
   Menu,
   Settings,
+  ShieldCheck,
+  UserRound,
   Youtube,
   ArrowLeft,
 } from "lucide-react";
@@ -24,6 +27,7 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog";
+import { useAuth } from "@/lib/auth";
 
 const navItems = [
   { to: "/", label: "Accueil", icon: Home },
@@ -32,6 +36,9 @@ const navItems = [
   { to: "/livre-du-conducteur", label: "Livre du conducteur", icon: BookOpen },
   { to: "/a-propos", label: "À propos", icon: Info },
 ] as const;
+
+const linkClass =
+  "flex items-center gap-3 rounded-md px-3 py-3 text-sm transition-colors hover:bg-sidebar-accent";
 
 export function AppShell({
   title,
@@ -44,6 +51,7 @@ export function AppShell({
 }) {
   const [open, setOpen] = useState(false);
   const [quitOpen, setQuitOpen] = useState(false);
+  const { user, isAdmin, signOut } = useAuth();
 
   const quit = () => {
     window.close();
@@ -76,11 +84,16 @@ export function AppShell({
               <Menu />
             </Button>
           </SheetTrigger>
-          <SheetContent side="left" className="w-[17rem] bg-sidebar p-0 text-sidebar-foreground">
+          <SheetContent side="left" className="w-[17rem] overflow-y-auto bg-sidebar p-0 text-sidebar-foreground">
             <div className="hero-gradient px-5 py-6">
               <p className="font-display text-lg leading-tight">Recueil des chants</p>
               <p className="text-gold font-display text-2xl font-semibold">TESP</p>
-              <p className="mt-1 text-xs opacity-80">Tabernacle Espérance</p>
+              <p className="mt-1 text-xs opacity-80">Tabernacle de l'Espérance</p>
+              {user ? (
+                <p className="mt-2 truncate text-xs opacity-80">
+                  {isAdmin ? "Administrateur" : "Membre"} · {user.email}
+                </p>
+              ) : null}
             </div>
             <nav className="flex flex-col gap-1 p-3">
               {navItems.map((item) => (
@@ -90,29 +103,67 @@ export function AppShell({
                   onClick={() => setOpen(false)}
                   activeOptions={{ exact: item.to === "/" }}
                   activeProps={{ className: "bg-sidebar-accent text-gold" }}
-                  className="flex items-center gap-3 rounded-md px-3 py-3 text-sm transition-colors hover:bg-sidebar-accent"
+                  className={linkClass}
                 >
                   <item.icon className="size-4" />
                   {item.label}
                 </Link>
               ))}
+
+              {isAdmin ? (
+                <Link
+                  to="/administration"
+                  onClick={() => setOpen(false)}
+                  activeProps={{ className: "bg-sidebar-accent text-gold" }}
+                  className={linkClass}
+                >
+                  <ShieldCheck className="size-4" />
+                  Administration
+                </Link>
+              ) : null}
+
               <a
                 href="https://www.youtube.com/@TabEsperance"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setOpen(false)}
-                className="flex items-center gap-3 rounded-md px-3 py-3 text-sm transition-colors hover:bg-sidebar-accent"
+                className={linkClass}
               >
                 <Youtube className="size-4" />
                 Notre chaîne YouTube
               </a>
+
+              {user ? (
+                <button
+                  type="button"
+                  onClick={() => {
+                    setOpen(false);
+                    void signOut();
+                  }}
+                  className={`${linkClass} text-left`}
+                >
+                  <UserRound className="size-4" />
+                  Se déconnecter
+                </button>
+              ) : (
+                <Link
+                  to="/auth"
+                  onClick={() => setOpen(false)}
+                  activeProps={{ className: "bg-sidebar-accent text-gold" }}
+                  className={linkClass}
+                >
+                  <LogIn className="size-4" />
+                  Connexion
+                </Link>
+              )}
+
               <button
                 type="button"
                 onClick={() => {
                   setOpen(false);
                   setQuitOpen(true);
                 }}
-                className="flex items-center gap-3 rounded-md px-3 py-3 text-left text-sm transition-colors hover:bg-sidebar-accent"
+                className={`${linkClass} text-left`}
               >
                 <LogOut className="size-4" />
                 Quitter

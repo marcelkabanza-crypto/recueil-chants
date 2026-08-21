@@ -8,18 +8,21 @@ import {
 } from "react";
 
 export type FontFamily = "serif" | "sans";
+export type ThemeMode = "jour" | "nuit";
 
 type Settings = {
   fontFamily: FontFamily;
   fontScale: number;
+  theme: ThemeMode;
 };
 
-const DEFAULTS: Settings = { fontFamily: "serif", fontScale: 1 };
+const DEFAULTS: Settings = { fontFamily: "serif", fontScale: 1, theme: "jour" };
 const KEY = "tesp-settings";
 
 type SettingsContextValue = Settings & {
   setFontFamily: (v: FontFamily) => void;
   setFontScale: (v: number) => void;
+  setTheme: (v: ThemeMode) => void;
   reset: () => void;
 };
 
@@ -46,6 +49,8 @@ export function SettingsProvider({ children }: { children: ReactNode }) {
         : "var(--font-body)",
     );
     root.style.setProperty("--reading-scale", String(settings.fontScale));
+    root.classList.toggle("dark", settings.theme === "nuit");
+    root.style.colorScheme = settings.theme === "nuit" ? "dark" : "light";
   }, [settings]);
 
   const update = useCallback((patch: Partial<Settings>) => {
@@ -66,6 +71,7 @@ export function SettingsProvider({ children }: { children: ReactNode }) {
         ...settings,
         setFontFamily: (fontFamily) => update({ fontFamily }),
         setFontScale: (fontScale) => update({ fontScale }),
+        setTheme: (theme) => update({ theme }),
         reset: () => update(DEFAULTS),
       }}
     >
