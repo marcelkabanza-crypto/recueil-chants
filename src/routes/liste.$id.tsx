@@ -15,7 +15,7 @@ import { useMemo, useState } from "react";
 import { AppShell } from "@/components/AppShell";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { cantiques, getCantique } from "@/data/cantiques";
+import { useCantiques } from "@/lib/cantiques-store";
 import { usePlaylists } from "@/lib/playlists";
 
 export const Route = createFileRoute("/liste/$id")({
@@ -41,6 +41,7 @@ export const Route = createFileRoute("/liste/$id")({
 function ListePage() {
   const { id } = Route.useParams();
   const { lists, addChant, removeChant, moveChant } = usePlaylists();
+  const { cantiques, getCantique } = useCantiques();
   const liste = lists.find((l) => l.id === id);
 
   const [q, setQ] = useState("");
@@ -48,7 +49,7 @@ function ListePage() {
 
   const chants = useMemo(
     () => (liste?.numeros ?? []).map((n) => getCantique(n)).filter(Boolean),
-    [liste],
+    [liste, getCantique],
   );
 
   const results = useMemo(() => {
@@ -58,7 +59,7 @@ function ListePage() {
     return base.filter(
       (c) => c.nom.toLowerCase().includes(term) || String(c.numero).startsWith(term),
     );
-  }, [q, liste]);
+  }, [q, liste, cantiques]);
 
   if (!liste) {
     return (
