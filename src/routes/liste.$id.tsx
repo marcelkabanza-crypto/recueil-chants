@@ -81,7 +81,7 @@ function ListePage() {
             {chant.numero}. {chant.nom}
           </h2>
           <div className="bg-accent mt-3 h-px w-16" />
-          <div className="cantique-text mt-5">{chant.texte}</div>
+          <CantiqueTexte texte={chant.texte} className="mt-5" />
         </article>
         <div className="mt-8 flex items-center justify-between gap-2">
           <Button
