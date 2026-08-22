@@ -26,7 +26,7 @@ import {
 } from "@/components/ui/alert-dialog";
 import { UpdateBanner } from "@/components/UpdateBanner";
 import { InstallButton } from "@/components/InstallButton";
-import { useAuth } from "@/lib/auth";
+
 
 
 const navItems = [
