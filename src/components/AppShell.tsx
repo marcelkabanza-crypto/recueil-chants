@@ -51,7 +51,7 @@ export function AppShell({
 }) {
   const [open, setOpen] = useState(false);
   const [quitOpen, setQuitOpen] = useState(false);
-  const { user, isAdmin, signOut } = useAuth();
+  
 
   const quit = () => {
     window.close();
