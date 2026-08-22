@@ -19,10 +19,11 @@ export function ShareButton({
 }: Props) {
   const handleShare = async () => {
     const text = `${cantique.numero}. ${cantique.nom}\n\n${cantique.texte}\n\nRecueil des chants du Tabernacle de l'espérance Kinshasa-Matete.`;
+    const nav = typeof navigator !== "undefined" ? navigator : null;
 
-    if (typeof navigator !== "undefined" && "share" in navigator) {
+    if (nav && typeof nav.share === "function") {
       try {
-        await navigator.share({
+        await nav.share({
           title: `Cantique ${cantique.numero} — ${cantique.nom}`,
           text,
         });
@@ -37,7 +38,7 @@ export function ShareButton({
 
     // Fallback : copier dans le presse-papiers
     try {
-      await navigator.clipboard.writeText(text);
+      await nav?.clipboard.writeText(text);
       toast.success("Cantique copié dans le presse-papiers.");
     } catch {
       toast.error("Impossible de copier le cantique.");
