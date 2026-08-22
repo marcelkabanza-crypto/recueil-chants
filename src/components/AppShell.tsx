@@ -105,7 +105,7 @@ export function AppShell({
                 </Link>
               ))}
 
-              <
+              <a
                 href="https://www.youtube.com/@TabEsperance"
                 target="_blank"
                 rel="noopener noreferrer"
