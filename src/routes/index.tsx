@@ -3,6 +3,7 @@ import { Search } from "lucide-react";
 import { useMemo, useState } from "react";
 
 import { AppShell } from "@/components/AppShell";
+import { InstallButton } from "@/components/InstallButton";
 import { Input } from "@/components/ui/input";
 import { useCantiques } from "@/lib/cantiques-store";
 
