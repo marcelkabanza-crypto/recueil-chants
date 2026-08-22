@@ -47,7 +47,7 @@ function CantiquePage() {
           {cantique.numero}. {cantique.nom}
         </h2>
         <div className="bg-accent mt-3 h-px w-16" />
-        <div className="cantique-text mt-5">{cantique.texte}</div>
+        <CantiqueTexte texte={cantique.texte} className="mt-5" />
       </article>
 
       <div className="mt-8 flex items-center justify-between gap-2">
