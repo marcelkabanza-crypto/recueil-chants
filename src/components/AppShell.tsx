@@ -105,19 +105,7 @@ export function AppShell({
                 </Link>
               ))}
 
-              {isAdmin ? (
-                <Link
-                  to="/administration"
-                  onClick={() => setOpen(false)}
-                  activeProps={{ className: "bg-sidebar-accent text-gold" }}
-                  className={linkClass}
-                >
-                  <ShieldCheck className="size-4" />
-                  Administration
-                </Link>
-              ) : null}
-
-              <a
+              <
                 href="https://www.youtube.com/@TabEsperance"
                 target="_blank"
                 rel="noopener noreferrer"
