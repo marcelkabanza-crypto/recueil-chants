@@ -13,6 +13,7 @@ import {
 import { useMemo, useState } from "react";
 
 import { AppShell } from "@/components/AppShell";
+import { CantiqueTexte } from "@/components/CantiqueTexte";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useCantiques } from "@/lib/cantiques-store";
