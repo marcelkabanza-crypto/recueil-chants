@@ -43,13 +43,16 @@ function Index() {
 
   return (
     <AppShell title="Recueil des Chants TESP">
+      <InstallButton className="mb-4 w-full" />
+
       <div className="relative mb-5">
-        <Search className="text-muted-foreground absolute left-3 top-1/2 size-4 -translate-y-1/2" />
+        <Search className="text-muted-foreground absolute left-3 top-1/2 size-5 -translate-y-1/2" />
         <Input
           value={q}
           onChange={(e) => setQ(e.target.value)}
           placeholder="Rechercher un cantique ou un numéro"
-          className="pl-9"
+          className="h-12 pl-10 text-base"
+          inputMode="text"
           aria-label="Rechercher un cantique"
         />
       </div>
