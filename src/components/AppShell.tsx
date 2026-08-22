@@ -4,12 +4,9 @@ import {
   CircleHelp,
   Home,
   Info,
-  LogIn,
   LogOut,
   Menu,
   Settings,
-  ShieldCheck,
-  UserRound,
   Youtube,
   ArrowLeft,
 } from "lucide-react";
@@ -29,7 +26,7 @@ import {
 } from "@/components/ui/alert-dialog";
 import { UpdateBanner } from "@/components/UpdateBanner";
 import { InstallButton } from "@/components/InstallButton";
-import { useAuth } from "@/lib/auth";
+
 
 
 const navItems = [
@@ -54,7 +51,7 @@ export function AppShell({
 }) {
   const [open, setOpen] = useState(false);
   const [quitOpen, setQuitOpen] = useState(false);
-  const { user, isAdmin, signOut } = useAuth();
+  
 
   const quit = () => {
     window.close();
@@ -92,11 +89,6 @@ export function AppShell({
               <p className="font-display text-lg leading-tight">Recueil des chants</p>
               <p className="text-gold font-display text-2xl font-semibold">TESP</p>
               <p className="mt-1 text-xs opacity-80">Tabernacle de l'Espérance</p>
-              {user ? (
-                <p className="mt-2 truncate text-xs opacity-80">
-                  {isAdmin ? "Administrateur" : "Membre"} · {user.email}
-                </p>
-              ) : null}
             </div>
             <nav className="flex flex-col gap-1 p-3">
               {navItems.map((item) => (
@@ -113,18 +105,6 @@ export function AppShell({
                 </Link>
               ))}
 
-              {isAdmin ? (
-                <Link
-                  to="/administration"
-                  onClick={() => setOpen(false)}
-                  activeProps={{ className: "bg-sidebar-accent text-gold" }}
-                  className={linkClass}
-                >
-                  <ShieldCheck className="size-4" />
-                  Administration
-                </Link>
-              ) : null}
-
               <a
                 href="https://www.youtube.com/@TabEsperance"
                 target="_blank"
@@ -136,29 +116,6 @@ export function AppShell({
                 Notre chaîne YouTube
               </a>
 
-              {user ? (
-                <button
-                  type="button"
-                  onClick={() => {
-                    setOpen(false);
-                    void signOut();
-                  }}
-                  className={`${linkClass} text-left`}
-                >
-                  <UserRound className="size-4" />
-                  Se déconnecter
-                </button>
-              ) : (
-                <Link
-                  to="/auth"
-                  onClick={() => setOpen(false)}
-                  activeProps={{ className: "bg-sidebar-accent text-gold" }}
-                  className={linkClass}
-                >
-                  <LogIn className="size-4" />
-                  Connexion
-                </Link>
-              )}
 
               <button
                 type="button"
