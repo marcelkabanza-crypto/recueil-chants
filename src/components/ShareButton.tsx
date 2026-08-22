@@ -37,11 +37,15 @@ export function ShareButton({
     }
 
     // Fallback : copier dans le presse-papiers
-    try {
-      await nav?.clipboard.writeText(text);
-      toast.success("Cantique copié dans le presse-papiers.");
-    } catch {
-      toast.error("Impossible de copier le cantique.");
+    if (nav && nav.clipboard) {
+      try {
+        await nav.clipboard.writeText(text);
+        toast.success("Cantique copié dans le presse-papiers.");
+      } catch {
+        toast.error("Impossible de copier le cantique.");
+      }
+    } else {
+      toast.error("Le partage n'est pas disponible sur cet appareil.");
     }
   };
 
