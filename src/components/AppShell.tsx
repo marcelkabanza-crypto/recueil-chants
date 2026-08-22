@@ -179,6 +179,11 @@ export function AppShell({
             </nav>
           </SheetContent>
         </Sheet>
+        <img
+          src="/logo-header-white.png"
+          alt=""
+          className="mr-2 h-8 w-auto opacity-90"
+        />
         <h1 className="font-display truncate text-lg font-semibold">{title}</h1>
       </header>
 
