@@ -3,6 +3,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 import { AppShell } from "@/components/AppShell";
 import { CantiqueTexte } from "@/components/CantiqueTexte";
+import { ShareButton } from "@/components/ShareButton";
 import { Button } from "@/components/ui/button";
 import { useCantiques } from "@/lib/cantiques-store";
 
