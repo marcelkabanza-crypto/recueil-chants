@@ -14,6 +14,7 @@ import { useMemo, useState } from "react";
 
 import { AppShell } from "@/components/AppShell";
 import { CantiqueTexte } from "@/components/CantiqueTexte";
+import { ShareButton } from "@/components/ShareButton";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useCantiques } from "@/lib/cantiques-store";
@@ -78,9 +79,12 @@ function ListePage() {
           <X /> Quitter la lecture
         </Button>
         <article>
-          <h2 className="font-display text-2xl font-semibold leading-tight">
-            {chant.numero}. {chant.nom}
-          </h2>
+          <div className="flex items-start justify-between gap-2">
+            <h2 className="font-display text-2xl font-semibold leading-tight">
+              {chant.numero}. {chant.nom}
+            </h2>
+            <ShareButton cantique={chant} className="shrink-0" />
+          </div>
           <div className="bg-accent mt-3 h-px w-16" />
           <CantiqueTexte texte={chant.texte} className="mt-5" />
         </article>

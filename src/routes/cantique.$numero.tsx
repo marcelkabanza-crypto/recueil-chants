@@ -3,6 +3,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 import { AppShell } from "@/components/AppShell";
 import { CantiqueTexte } from "@/components/CantiqueTexte";
+import { ShareButton } from "@/components/ShareButton";
 import { Button } from "@/components/ui/button";
 import { useCantiques } from "@/lib/cantiques-store";
 
@@ -44,9 +45,12 @@ function CantiquePage() {
   return (
     <AppShell title={`Cantique ${cantique.numero}`} backTo="/">
       <article>
-        <h2 className="font-display text-2xl font-semibold leading-tight">
-          {cantique.numero}. {cantique.nom}
-        </h2>
+        <div className="flex items-start justify-between gap-2">
+          <h2 className="font-display text-2xl font-semibold leading-tight">
+            {cantique.numero}. {cantique.nom}
+          </h2>
+          <ShareButton cantique={cantique} className="shrink-0" />
+        </div>
         <div className="bg-accent mt-3 h-px w-16" />
         <CantiqueTexte texte={cantique.texte} className="mt-5" />
       </article>
