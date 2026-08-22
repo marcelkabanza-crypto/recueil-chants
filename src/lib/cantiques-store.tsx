@@ -107,16 +107,45 @@ export function CantiquesProvider({ children }: { children: ReactNode }) {
   const pending = useRef<CacheShape | null>(null);
   const busy = useRef(false);
 
+  /**
+   * Récupère le recueil distant : la base de données en priorité (elle contient
+   * toujours les derniers ajouts de l'administrateur, sans republication), puis
+   * le fichier publié avec l'application en secours.
+   */
+  const fetchRemote = useCallback(async (): Promise<Partial<CacheShape> | null> => {
+    try {
+      const [{ data: rows }, { data: versionRow }] = await Promise.all([
+        supabase.from("cantiques").select("numero, nom, texte").order("numero", { ascending: true }),
+        supabase.from("recueil_version").select("version, published_at").eq("id", 1).maybeSingle(),
+      ]);
+      const distants = ((rows ?? []) as Cantique[]).filter(isCantique);
+      if (distants.length > 0) {
+        return {
+          version: versionRow?.version ?? 0,
+          updatedAt: versionRow?.published_at ?? new Date().toISOString(),
+          cantiques: distants,
+        };
+      }
+    } catch {
+      /* base inaccessible : on tente le fichier publié */
+    }
+    try {
+      const res = await fetch(`${UPDATE_URL}?t=${Date.now()}`, { cache: "no-store" });
+      if (!res.ok) return null;
+      return (await res.json()) as Partial<CacheShape>;
+    } catch {
+      return null;
+    }
+  }, []);
+
   const checkForUpdate = useCallback(async () => {
     if (busy.current) return;
     if (typeof navigator !== "undefined" && navigator.onLine === false) return;
     busy.current = true;
     setChecking(true);
     try {
-      const res = await fetch(`${UPDATE_URL}?t=${Date.now()}`, { cache: "no-store" });
-      if (!res.ok) return;
-      const remote = (await res.json()) as Partial<CacheShape>;
-      if (!Array.isArray(remote.cantiques)) return;
+      const remote = await fetchRemote();
+      if (!remote || !Array.isArray(remote.cantiques)) return;
       const cantiquesDistants = remote.cantiques.filter(isCantique);
       if (cantiquesDistants.length === 0) return;
 
@@ -142,7 +171,8 @@ export function CantiquesProvider({ children }: { children: ReactNode }) {
       busy.current = false;
       setChecking(false);
     }
-  }, []);
+  }, [fetchRemote]);
+
 
   const applyUpdate = useCallback(async () => {
     const next = pending.current;
