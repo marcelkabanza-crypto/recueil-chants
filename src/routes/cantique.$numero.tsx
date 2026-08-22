@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 import { AppShell } from "@/components/AppShell";
+import { CantiqueTexte } from "@/components/CantiqueTexte";
 import { Button } from "@/components/ui/button";
 import { useCantiques } from "@/lib/cantiques-store";
 
