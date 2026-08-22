@@ -116,29 +116,6 @@ export function AppShell({
                 Notre chaîne YouTube
               </a>
 
-              {user ? (
-                <button
-                  type="button"
-                  onClick={() => {
-                    setOpen(false);
-                    void signOut();
-                  }}
-                  className={`${linkClass} text-left`}
-                >
-                  <UserRound className="size-4" />
-                  Se déconnecter
-                </button>
-              ) : (
-                <Link
-                  to="/auth"
-                  onClick={() => setOpen(false)}
-                  activeProps={{ className: "bg-sidebar-accent text-gold" }}
-                  className={linkClass}
-                >
-                  <LogIn className="size-4" />
-                  Connexion
-                </Link>
-              )}
 
               <button
                 type="button"
