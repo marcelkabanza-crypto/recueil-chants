@@ -28,6 +28,7 @@ import {
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog";
 import { UpdateBanner } from "@/components/UpdateBanner";
+import { InstallButton } from "@/components/InstallButton";
 import { useAuth } from "@/lib/auth";
 
 
@@ -170,6 +171,8 @@ export function AppShell({
                 <LogOut className="size-4" />
                 Quitter
               </button>
+
+              <InstallButton className="mt-3 w-full" />
             </nav>
           </SheetContent>
         </Sheet>
