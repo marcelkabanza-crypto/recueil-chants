@@ -67,9 +67,9 @@ function Index() {
             <Link
               to="/cantique/$numero"
               params={{ numero: String(c.numero) }}
-              className="bg-card shadow-soft hover:border-accent flex items-center gap-3 rounded-lg border p-3 transition-colors"
+              className="bg-card shadow-soft hover:border-accent flex min-h-16 items-center gap-3 rounded-lg border p-3 transition-colors active:opacity-80"
             >
-              <span className="bg-primary text-primary-foreground font-display flex size-10 shrink-0 items-center justify-center rounded-full text-base font-semibold">
+              <span className="bg-primary text-primary-foreground font-display flex size-11 shrink-0 items-center justify-center rounded-full text-base font-semibold">
                 {c.numero}
               </span>
               <span className="font-display text-lg leading-snug">{c.nom}</span>
