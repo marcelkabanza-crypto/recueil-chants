@@ -89,11 +89,6 @@ export function AppShell({
               <p className="font-display text-lg leading-tight">Recueil des chants</p>
               <p className="text-gold font-display text-2xl font-semibold">TESP</p>
               <p className="mt-1 text-xs opacity-80">Tabernacle de l'Espérance</p>
-              {user ? (
-                <p className="mt-2 truncate text-xs opacity-80">
-                  {isAdmin ? "Administrateur" : "Membre"} · {user.email}
-                </p>
-              ) : null}
             </div>
             <nav className="flex flex-col gap-1 p-3">
               {navItems.map((item) => (
