@@ -13,6 +13,7 @@ import {
 import { useMemo, useState } from "react";
 
 import { AppShell } from "@/components/AppShell";
+import { CantiqueTexte } from "@/components/CantiqueTexte";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useCantiques } from "@/lib/cantiques-store";
@@ -81,7 +82,7 @@ function ListePage() {
             {chant.numero}. {chant.nom}
           </h2>
           <div className="bg-accent mt-3 h-px w-16" />
-          <div className="cantique-text mt-5">{chant.texte}</div>
+          <CantiqueTexte texte={chant.texte} className="mt-5" />
         </article>
         <div className="mt-8 flex items-center justify-between gap-2">
           <Button

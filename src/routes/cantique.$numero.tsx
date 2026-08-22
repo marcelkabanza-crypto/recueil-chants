@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 import { AppShell } from "@/components/AppShell";
+import { CantiqueTexte } from "@/components/CantiqueTexte";
 import { Button } from "@/components/ui/button";
 import { useCantiques } from "@/lib/cantiques-store";
 
@@ -47,7 +48,7 @@ function CantiquePage() {
           {cantique.numero}. {cantique.nom}
         </h2>
         <div className="bg-accent mt-3 h-px w-16" />
-        <div className="cantique-text mt-5">{cantique.texte}</div>
+        <CantiqueTexte texte={cantique.texte} className="mt-5" />
       </article>
 
       <div className="mt-8 flex items-center justify-between gap-2">
