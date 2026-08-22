@@ -1,13 +1,26 @@
 {
+  "id": "/",
   "name": "Recueil des Chants TESP",
   "short_name": "Chants TESP",
-  "description": "Recueil des cantiques du Tabernacle de l'Espérance",
+  "description": "Recueil des cantiques du Tabernacle de l'Espérance, consultable hors ligne.",
+  "lang": "fr",
+  "dir": "ltr",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "portrait",
   "background_color": "#0d2b2b",
   "theme_color": "#0d2b2b",
+  "categories": ["books", "music", "lifestyle"],
   "icons": [
-    { "src": "/images/icon-192.png", "sizes": "192x192", "type": "image/png" },
-    { "src": "/images/icon-512.png", "sizes": "512x512", "type": "image/png" }
+    { "src": "/images/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/images/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/images/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "/images/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Livre du conducteur", "short_name": "Listes", "url": "/livre-du-conducteur" },
+    { "name": "Aide", "short_name": "Aide", "url": "/aide" }
   ]
 }
