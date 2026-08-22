@@ -22,8 +22,13 @@ export default defineConfig({
         filename: "sw.js",
         devOptions: { enabled: false },
         manifest: false,
+        // Le service worker doit être émis dans le dossier statique servi au navigateur
+        // (dist/client) pour être accessible à l'URL « /sw.js » sur le téléphone.
+        outDir: "dist/client",
         workbox: {
+          globDirectory: "dist/client",
           globPatterns: ["**/*.{js,css,html,ico,png,svg,woff2,json}"],
+
           // L'app est rendue par le serveur : on met en cache la page « / »
           // dès l'installation pour que toutes les routes fonctionnent hors ligne.
           additionalManifestEntries: [{ url: "/", revision: `${Date.now()}` }],
