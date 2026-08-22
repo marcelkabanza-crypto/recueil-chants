@@ -102,21 +102,23 @@ Lui seul est digne d'être exalté.`}
         <p className="text-muted-foreground mt-1 text-sm">
           Pour signaler une erreur ou proposer un nouveau cantique.
         </p>
-        <div className="mt-4 space-y-2">
-          <Button asChild variant="outline" className="w-full justify-start">
-            <a
-              href={`https://wa.me/${WHATSAPP}`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <MessageCircle /> WhatsApp : +{WHATSAPP}
-            </a>
-          </Button>
-          <Button asChild variant="outline" className="w-full justify-start">
-            <a href={`mailto:${EMAIL}`}>
-              <Mail /> {EMAIL}
-            </a>
-          </Button>
+        <div className="mt-4 flex items-center justify-center gap-4">
+          <a
+            href={`https://wa.me/${WHATSAPP}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Contacter par WhatsApp"
+            className="flex size-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-soft transition-transform active:scale-95"
+          >
+            <MessageCircle className="size-7" />
+          </a>
+          <a
+            href={`mailto:${EMAIL}`}
+            aria-label="Contacter par Gmail"
+            className="flex size-14 items-center justify-center rounded-full bg-[#EA4335] text-white shadow-soft transition-transform active:scale-95"
+          >
+            <Mail className="size-7" />
+          </a>
         </div>
       </section>
     </AppShell>

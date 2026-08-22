@@ -89,12 +89,9 @@ export function AppShell({
           </SheetTrigger>
           <SheetContent side="left" className="w-[17rem] overflow-y-auto bg-sidebar p-0 text-sidebar-foreground">
             <div className="hero-gradient px-5 py-6">
-              <img
-                src="/logo-header-white.png"
-                alt="Tabernacle de l'Espérance"
-                className="h-16 w-auto"
-              />
-              <p className="mt-2 text-xs opacity-80">Tabernacle de l'Espérance</p>
+              <p className="font-display text-lg leading-tight">Recueil des chants</p>
+              <p className="text-gold font-display text-2xl font-semibold">TESP</p>
+              <p className="mt-1 text-xs opacity-80">Tabernacle de l'Espérance</p>
               {user ? (
                 <p className="mt-2 truncate text-xs opacity-80">
                   {isAdmin ? "Administrateur" : "Membre"} · {user.email}
@@ -179,11 +176,6 @@ export function AppShell({
             </nav>
           </SheetContent>
         </Sheet>
-        <img
-          src="/logo-header-white.png"
-          alt=""
-          className="mr-2 h-8 w-auto opacity-90"
-        />
         <h1 className="font-display truncate text-lg font-semibold">{title}</h1>
       </header>
 

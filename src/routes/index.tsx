@@ -43,17 +43,6 @@ function Index() {
 
   return (
     <AppShell title="Recueil des Chants TESP">
-      <div className="mb-5 flex flex-col items-center">
-        <img
-          src="/logo-header.png"
-          alt="Tabernacle de l'Espérance"
-          className="h-28 w-auto"
-        />
-        <p className="text-muted-foreground mt-2 text-center text-sm">
-          Tabernacle de l'Espérance
-        </p>
-      </div>
-
       <InstallButton className="mb-4 w-full" />
 
       <div className="relative mb-5">
