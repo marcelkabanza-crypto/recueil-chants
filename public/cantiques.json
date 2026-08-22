@@ -1,6 +1,6 @@
 {
-  "version": 1,
-  "updatedAt": "2026-08-21",
+  "version": 2,
+  "updatedAt": "2026-08-22",
   "cantiques": [
     {
       "numero": 1,
@@ -36,6 +36,31 @@
       "numero": 7,
       "nom": "Jour de joie éternelle",
       "texte": "1. Un jour viendra, jour sans nuage,\nOù nous verrons notre Sauveur ;\nPlus de sanglots, plus de naufrage,\nPlus de douleur, plus de labeur.\n\nRefrain :\nÔ jour de joie éternelle,\nJour où l'Époux paraîtra !\nL'Épouse enfin, pure et fidèle,\nDans sa gloire il l'emmènera.\n\n2. Tenons ferme jusqu'à l'aurore,\nGardons la lampe allumée ;\nCar celui qui vient bientôt encore\nRécompense la fidélité."
+    },
+    {
+      "numero": 8,
+      "nom": "Ami de jésus",
+      "texte": "Merci beaucoup"
+    },
+    {
+      "numero": 9,
+      "nom": "A jésus je m'abandonne",
+      "texte": "Flfofofoyococ\nOcfhofofofo\nLflfofo\nLflcoy"
+    },
+    {
+      "numero": 10,
+      "nom": "Je l'aime",
+      "texte": "Jdjfjfjfjfjf\nHdhfhfhf\nYeyrhrhr"
+    },
+    {
+      "numero": 11,
+      "nom": "Amen",
+      "texte": "875555433322eefh\nK875rrf"
+    },
+    {
+      "numero": 12,
+      "nom": "Merci Jésus",
+      "texte": "Difhdudvdufbd\nNdufjfu\nJdufjdos\nJfurhfuf\nUfhfhidjf\nJdurnfj"
     }
   ]
 }
