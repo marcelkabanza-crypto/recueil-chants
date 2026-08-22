@@ -171,6 +171,8 @@ export function AppShell({
                 <LogOut className="size-4" />
                 Quitter
               </button>
+
+              <InstallButton className="mt-3 w-full" />
             </nav>
           </SheetContent>
         </Sheet>
