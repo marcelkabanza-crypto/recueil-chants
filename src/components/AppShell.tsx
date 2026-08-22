@@ -4,12 +4,9 @@ import {
   CircleHelp,
   Home,
   Info,
-  LogIn,
   LogOut,
   Menu,
   Settings,
-  ShieldCheck,
-  UserRound,
   Youtube,
   ArrowLeft,
 } from "lucide-react";
