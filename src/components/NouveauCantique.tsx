@@ -25,6 +25,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/lib/auth";
 import { useCantiques } from "@/lib/cantiques-store";
 import { LANGUES, type Langue } from "@/lib/langues";
+import { useSettings } from "@/lib/settings";
 
 /**
  * Bouton d'ajout d'un cantique, réservé au concepteur (rôle administrateur).
@@ -32,6 +33,7 @@ import { LANGUES, type Langue } from "@/lib/langues";
  */
 export function NouveauCantique({ langue = "fr" }: { langue?: Langue }) {
   const { isAdmin } = useAuth();
+  const { adminUnlocked } = useSettings();
   const { sync } = useCantiques();
   const [open, setOpen] = useState(false);
   const [numero, setNumero] = useState("");
@@ -40,7 +42,7 @@ export function NouveauCantique({ langue = "fr" }: { langue?: Langue }) {
   const [code, setCode] = useState<Langue>(langue);
   const [envoi, setEnvoi] = useState(false);
 
-  if (!isAdmin) return null;
+  if (!isAdmin && !adminUnlocked) return null;
 
   const enregistrer = async () => {
     const num = Number(numero);

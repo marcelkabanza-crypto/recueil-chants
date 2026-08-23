@@ -14,15 +14,26 @@ type Settings = {
   fontFamily: FontFamily;
   fontScale: number;
   theme: ThemeMode;
+  /** Mode concepteur activé localement via l'Id Admin. */
+  adminUnlocked: boolean;
 };
 
-const DEFAULTS: Settings = { fontFamily: "serif", fontScale: 1, theme: "jour" };
+const DEFAULTS: Settings = {
+  fontFamily: "serif",
+  fontScale: 1,
+  theme: "jour",
+  adminUnlocked: false,
+};
 const KEY = "tesp-settings";
+const ADMIN_CODE = "Vision8889";
 
 type SettingsContextValue = Settings & {
   setFontFamily: (v: FontFamily) => void;
   setFontScale: (v: number) => void;
   setTheme: (v: ThemeMode) => void;
+  /** Retourne vrai si l'Id Admin est correct. */
+  unlockAdmin: (code: string) => boolean;
+  lockAdmin: () => void;
   reset: () => void;
 };
 
@@ -72,7 +83,13 @@ export function SettingsProvider({ children }: { children: ReactNode }) {
         setFontFamily: (fontFamily) => update({ fontFamily }),
         setFontScale: (fontScale) => update({ fontScale }),
         setTheme: (theme) => update({ theme }),
-        reset: () => update(DEFAULTS),
+        unlockAdmin: (code) => {
+          const ok = code.trim() === ADMIN_CODE;
+          if (ok) update({ adminUnlocked: true });
+          return ok;
+        },
+        lockAdmin: () => update({ adminUnlocked: false }),
+        reset: () => update({ ...DEFAULTS, adminUnlocked: settings.adminUnlocked }),
       }}
     >
       {children}
