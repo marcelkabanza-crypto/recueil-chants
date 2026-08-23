@@ -33,6 +33,7 @@ import { useSettings } from "@/lib/settings";
  */
 export function NouveauCantique({ langue = "fr" }: { langue?: Langue }) {
   const { isAdmin } = useAuth();
+  const { adminUnlocked } = useSettings();
   const { sync } = useCantiques();
   const [open, setOpen] = useState(false);
   const [numero, setNumero] = useState("");
