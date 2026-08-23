@@ -34,8 +34,29 @@ export const Route = createFileRoute("/parametres")({
 });
 
 function Parametres() {
-  const { fontFamily, fontScale, theme, setFontFamily, setFontScale, setTheme, reset } =
-    useSettings();
+  const {
+    fontFamily,
+    fontScale,
+    theme,
+    adminUnlocked,
+    setFontFamily,
+    setFontScale,
+    setTheme,
+    unlockAdmin,
+    lockAdmin,
+    reset,
+  } = useSettings();
+  const [code, setCode] = useState("");
+
+  const valider = () => {
+    if (unlockAdmin(code)) {
+      setCode("");
+      toast.success("Mode concepteur activé");
+    } else {
+      toast.error("Id Admin incorrect");
+    }
+  };
+
 
   return (
     <AppShell title="Paramètres" backTo="/">
