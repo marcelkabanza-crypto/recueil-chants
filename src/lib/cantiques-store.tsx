@@ -115,7 +115,10 @@ export function CantiquesProvider({ children }: { children: ReactNode }) {
   const fetchRemote = useCallback(async (): Promise<Partial<CacheShape> | null> => {
     try {
       const [{ data: rows }, { data: versionRow }] = await Promise.all([
-        supabase.from("cantiques").select("numero, nom, texte").order("numero", { ascending: true }),
+        supabase
+          .from("cantiques")
+          .select("numero, nom, texte, langue")
+          .order("numero", { ascending: true }),
         supabase.from("recueil_version").select("version, published_at").eq("id", 1).maybeSingle(),
       ]);
       const distants = ((rows ?? []) as Cantique[]).filter(isCantique);
