@@ -48,7 +48,7 @@ function Index() {
   }, [q, cantiques]);
 
   return (
-    <AppShell title="Recueil des Chants TESP">
+    <AppShell title="Recueil des Chants TESP" langueCourante="fr">
       <InstallButton className="mb-4 w-full" />
 
       <div className="relative mb-5">
