@@ -6,6 +6,7 @@ import { CantiqueTexte } from "@/components/CantiqueTexte";
 import { ShareButton } from "@/components/ShareButton";
 import { Button } from "@/components/ui/button";
 import { useCantiques } from "@/lib/cantiques-store";
+import { isLangue, langueDe, type Langue } from "@/lib/langues";
 
 export const Route = createFileRoute("/cantique/$numero")({
   head: ({ params }) => {
@@ -20,13 +21,19 @@ export const Route = createFileRoute("/cantique/$numero")({
       ],
     };
   },
+  validateSearch: (search: Record<string, unknown>): { langue: Langue } => {
+    const l = typeof search["langue"] === "string" ? search["langue"] : "fr";
+    return { langue: isLangue(l) ? l : "fr" };
+  },
   component: CantiquePage,
 });
 
 function CantiquePage() {
   const { numero } = Route.useParams();
-  const { cantiques, getCantique } = useCantiques();
-  const cantique = getCantique(Number(numero));
+  const { langue } = Route.useSearch();
+  const { cantiques } = useCantiques();
+  const liste = cantiques.filter((c) => langueDe(c) === langue);
+  const cantique = liste.find((c) => c.numero === Number(numero));
 
   if (!cantique) {
     return (
@@ -38,9 +45,9 @@ function CantiquePage() {
     );
   }
 
-  const index = cantiques.findIndex((c) => c.numero === cantique.numero);
-  const prev = cantiques[index - 1];
-  const next = cantiques[index + 1];
+  const index = liste.findIndex((c) => c.numero === cantique.numero);
+  const prev = liste[index - 1];
+  const next = liste[index + 1];
 
   return (
     <AppShell title={`Cantique ${cantique.numero}`} backTo="/">
@@ -55,7 +62,7 @@ function CantiquePage() {
       <div className="mt-8 flex items-center justify-between gap-2">
         {prev ? (
           <Button asChild variant="outline" size="sm">
-            <Link to="/cantique/$numero" params={{ numero: String(prev.numero) }}>
+            <Link to="/cantique/$numero" params={{ numero: String(prev.numero) }} search={{ langue }}>
               <ChevronLeft /> {prev.numero}
             </Link>
           </Button>
@@ -64,7 +71,7 @@ function CantiquePage() {
         )}
         {next ? (
           <Button asChild variant="outline" size="sm">
-            <Link to="/cantique/$numero" params={{ numero: String(next.numero) }}>
+            <Link to="/cantique/$numero" params={{ numero: String(next.numero) }} search={{ langue }}>
               {next.numero} <ChevronRight />
             </Link>
           </Button>

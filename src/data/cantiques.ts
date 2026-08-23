@@ -6,6 +6,8 @@ export type Cantique = {
   numero: number;
   nom: string;
   texte: string;
+  /** "fr" (défaut), "ln" (lingala), "sw" (swahili), "lu" (tshiluba). */
+  langue?: string;
 };
 
 export type Recueil = {

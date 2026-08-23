@@ -16,6 +16,7 @@ import { Route as LivreDuConducteurRouteImport } from './routes/livre-du-conduct
 import { Route as ParametresRouteImport } from './routes/parametres'
 import { Route as CantiqueNumeroRouteImport } from './routes/cantique.$numero'
 import { Route as ListeIdRouteImport } from './routes/liste.$id'
+import { Route as RecueilLangueRouteImport } from './routes/recueil.$langue'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -52,6 +53,11 @@ const ListeIdRoute = ListeIdRouteImport.update({
   path: '/liste/$id',
   getParentRoute: () => rootRouteImport,
 } as any)
+const RecueilLangueRoute = RecueilLangueRouteImport.update({
+  id: '/recueil/$langue',
+  path: '/recueil/$langue',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -61,6 +67,7 @@ export interface FileRoutesByFullPath {
   '/parametres': typeof ParametresRoute
   '/cantique/$numero': typeof CantiqueNumeroRoute
   '/liste/$id': typeof ListeIdRoute
+  '/recueil/$langue': typeof RecueilLangueRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -70,6 +77,7 @@ export interface FileRoutesByTo {
   '/parametres': typeof ParametresRoute
   '/cantique/$numero': typeof CantiqueNumeroRoute
   '/liste/$id': typeof ListeIdRoute
+  '/recueil/$langue': typeof RecueilLangueRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -80,6 +88,7 @@ export interface FileRoutesById {
   '/parametres': typeof ParametresRoute
   '/cantique/$numero': typeof CantiqueNumeroRoute
   '/liste/$id': typeof ListeIdRoute
+  '/recueil/$langue': typeof RecueilLangueRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -91,6 +100,7 @@ export interface FileRouteTypes {
     | '/parametres'
     | '/cantique/$numero'
     | '/liste/$id'
+    | '/recueil/$langue'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -100,6 +110,7 @@ export interface FileRouteTypes {
     | '/parametres'
     | '/cantique/$numero'
     | '/liste/$id'
+    | '/recueil/$langue'
   id:
     | '__root__'
     | '/'
@@ -109,6 +120,7 @@ export interface FileRouteTypes {
     | '/parametres'
     | '/cantique/$numero'
     | '/liste/$id'
+    | '/recueil/$langue'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -119,6 +131,7 @@ export interface RootRouteChildren {
   ParametresRoute: typeof ParametresRoute
   CantiqueNumeroRoute: typeof CantiqueNumeroRoute
   ListeIdRoute: typeof ListeIdRoute
+  RecueilLangueRoute: typeof RecueilLangueRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -172,6 +185,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ListeIdRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/recueil/$langue': {
+      id: '/recueil/$langue'
+      path: '/recueil/$langue'
+      fullPath: '/recueil/$langue'
+      preLoaderRoute: typeof RecueilLangueRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -183,6 +203,7 @@ const rootRouteChildren: RootRouteChildren = {
   ParametresRoute: ParametresRoute,
   CantiqueNumeroRoute: CantiqueNumeroRoute,
   ListeIdRoute: ListeIdRoute,
+  RecueilLangueRoute: RecueilLangueRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

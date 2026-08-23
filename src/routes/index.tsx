@@ -1,11 +1,13 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { Search } from "lucide-react";
 import { useMemo, useState } from "react";
 
 import { AppShell } from "@/components/AppShell";
+import { CantiqueListe } from "@/components/CantiqueListe";
 import { InstallButton } from "@/components/InstallButton";
 import { Input } from "@/components/ui/input";
 import { useCantiques } from "@/lib/cantiques-store";
+import { langueDe } from "@/lib/langues";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -32,10 +34,13 @@ function Index() {
 
   const results = useMemo(() => {
     const term = q.trim().toLowerCase();
-    if (!term) return cantiques;
+    // Sans recherche : uniquement le recueil français.
+    if (!term) return cantiques.filter((c) => langueDe(c) === "fr");
+    // Avec recherche : toutes les versions (français, lingala, swahili, tshiluba).
     return cantiques.filter(
       (c) =>
         c.nom.toLowerCase().includes(term) ||
+        c.texte.toLowerCase().includes(term) ||
         String(c.numero) === term ||
         String(c.numero).startsWith(term),
     );
@@ -50,7 +55,7 @@ function Index() {
         <Input
           value={q}
           onChange={(e) => setQ(e.target.value)}
-          placeholder="Rechercher un cantique ou un numéro"
+          placeholder="Rechercher dans toutes les versions"
           className="h-12 pl-10 text-base"
           inputMode="text"
           aria-label="Rechercher un cantique"
@@ -61,28 +66,7 @@ function Index() {
         {results.length} cantique{results.length > 1 ? "s" : ""}
       </p>
 
-      <ul className="space-y-2">
-        {results.map((c) => (
-          <li key={c.numero}>
-            <Link
-              to="/cantique/$numero"
-              params={{ numero: String(c.numero) }}
-              className="bg-card shadow-soft hover:border-accent flex min-h-16 items-center gap-3 rounded-lg border p-3 transition-colors active:opacity-80"
-            >
-              <span className="bg-primary text-primary-foreground font-display flex size-11 shrink-0 items-center justify-center rounded-full text-base font-semibold">
-                {c.numero}
-              </span>
-              <span className="font-display text-lg leading-snug">{c.nom}</span>
-            </Link>
-          </li>
-        ))}
-      </ul>
-
-      {results.length === 0 ? (
-        <p className="text-muted-foreground py-10 text-center text-sm">
-          Aucun cantique ne correspond à votre recherche.
-        </p>
-      ) : null}
+      <CantiqueListe cantiques={results} />
     </AppShell>
   );
 }

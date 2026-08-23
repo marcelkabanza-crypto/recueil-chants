@@ -6,6 +6,7 @@ import {
   Info,
   LogOut,
   Menu,
+  MoreVertical,
   Settings,
   Youtube,
   ArrowLeft,
@@ -24,8 +25,15 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import { UpdateBanner } from "@/components/UpdateBanner";
 import { InstallButton } from "@/components/InstallButton";
+import { LANGUES } from "@/lib/langues";
 
 
 
@@ -134,6 +142,28 @@ export function AppShell({
           </SheetContent>
         </Sheet>
         <h1 className="font-display truncate text-lg font-semibold">{title}</h1>
+
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <Button
+              variant="ghost"
+              size="icon"
+              aria-label="Autres recueils"
+              className="ml-auto text-sidebar-foreground hover:bg-white/10"
+            >
+              <MoreVertical />
+            </Button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent align="end" className="w-56">
+            {LANGUES.map((l) => (
+              <DropdownMenuItem key={l.code} asChild>
+                <Link to="/recueil/$langue" params={{ langue: l.code }}>
+                  {l.menu}
+                </Link>
+              </DropdownMenuItem>
+            ))}
+          </DropdownMenuContent>
+        </DropdownMenu>
       </header>
 
       <UpdateBanner />
