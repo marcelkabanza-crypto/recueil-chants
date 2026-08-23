@@ -33,7 +33,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { UpdateBanner } from "@/components/UpdateBanner";
 import { InstallButton } from "@/components/InstallButton";
-import { LANGUES } from "@/lib/langues";
+import { LANGUES, type Langue } from "@/lib/langues";
 
 
 
@@ -52,10 +52,13 @@ export function AppShell({
   title,
   children,
   backTo,
+  langueCourante,
 }: {
   title: string;
   children: ReactNode;
   backTo?: string;
+  /** Recueil affiché : il est masqué dans le menu de droite. */
+  langueCourante?: Langue;
 }) {
   const [open, setOpen] = useState(false);
   const [quitOpen, setQuitOpen] = useState(false);
