@@ -76,17 +76,20 @@ function writeCache(next: CacheShape) {
   }
 }
 
+/** Clé unique : un même numéro peut exister dans plusieurs recueils. */
+const cle = (c: Cantique) => `${(c.langue ?? "fr").toLowerCase()}-${c.numero}`;
+
 /** Fusionne les chants locaux avec ceux d'une mise à jour (le distant gagne). */
 function merge(base: Cantique[], updates: Cantique[]): Cantique[] {
-  const map = new Map<number, Cantique>();
-  for (const c of base) map.set(c.numero, c);
-  for (const c of updates) map.set(c.numero, c);
+  const map = new Map<string, Cantique>();
+  for (const c of base) map.set(cle(c), c);
+  for (const c of updates) map.set(cle(c), c);
   return [...map.values()].sort((a, b) => a.numero - b.numero);
 }
 
 /** Empreinte du contenu, pour détecter ajouts et corrections de texte. */
 function signature(list: Cantique[]): string {
-  return list.map((c) => `${c.numero}|${c.nom}|${c.texte.length}`).join("~");
+  return list.map((c) => `${cle(c)}|${c.nom}|${c.texte.length}`).join("~");
 }
 
 const baseCache: CacheShape = {
@@ -213,7 +216,7 @@ export function CantiquesProvider({ children }: { children: ReactNode }) {
 
       const { data, error } = await supabase
         .from("cantiques")
-        .select("numero, nom, texte")
+        .select("numero, nom, texte, langue")
         .order("numero", { ascending: true });
       if (error) return { updated: false, error: error.message };
 
