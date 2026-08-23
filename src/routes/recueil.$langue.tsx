@@ -3,6 +3,7 @@ import { useMemo } from "react";
 
 import { AppShell } from "@/components/AppShell";
 import { CantiqueListe } from "@/components/CantiqueListe";
+import { NouveauCantique } from "@/components/NouveauCantique";
 import { useCantiques } from "@/lib/cantiques-store";
 import { isLangue, labelLangue, langueDe } from "@/lib/langues";
 
@@ -34,7 +35,8 @@ function RecueilPage() {
   );
 
   return (
-    <AppShell title={labelLangue(code)} backTo="/">
+    <AppShell title={labelLangue(code)} backTo="/" langueCourante={code}>
+      <NouveauCantique langue={code} />
       <p className="text-muted-foreground mb-3 text-sm">
         {liste.length} cantique{liste.length > 1 ? "s" : ""}
       </p>

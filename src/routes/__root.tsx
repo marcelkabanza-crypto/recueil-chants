@@ -14,6 +14,7 @@ import { reportLovableError } from "../lib/lovable-error-reporting";
 import { SettingsProvider } from "@/lib/settings";
 
 import { CantiquesProvider } from "@/lib/cantiques-store";
+import { AuthProvider } from "@/lib/auth";
 import { Toaster } from "@/components/ui/sonner";
 import { registerServiceWorker } from "@/lib/register-sw";
 
@@ -156,11 +157,13 @@ function RootComponent() {
   return (
     <QueryClientProvider client={queryClient}>
       <SettingsProvider>
-        <CantiquesProvider>
-          {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
-          <Outlet />
-          <Toaster />
-        </CantiquesProvider>
+        <AuthProvider>
+          <CantiquesProvider>
+            {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
+            <Outlet />
+            <Toaster />
+          </CantiquesProvider>
+        </AuthProvider>
       </SettingsProvider>
     </QueryClientProvider>
   );

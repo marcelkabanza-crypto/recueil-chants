@@ -5,6 +5,7 @@ import { useMemo, useState } from "react";
 import { AppShell } from "@/components/AppShell";
 import { CantiqueListe } from "@/components/CantiqueListe";
 import { InstallButton } from "@/components/InstallButton";
+import { NouveauCantique } from "@/components/NouveauCantique";
 import { Input } from "@/components/ui/input";
 import { useCantiques } from "@/lib/cantiques-store";
 import { langueDe } from "@/lib/langues";
@@ -47,7 +48,7 @@ function Index() {
   }, [q, cantiques]);
 
   return (
-    <AppShell title="Recueil des Chants TESP">
+    <AppShell title="Recueil des Chants TESP" langueCourante="fr">
       <InstallButton className="mb-4 w-full" />
 
       <div className="relative mb-5">
@@ -61,6 +62,8 @@ function Index() {
           aria-label="Rechercher un cantique"
         />
       </div>
+
+      <NouveauCantique langue="fr" />
 
       <p className="text-muted-foreground mb-3 text-sm">
         {results.length} cantique{results.length > 1 ? "s" : ""}

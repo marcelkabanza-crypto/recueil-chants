@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AProposRouteImport } from './routes/a-propos'
 import { Route as AideRouteImport } from './routes/aide'
+import { Route as AuthRouteImport } from './routes/auth'
 import { Route as LivreDuConducteurRouteImport } from './routes/livre-du-conducteur'
 import { Route as ParametresRouteImport } from './routes/parametres'
 import { Route as CantiqueNumeroRouteImport } from './routes/cantique.$numero'
@@ -31,6 +32,11 @@ const AProposRoute = AProposRouteImport.update({
 const AideRoute = AideRouteImport.update({
   id: '/aide',
   path: '/aide',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AuthRoute = AuthRouteImport.update({
+  id: '/auth',
+  path: '/auth',
   getParentRoute: () => rootRouteImport,
 } as any)
 const LivreDuConducteurRoute = LivreDuConducteurRouteImport.update({
@@ -63,6 +69,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/a-propos': typeof AProposRoute
   '/aide': typeof AideRoute
+  '/auth': typeof AuthRoute
   '/livre-du-conducteur': typeof LivreDuConducteurRoute
   '/parametres': typeof ParametresRoute
   '/cantique/$numero': typeof CantiqueNumeroRoute
@@ -73,6 +80,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/a-propos': typeof AProposRoute
   '/aide': typeof AideRoute
+  '/auth': typeof AuthRoute
   '/livre-du-conducteur': typeof LivreDuConducteurRoute
   '/parametres': typeof ParametresRoute
   '/cantique/$numero': typeof CantiqueNumeroRoute
@@ -84,6 +92,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/a-propos': typeof AProposRoute
   '/aide': typeof AideRoute
+  '/auth': typeof AuthRoute
   '/livre-du-conducteur': typeof LivreDuConducteurRoute
   '/parametres': typeof ParametresRoute
   '/cantique/$numero': typeof CantiqueNumeroRoute
@@ -96,6 +105,7 @@ export interface FileRouteTypes {
     | '/'
     | '/a-propos'
     | '/aide'
+    | '/auth'
     | '/livre-du-conducteur'
     | '/parametres'
     | '/cantique/$numero'
@@ -106,6 +116,7 @@ export interface FileRouteTypes {
     | '/'
     | '/a-propos'
     | '/aide'
+    | '/auth'
     | '/livre-du-conducteur'
     | '/parametres'
     | '/cantique/$numero'
@@ -116,6 +127,7 @@ export interface FileRouteTypes {
     | '/'
     | '/a-propos'
     | '/aide'
+    | '/auth'
     | '/livre-du-conducteur'
     | '/parametres'
     | '/cantique/$numero'
@@ -127,6 +139,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AProposRoute: typeof AProposRoute
   AideRoute: typeof AideRoute
+  AuthRoute: typeof AuthRoute
   LivreDuConducteurRoute: typeof LivreDuConducteurRoute
   ParametresRoute: typeof ParametresRoute
   CantiqueNumeroRoute: typeof CantiqueNumeroRoute
@@ -155,6 +168,13 @@ declare module '@tanstack/react-router' {
       path: '/aide'
       fullPath: '/aide'
       preLoaderRoute: typeof AideRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/auth': {
+      id: '/auth'
+      path: '/auth'
+      fullPath: '/auth'
+      preLoaderRoute: typeof AuthRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/livre-du-conducteur': {
@@ -199,6 +219,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AProposRoute: AProposRoute,
   AideRoute: AideRoute,
+  AuthRoute: AuthRoute,
   LivreDuConducteurRoute: LivreDuConducteurRoute,
   ParametresRoute: ParametresRoute,
   CantiqueNumeroRoute: CantiqueNumeroRoute,
