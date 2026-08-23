@@ -25,6 +25,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/lib/auth";
 import { useCantiques } from "@/lib/cantiques-store";
 import { LANGUES, type Langue } from "@/lib/langues";
+import { useSettings } from "@/lib/settings";
 
 /**
  * Bouton d'ajout d'un cantique, réservé au concepteur (rôle administrateur).
