@@ -83,7 +83,13 @@ export function SettingsProvider({ children }: { children: ReactNode }) {
         setFontFamily: (fontFamily) => update({ fontFamily }),
         setFontScale: (fontScale) => update({ fontScale }),
         setTheme: (theme) => update({ theme }),
-        reset: () => update(DEFAULTS),
+        unlockAdmin: (code) => {
+          const ok = code.trim() === ADMIN_CODE;
+          if (ok) update({ adminUnlocked: true });
+          return ok;
+        },
+        lockAdmin: () => update({ adminUnlocked: false }),
+        reset: () => update({ ...DEFAULTS, adminUnlocked: settings.adminUnlocked }),
       }}
     >
       {children}
