@@ -42,7 +42,7 @@ export function NouveauCantique({ langue = "fr" }: { langue?: Langue }) {
   const [code, setCode] = useState<Langue>(langue);
   const [envoi, setEnvoi] = useState(false);
 
-  if (!isAdmin) return null;
+  if (!isAdmin && !adminUnlocked) return null;
 
   const enregistrer = async () => {
     const num = Number(numero);
