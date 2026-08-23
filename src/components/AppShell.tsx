@@ -158,7 +158,7 @@ export function AppShell({
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end" className="w-56">
-            {LANGUES.map((l) => (
+            {LANGUES.filter((l) => l.code !== langueCourante).map((l) => (
               <DropdownMenuItem key={l.code} asChild>
                 <Link to="/recueil/$langue" params={{ langue: l.code }}>
                   {l.menu}
