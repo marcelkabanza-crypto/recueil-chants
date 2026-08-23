@@ -122,6 +122,43 @@ Lui seul est digne d'être exalté.`}
       </section>
 
       <section className="bg-card shadow-soft mt-4 rounded-lg border p-4">
+        <h2 className="font-display text-lg font-semibold">Id Admin</h2>
+        <p className="text-muted-foreground mt-1 text-sm">
+          Réservé au concepteur : saisissez votre Id Admin pour activer le bouton
+          « Nouveau Cantique ».
+        </p>
+
+        {adminUnlocked ? (
+          <div className="mt-4 flex items-center justify-between gap-3">
+            <p className="text-sm font-medium">Mode concepteur activé</p>
+            <Button variant="outline" size="sm" onClick={lockAdmin}>
+              Désactiver
+            </Button>
+          </div>
+        ) : (
+          <div className="mt-4 space-y-3">
+            <Label htmlFor="id-admin">Id Admin</Label>
+            <Input
+              id="id-admin"
+              type="password"
+              autoComplete="off"
+              value={code}
+              maxLength={64}
+              onChange={(e) => setCode(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") valider();
+              }}
+              placeholder="Saisir l'Id Admin"
+              className="h-12"
+            />
+            <Button className="w-full gap-2" onClick={valider} disabled={!code.trim()}>
+              <KeyRound className="size-4" /> Activer
+            </Button>
+          </div>
+        )}
+      </section>
+
+      <section className="bg-card shadow-soft mt-4 rounded-lg border p-4">
         <h2 className="font-display text-lg font-semibold">Contacter l'administrateur</h2>
         <p className="text-muted-foreground mt-1 text-sm">
           Pour signaler une erreur ou proposer un nouveau cantique.
