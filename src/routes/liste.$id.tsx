@@ -79,12 +79,9 @@ function ListePage() {
           <X /> Quitter la lecture
         </Button>
         <article>
-          <div className="flex items-start justify-between gap-2">
-            <h2 className="font-display text-2xl font-semibold leading-tight">
-              {chant.numero}. {chant.nom}
-            </h2>
-            <ShareButton cantique={chant} className="shrink-0" />
-          </div>
+          <h2 className="font-display text-2xl font-semibold leading-tight">
+            {chant.numero}. {chant.nom}
+          </h2>
           <div className="bg-accent mt-3 h-px w-16" />
           <CantiqueTexte texte={chant.texte} className="mt-5" />
         </article>
@@ -106,6 +103,12 @@ function ListePage() {
             Suivant <ChevronRight />
           </Button>
         </div>
+
+        <ShareButton
+          cantique={chant}
+          size="icon"
+          className="fixed bottom-4 right-4 z-50 h-14 w-14 rounded-full shadow-lg"
+        />
       </AppShell>
     );
   }
