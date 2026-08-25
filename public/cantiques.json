@@ -1,5 +1,5 @@
 {
-  "version": 7,
+  "version": 8,
   "updatedAt": "2026-08-25",
   "cantiques": [
     {
@@ -120,6 +120,60 @@
       "numero": 20,
       "nom": "APPRENDS-MOI, SEIGNEUR, À ATTENDRE",
       "texte": "Apprends-moi, Seigneur, à attendre\nÀ genoux jusqu'à ce que Tu m'exauces,\nÀ me défier de ce que font les autres,\nEt à attendre de Toi une réponse en prière\n\nChœur \nCeux qui s’attendent au Seigneur renouvellent leurs forces,\nIls prendront l'envol comme \ndes aigles,\nIls courront sans se fatiguer, marcheront sans faiblir ;\nApprends-moi, Seigneur, à attendre.\n\nApprends-moi, Seigneur, à patienter,\nAide-moi à m'humilier, à T'invoquer ;\nRenouvelle ma foi et garde mes yeux sur Toi,\nAide-moi à être ce que Tu veux que je sois.",
+      "langue": "fr"
+    },
+    {
+      "numero": 21,
+      "nom": "ARRÊTE, Ô PÉCHEUR, ARRÊTE !",
+      "texte": "Arrête, ô pécheur, arrête !\nIl est sombre le chemin Où tu vas, \nbaissant la tête,\nN'osant penser à ta fin.\n\nChœur \nReviens au Dieu qui pardonne,\nQui relève le pécheur.\nIl ne repousse personne ; Viens, \nc'est un Libérateur.\n\nTrop longtemps dans la misère,\nDans la honte et le remords,\nTu t'es débattu, mon frère ;\nLaisse là ces vains efforts !\n\nAh ! pour toi, quelle autre vie,\nSi ton péché n'était plus!\nDe la chaîne qui te lie\nQue les anneaux soient rompus !\n\nTu pourras, dans la lumière,\nMarcher libre avec ton Dieu,\nEt le bon regard du Père\nTe guidera du saint Lieu.\n\nPuis, au terme du voyage,\nLà-haut, dans l’éternité,\nTu recevras l’héritage\nQue Dieu donne au racheté.\n\nArrête, ô pécheur, arrête !\nTon Dieu t’appelle aujourd’hui ;\nÀ te sauver Il S’apprête.\nNe tarde pas, viens à Lui.",
+      "langue": "fr"
+    },
+    {
+      "numero": 22,
+      "nom": "ASSURANCE BÉNIE",
+      "texte": "Assurance bénie, Jésus est mien !\nOh! quelle avant-goût de la divine gloire! \nRacheté, héritier  du salut,\nLavé dans Son Sang, né de l'Esprit.\n\nChœur \nC'est mon histoire, c'est ma chanson,\nJe loue mon Sauveur le long du jour.\nC'est mon histoire, c'est ma chanson,\nJe loue mon Sauveur le long du jour.\n\nParfaite soumission, \nparfaites délices,\nVisions d'enlèvement  éclatent à ma vue ;\nLes anges descendant du Ciel apportent\nÉchos de la grâce, murmures d'amour.\n\nParfaite soumission, tout au repos,\nEn mon Sauveur, j'ai joie, bénédiction, \nVeillant, attendant, les yeux levés,\nPlein de Sa bonté, couvert d'amour.",
+      "langue": "fr"
+    },
+    {
+      "numero": 23,
+      "nom": "À TES PIEDS, Ô DIVIN MAÎTRE",
+      "texte": "À Tes pieds, ô divin Maître !\nJe me place avec bonheur,\nEn T'adorant, je veux être\nTon disciple, ô mon Sauveur !\nParle ! j'ai soif de T'entendre ;\nParle ! je n'ai qu'un désir :\nQue Ta voix puissante et tendre\nÀ mon cœur se fasse ouïr.\nParle ! j'ai soif de T'entendre ;\nParle ! je n'ai qu'un désir :\nQue Ta voix puissante et tendre\nÀ mon cœur se fasse ouïr.       \n\nParle-moi, Témoin fidèle !\nDécouvre-moi le trésor\nDe Ta sagesse éternelle ;\nParle, ô Maître ! Parle encor.\nTa Parole, c'est la Vie,\nC'est la lumière et la paix. \nÀ Ton école bénie\nJe veux rester à jamais.\nTa Parole, c'est la Vie,\nC'est la lumière et la paix. \nÀ Ton école bénie\nJe veux rester à jamais.\n\nParle ! et pour que je comprenne\nTon enseignement divin,\nDans Ta grâce souveraine\nInstruis-moi par l'Esprit Saint.\nParle ! et pour que j'obéisse\nÀ Tes ordres aussitôt,\nForme-moi pour Ton service,\nPour Te suivre, saint Agneau !\nParle ! et pour que j'obéisse\nÀ Tes ordres aussitôt,\nForme-moi pour Ton service,\nPour Te suivre, saint Agneau !",
+      "langue": "fr"
+    },
+    {
+      "numero": 24,
+      "nom": "À TOI LA GLOIRE",
+      "texte": "À Toi la gloire, Ô Ressuscité !\nÀ Toi la victoire\nPour l'éternité ! \nBrillant de lumière,\nL'ange est descendu,\nIl roule la pierre\nDu tombeau vaincu.\n\nChœur \nÀ Toi la gloire,\nÔ Ressuscité !\nÀ Toi la victoire,\nPour l’Éternité !\nVois-Le paraître :\nC'est Lui, c'est Jésus,\n\nTon Sauveur,  ton Maître.\nOh ! ne doute plus !\nSois dans l'allégresse,\nPeuple du Seigneur,\nEt redis sans cesse\nQue Christ est vainqueur !\n\nCraindrais-je encore ?\nIl vit à jamais,\nCelui que j'adore,\nLe Prince de paix ;\nIl est ma victoire,\nMon puissant Soutien,\nMa Vie et ma gloire :\nNon, je ne crains rien.",
+      "langue": "fr"
+    },
+    {
+      "numero": 25,
+      "nom": "À TOI, MON DIEU",
+      "texte": "À Toi, mon Dieu, je m'abandonne,\nOh ! fais de moi ce que Tu veux :\nDe l'argile que je Te donne,\nFais un diamant précieux !\n\nChœur \nPrends, Seigneur, prends toute ma vie,\nÀ Toi seul je veux obéir.\nPar l'Esprit qui me sanctifie !\nSur Ton autel je viens m'offrir.\n\nTu connais ma grande faiblesse,\nMon impuissance à Te servir\nS'il le faut que Ta main me blesse,\nTon amour saura me guérir !\n\nOh ! ne m'épargne ni la flamme,\nNi le ciseau, divin Sculpteur !\nQue Ton Esprit forme mon âme\nÀ l'image de son Sauveur !",
+      "langue": "fr"
+    },
+    {
+      "numero": 26,
+      "nom": "ATTIRE-MOI PLUS PRÈS",
+      "texte": "Je suis Tien, Seigneur, \nj'ai saisi Ta Voix,\nMe parlant de Ton amour ;\nMon ardent désir : grandir dans la foi Et être plus près de Toi.\n\nAttire-moi plus près, Seigneur béni,\nDe la croix où Tu mourus ;\nAttire-moi plus près, plus près, Seigneur béni,\nDe Ton précieux flanc saignant.\n\nSeigneur, consacre-moi à \nTon service,\nPar la puissance de Ta grâce ;\nQue mon âme T'invoque avec \nferme espoir,\nQue Ta volonté soit mienne.\n\nOh! les pures délices d'une \nheure de prière\nQue je passe devant Ton trône,\nAvec Toi mon Dieu, \nquand je m'agenouille,\nJe communie en ami.",
+      "langue": "fr"
+    },
+    {
+      "numero": 27,
+      "nom": "AUJOURD'HUI JÉSUS T'APPELLE",
+      "texte": "Aujourd'hui Jésus t'appelle,\nNe tarde plus, ô pécheur;\nPourquoi rester si rebelle\nAux appels de ton Sauveur ?\n\nViens à Lui, viens à Lui,\nCar Jésus sauve aujourd'hui.\nViens à Lui, viens à Lui,\nCar Jésus sauve aujourd'hui\n\nMaintenant Il parle en grâce,\nSon cœur déborde d'amour.\nOh ! crois avant qu'Il ne passe !\nViens à Jésus en ce jour !\n\nVeux-tu donc toujours entendre,\nEt rester dans ton péché?\nNe Le fais donc plus attendre,\nÀ la mort sois arraché !\n\nÔ pécheur, Jésus t'appelle ;\nHâte-toi, saisis Sa main. \nÉcoute Sa voix fidèle,\nNe remets pas à demain.",
+      "langue": "fr"
+    },
+    {
+      "numero": 29,
+      "nom": "AU NOM DE JÉSUS",
+      "texte": "Au Nom de Jésus, au Nom de Jésus\nNous avons la victoire ;\nAu Nom de Jésus, au Nom de Jésus\nLes démons doivent s'enfuir.\n\nSi nous marchons au Nom de Jésus,\nDites-moi qui peut résister ?\nAu Nom précieux de Jésus Christ\nNous avons la victoire.",
+      "langue": "fr"
+    },
+    {
+      "numero": 30,
+      "nom": "AUSSI LONGTEMPS",
+      "texte": "Aussi longtemps qu'étranger \nsur la terre,\nJe foulerai les sentiers douloureux ;\nFais qu'en tout temps, à tout bien \nje préfère \nCe que Tu veux, Seigneur, ce que \nTu veux !\n\nOui, qu'en tout temps, \nsous la croix la plus dure,\nAux jours mauvais comme \naux jours radieux,\nJe puisse dire, éloignant tout murmure:\n“Comme Tu veux, Seigneur, \ncomme Tu veux !”\n\nJe ne demande, ô mon Dieu ! \nqu'une chose :\nSois mon trésor, mon appui précieux \nPour tout le reste ordonne, \nfais, dispose\nComme Tu veux, Seigneur, \ncomme Tu veux !\n\nÉtablis donc sur mon cœur \nTon  empire;\nRègne si bien et par de si doux nœuds,\nQue rien jamais ne m’empêche de dire:\n“Comme Tu veux, Seigneur, \ncomme Tu veux !”\n\nEt puis un jour sans trouble, \nsans alarmes,\nJe chanterai sur des bords\n plus heureux,\nL'hymne qu'ici je mêle avec mes larmes ;\nComme Tu veux, Seigneur,\n comme Tu veux !",
       "langue": "fr"
     }
   ]
