@@ -1,66 +1,126 @@
 {
-  "version": 3,
-  "updatedAt": "2026-08-22",
+  "version": 7,
+  "updatedAt": "2026-08-25",
   "cantiques": [
     {
       "numero": 1,
       "nom": "ACCLAMEZ TOUS LA PUISSANCE DU NOM DE JESUS (145/CS",
-      "texte": "1. Acclamez le Nom de Jésus !\nQue les anges se prosternent ;\nApportez le diadème royal,\nCouronnez-Le Seigneur ;\nApportez le diadème royal,\nCouronnez-Le Seigneur.\n\n2. Semence d'Israël, race élue,\nRachetés de la chute,\nAcclamez-Le, Sa grâce vous sauve,\nCouronnez-Le Seigneur ;\nAcclamez-Le, Sa grâce vous sauve,\nCouronnez-Le Seigneur.\n\n3. Semence d'Israël, race élue,\nRachetés de la chute,\nAcclamez-Le, Sa grâce vous sauve,\nCouronnez-Le Seigneur ;\nAcclamez-Le, Sa grâce vous sauve,\nCouronnez-Le Seigneur.\n\n4. Pécheurs dont l'amour n'oublie point\nAmertume et dégoût,\nPosez vos trophées à Ses pieds,\nCouronnez-Le Seigneur ;\nPosez vos trophées à Ses pieds,\nCouronnez-Le Seigneur.\n\n5. Que toute famille, que toute tribu,\nSur la face de la terre,\nLui attribuent toute majesté,\nEt Le couronne  Seigneur ;\nLui attribuent toute majesté,\nEt Le couronnent Seigneur.\n\n6. Qu'avec la foule sacrée là-bas\nNous tombions à Ses pieds,\nNous chantions le chant éternel,\nLe couronnant Seigneur ;\nNous chantions le chant éternel,\nLe couronnant Seigneur."
+      "texte": "1. Acclamez le Nom de Jésus!\nQue les anges se prosternent ;\nApportez le diadème royal,\nCouronnez-Le Seigneur ;\nApportez le diadème royal,\nCouronnez-Le Seigneur.\n\n2. Semence d'Israël, race élue,\nRachetés de la chute,\nAcclamez-Le, Sa grâce vous sauve,\nCouronnez-Le Seigneur ;\nAcclamez-Le, Sa grâce vous sauve,\nCouronnez-Le Seigneur.\n\n3. Semence d'Israël, race élue,\nRachetés de la chute,\nAcclamez-Le, Sa grâce vous sauve,\nCouronnez-Le Seigneur ;\nAcclamez-Le, Sa grâce vous sauve,\nCouronnez-Le Seigneur.\n\n4. Pécheurs dont l'amour n'oublie point\nAmertume et dégoût,\nPosez vos trophées à Ses pieds,\nCouronnez-Le Seigneur ;\nPosez vos trophées à Ses pieds,\nCouronnez-Le Seigneur.\n\n5. Que toute famille, que toute tribu,\nSur la face de la terre,\nLui attribuent toute majesté,\nEt Le couronne  Seigneur ;\nLui attribuent toute majesté,\nEt Le couronnent Seigneur\n\n6. Qu'avec la foule sacrée là-bas\nNous tombions à Ses pieds,\nNous chantions le chant éternel,\nLe couronnant Seigneur ;\nNous chantions le chant éternel,\nLe couronnant Seigneur.",
+      "langue": "fr"
     },
     {
       "numero": 2,
-      "nom": "Espérance vivante",
-      "texte": "1. Dans la nuit de ce monde obscur,\nBrille une lumière si pure ;\nChrist est l'espérance vivante,\nSa promesse est douce et constante.\n\nRefrain :\nEspérance, ô ferme espérance,\nAncre de l'âme en la souffrance ;\nQuand tout vacille autour de moi,\nJe reste debout par la foi.\n\n2. Les tempêtes peuvent gronder,\nMon Rocher ne peut s'ébranler ;\nSa Parole est mon fondement,\nElle demeure éternellement."
+      "nom": "ACCLAMEZ TOUS LE ROI JÉSUS (248/H)",
+      "texte": "Acclamez tous le Roi\nJésus, Emmanuel !\nLe Seigneur, Roi des rois,\nÉtoile du matin,\nÀ travers l'éternité.\nJe vais Le louer,\nEt pour toujours,\nJe vais régner avec Lui !",
+      "langue": "fr"
     },
     {
       "numero": 3,
-      "nom": "Conduis-moi, Berger fidèle",
-      "texte": "1. Conduis-moi, Berger fidèle,\nPar les sentiers du désert ;\nTa houlette me rappelle\nQue ton cœur m'est grand ouvert.\n\nRefrain :\nConduis-moi, conduis-moi,\nJour après jour, garde ma foi ;\nDans les vallées comme aux sommets,\nJe marcherai, tu me connais.\n\n2. Près des eaux tranquilles,\nTu restaures mon âme lassée ;\nMême à l'ombre de la mort,\nTa présence est ma paix gardée."
+      "nom": "À CELUI QUI NOUS A LAVÉS (6/H)",
+      "texte": "À Celui qui nous a lavés,\nQui nous a tant aimés,\nPar Son Sang nous a rachetés,\nSoient gloire, gloire, gloire,\nLouange à jamais !\n\nChantons le cantique nouveau\nÀ l'honneur de l'Agneau\nQui sortit vainqueur du tombeau,\nOui, gloire, gloire, gloire,\nLouange à jamais !\n\nAdorons le Triomphateur,\nJésus notre Sauveur,\nSur tous Ses ennemis vainqueur ;\nOui, gloire, gloire, gloire,\nLouange à jamais !\n\nDu Ciel bientôt Il reviendra,\nEt tout œil Le verra,\nLe monde entier L'adorera,\nOui, gloire, gloire, gloire,\nLouange à jamais !",
+      "langue": "fr"
     },
     {
       "numero": 4,
-      "nom": "Viens, Esprit de Dieu",
-      "texte": "1. Viens, Esprit de Dieu, descends,\nSouffle sur ce cœur brûlant ;\nRemplis-nous de ta puissance,\nRenouvelle notre alliance.\n\nRefrain :\nViens, ô Esprit, viens embraser\nL'autel que nous venons dresser ;\nQue ta flamme jamais ne meure\nDans nos vies, à toute heure.\n\n2. Sans toi nos chants sont sans voix,\nSans toi nos pas sont sans foi ;\nMais ton onction nous relève,\nEt notre louange s'élève."
+      "nom": "À CELUI QUI SERA VAINQUEUR (117/H)",
+      "texte": "\"À celui qui sera vainqueur\nEt qui Me glorifie,\nJe donnerai,\" dit le Seigneur,\n\"Au Ciel l'Arbre de Vie.\"\n\nChœur \nVictoire, force, honneur\net louanges,\nGloire, gloire, puissance\nà Toi, Jésus!\n\ncaillou blanc, un nom nouveau\nEt la manne cachée\nLui seront donnés par l'Agneau,\nSa promesse est scellée !\n\nRevêtu d'un vêtement blanc,\nResplendissant de gloire\nSera celui qui par le Sang\nRemportera la victoire !\n\nAvec Christ, celui qui vaincra\nS'assiéra sur Son trône,\nEt de Ses mains \nil recevra L'immortelle couronne.",
+      "langue": "fr"
     },
     {
       "numero": 5,
-      "nom": "Le Tabernacle de l'Espérance",
-      "texte": "1. Peuple élu, marche en avant,\nLe Seigneur va devant ;\nSous la nuée le jour, la nuit,\nSa colonne de feu nous conduit.\n\nRefrain :\nTabernacle, maison de sa gloire,\nLieu de louange et de victoire ;\nIci nous chantons d'un seul cœur :\nÉternel, tu es le vainqueur !\n\n2. Que nos familles soient bénies,\nQue nos enfants servent le Christ ;\nQue dans ce lieu de sainteté,\nRègne à jamais sa vérité."
+      "nom": "A DIEU  SOIT  LA GLOIRE!",
+      "texte": "À Dieu soit la gloire!\nPar son grand amour,Dans mon âme noire\nS’est levé le jour,\nJésus, à ma place,\nMourut sur la croix,\nIl m’offre sa grâce\nEt je la reçois\n\n  Chœur \nGloire à Dieu!   Gloire à Dieu!\nTerre, écoute sa voix!\nGloire à Dieu!  Gloire à Dieu!\nMonde, réjouis- toi!\nOh! Venez au père,\nJésus est vainqueur;\nQue toute la terre\nChante en son honneur!\n\nDe Jésus la joie\nRemplit notre cœur,\nQu’importe qu’on voie\nTout  notre bonheur?\nSelon sa promesse,\nJésus changera\nDeuil en allégresse\nQuand  il reviendra.\n\nGloire à Dieu!   Gloire à Dieu!\nTerre, écoute sa voix!\nGloire à Dieu!  Gloire à Dieu!\nMonde, réjouis- toi!\nOh! Venez au père,\nJésus est vainqueur;\nQue toute la terre\nChante en son honneur!",
+      "langue": "fr"
     },
     {
       "numero": 6,
-      "nom": "Quel ami fidèle est Jésus",
-      "texte": "1. Quel ami fidèle et tendre\nNous avons en Jésus-Christ !\nToujours prêt à nous entendre,\nÀ répondre à notre cri.\n\nRefrain :\nIl connaît nos défaillances,\nNos chutes et nos douleurs ;\nApportons-lui nos souffrances,\nIl est l'ami des pécheurs.\n\n2. Quand la route est difficile,\nQuand nos forces s'en vont,\nSa main puissante et tranquille\nNous relève et nous répond."
+      "nom": "ADORABLE MYSTÈRE",
+      "texte": "Adorable mystère,\nLe Fils du Roi des rois\nDescendit sur la terre,\nMourut sur une croix.\nHonneur, honneur\nAu Sauveur, au Seigneur!\nHonneur, honneur,\nHonneur, gloire au Sauveur !\n\nAdorable mystère,                  \nC'est pour moi qu'Il mourut !\nIl a pris ma misère,\nIl m'offre le salut.\nHonneur, honneur\nAu Sauveur, au Seigneur! \nHonneur, honneur,\nHonneur, gloire au Sauveur !\n\nAdorable mystère,\nVous tous qui connaissez\nSon pouvoir salutaire,\nAdorez, bénissez !\nHonneur, honneur\nAu Sauveur, au Seigneur !\nHonneur, honneur,\nHonneur, gloire au Sauveur !",
+      "langue": "fr"
     },
     {
       "numero": 7,
-      "nom": "Jour de joie éternelle",
-      "texte": "1. Un jour viendra, jour sans nuage,\nOù nous verrons notre Sauveur ;\nPlus de sanglots, plus de naufrage,\nPlus de douleur, plus de labeur.\n\nRefrain :\nÔ jour de joie éternelle,\nJour où l'Époux paraîtra !\nL'Épouse enfin, pure et fidèle,\nDans sa gloire il l'emmènera.\n\n2. Tenons ferme jusqu'à l'aurore,\nGardons la lampe allumée ;\nCar celui qui vient bientôt encore\nRécompense la fidélité."
+      "nom": "AGNEAU DE DIEU, MESSAGER",
+      "texte": "Agneau de Dieu, \nMessager de la grâce,\nJe veux entendre Ta voix,\nLe langage de la Croix :\n\"Pour toi Je fus livré,\nMéprisé, maltraité,\nBattu, meurtri, blessé,\nPour ton iniquité. »\n\nAgneau de Dieu, \nMessager de la grâce,\nJ'ai péché, je viens à Toi,\nJe T'invoque, réponds-moi!\n\"Pour toi Je fus brisé,\nD'épines couronné,\nDe tous abandonné,\nFrappé pour ton péché. »\n\nAgneau de Dieu, \nMessager de la grâce,\nOh ! fais passer sur mon cœur\nTout Ton Sang, Divin Sauveur !\n\"Mon côté fut percé,\nEt Mon Sang fut versé ;\nDans ce Sang, ton passé,\nPécheur, est effacé. »\n\nAgneau de Dieu, \nMessager de la grâce,\nJe me confie et je crois ;\nTon pardon, je le reçois !\n\"Sur l'enfant racheté\nQui fait Ma volonté Je mets \nMa sainteté,\nMa Divine beauté.\"",
+      "langue": "fr"
     },
     {
       "numero": 8,
-      "nom": "Ami de jésus",
-      "texte": "Merci beaucoup"
+      "nom": "AH ! DONNE À MON ÂME",
+      "texte": "Ah ! donne à mon âme\nPlus de sainteté,\nPlus d'ardente flamme,\nDe sérénité ;\nPlus de confiance\nPour rester debout,\nPlus de patience\nPour supporter tout !\n\nFais que je contemple\nSans cesse l'Agneau,\nSon vivant exemple,\nSa Croix, Son tombeau,\nSa grâce fidèle,\nSon immense amour,\nSa gloire éternelle,\nSon prochain retour !\n\nJésus, à mes larmes\nTu veux compatir ;\nDe toutes Tes armes\nViens me revêtir ;\nPar plus de prière,\nDe zèle et de foi,\nQue dans la lumière\nJe marche avec Toi !\n\nDonne à Ton service\nUn cœur plus joyeux,\nPrompt au sacrifice,\nToujours sous Tes yeux ;\nQui chante et qui tremble,\nHumble en Sa ferveur,\nUn cœur qui ressemble\nAu Tien, mon Sauveur !",
+      "langue": "fr"
     },
     {
       "numero": 9,
-      "nom": "A jésus je m'abandonne",
-      "texte": "Flfofofoyococ\nOcfhofofofo\nLflfofo\nLflcoy"
+      "nom": "AH ! QU’IL EST BEAU DE VOIR",
+      "texte": "Ah ! donne à mon âme\nPlus de sainteté,\nPlus d'ardente flamme,\nDe sérénité ;\nPlus de confiance\nPour rester debout,\nPlus de patience\nPour supporter tout !\n\nFais que je contemple\nSans cesse l'Agneau,\nSon vivant exemple,\nSa Croix, Son tombeau,\nSa grâce fidèle,\nSon immense amour,\nSa gloire éternelle,\nSon prochain retour !\n\nJésus, à mes larmes\nTu veux compatir ;\nDe toutes Tes armes\nViens me revêtir ;\nPar plus de prière,\nDe zèle et de foi,\nQue dans la lumière\nJe marche avec Toi !\n\nDonne à Ton service\nUn cœur plus joyeux,\nPrompt au sacrifice,\nToujours sous Tes yeux ;\nQui chante et qui tremble,\nHumble en Sa ferveur,\nUn cœur qui ressemble\nAu Tien, mon Sauveur !",
+      "langue": "fr"
     },
     {
       "numero": 10,
-      "nom": "Je l'aime",
-      "texte": "Jdjfjfjfjfjf\nHdhfhfhf\nYeyrhrhr"
+      "nom": "AINSI SOIS FIDÈLE",
+      "texte": "En ces jours d'épreuves \nproches de la fin\nQuand Christ descend \nmaintenant de la Gloire,\nLes cœurs des hommes \ndéfaillent et prennent peur,\nNous savons que c'est \nvraiment la fin.\n\nChœur\nAinsi sois fidèle, \ncrois Sa Parole ;\nGarde le Message que tu as reçu ;\nÉcoute Son prophète, \nveille au Message ; \nMarche dans la Lumière \noù conduit l’étoile.\n\nDans chaque âge une étoile a brillé,\nAidant Son peuple à trouver le Vrai ;\nDans ce dernier âge une étoile brille,.\nFrère, reçois-la, marche dans la Lumière.\n\nNe crains pas, ne sois pas effrayé,\nTon prophète dort, \nil n'est certes pas mort ;\nL'Épouse est dans l'attente de cette Voix,\nEt cette espérance fait notre joie.\n\nIl donna Sa promesse à l'Épouse,\nDu cheval blanc le prophète cria :\n\"Je parcourrai encore ce sentier !\"\nL' AINSI DIT LE SEIGNEUR n'échoue point.",
+      "langue": "fr"
     },
     {
       "numero": 11,
-      "nom": "Amen",
-      "texte": "875555433322eefh\nK875rrf"
+      "nom": "À JÉSUS JE M'ABANDONNE",
+      "texte": "À Jésus je m'abandonne ;\nCe qu'Il me dit, je le crois,\nEt je prends ce qu'Il  me donne,\nLa couronne avec la Croix.\n\nChœur\nCompter sur Lui d'heure en heure,\nTant que dure le combat ;\nQue l'on vive ou que l'on meure,\nCompter sur Lui, tout est là.\n\nQue si l'ennemi se montre,\nMon cœur n'en est point troublé ;\nAvec Christ, à Sa rencontre\nJe puis aller sans trembler.\n\nSuis-je en paix vers la Lumière ?\nMon chant s'élève attendri,\nPour se changer en prière\nSi l'horizon s'assombrit.\n\nQu'on m'approuve ou qu'on me blâme,\nEt demain comme aujourd'hui,\nJe ne veux, quoi qu'on réclame,\nJamais compter que sur Lui.",
+      "langue": "fr"
     },
     {
       "numero": 12,
-      "nom": "Merci Jésus",
-      "texte": "Difhdudvdufbd\nNdufjfu\nJdufjdos\nJfurhfuf\nUfhfhidjf\nJdurnfj"
+      "nom": "A LA CROIX",
+      "texte": "Hélas ! Mon Sauveur saigna-t-il,\nMon souverain mouru-t-il ?\nDut-il livrer sa tête sacrée pour un\nVer tel que Moi ?\n\nÀ la croix, à la croix où j'ai vu la Lumière,\nEt le fardeau de mon cœur fut ôté,\nLà, par la foi, j'ai recouvré la vue,\nEt maintenant j'ai la joie tous les jours !\n\nFut-ce pour les crimes que j'ai commis\nQu'Il gémit sur la croix ?\nÉtonnante pitié, grâce inouïe\nEt amour infini !\n\nLe soleil même dut s'obscurcir\nEt dut cacher sa gloire,\nQuand Christ, le Créateur, mourait\nPour le péché de l'homme !\n\nMais mon chagrin ne peut payer\nMa dette d'amour pour Lui ;\nMe voici, Seigneur, je me donne,\nC'est tout ce que je peux faire !",
+      "langue": "fr"
+    },
+    {
+      "numero": 13,
+      "nom": "A LA CROIX, AUX PIEDS DU MAÎTRE",
+      "texte": "A la Croix, aux pieds du Maître\nA genoux, j’ai  fait mon choix\nSon disciple je veux être\nTout près de Lui, par la foi\nBrebis de Sa bergerie,\nNul ne m’ôte de Sa main\n Sur les monts, dans les prairies\nOui, mon bonheur est divin. \n\nChœur\nA la Croix, aux pieds du Maître\nA genoux, j’ai fait mon choix\nSon disciple je veux être\nTout près de Lui, par la foi\n\nDepuis lors, ô choix splendide,\nLa joie demeure dans mon cœur\nAdieu, mes soucis perfides\nPar Jésus, je suis vainqueur,\nAdieu, vaines convoitises\nDu monde qui me tenta\nJ’ai trouvé la paix promise\nDans le Sang de Golgotha.\n\nBientôt ma tâche accomplie\nJ’entrerai tout droit au  port\nOù m’attend, douce patrie\nLe grand vainqueur de la mort\nLà, je chanterai Ta gloire\nO Toi qui m’as tant aimé\nEt dont l’œuvre expiatoire\nPour toujours m’a racheté.",
+      "langue": "fr"
+    },
+    {
+      "numero": 14,
+      "nom": "ALLÉLUIAH, NOUS RESSUSCITERONS !",
+      "texte": "Au matin de résurrection,\nLa trompette de Dieu sonnera,\nNous vivrons, (Alléluia!),\nnous vivrons !\nLes saints viendront se réjouissant,\nAucune larme ne sera versée,\nNous vivrons, (Alléluia!),\nnous vivrons ! \n\n   Chœur\nNous vivrons, (Alléluia !)\nNous vivrons ! (Amen !)\nNous vivrons, (Alléluia !)\nAu matin de résurrection,\nLes liens de la mort sont brisés,\nNous vivrons, (Alléluia!),\nnous vivrons ! \n\nAu matin de résurrection,\nOh! quelle rencontre ce sera !\nNous vivrons, (Alléluia!),\nnous vivrons !\nEt lorsque nous verrons nos pères,\nNos mères et tous nos bien-aimés,\nNous vivrons, (Alléluia!),\nnous vivrons !\n\nAu matin de résurrection,\nOh ! quelle pensé bénie pour moi !Nous vivrons, (Alléluia!), \nnous vivrons !\nJe verrai mon Seigneur béni,\nQui mourut librement pour moi,\nNous vivrons, (Alléluia!),\nnous vivrons !\n\nAu matin de résurrection,\nNous Le rencontrerons dans l'air,\nNous vivrons, (Alléluia!),\nnous vivrons !\nÊtre enlevés dans la Gloire,\nVers notre demeure pure et belle,\nNous vivrons, (Alléluia!),\nnous vivrons !",
+      "langue": "fr"
+    },
+    {
+      "numero": 15,
+      "nom": "À L'OUEST LE SOLEIL SE COUCHE",
+      "texte": "À l'ouest le soleil se couche,\nIl arrive à la fin de sa course.\nEt je vois bien que le temps est là,\nOh ! le temps du coucher du soleil !\n\nChœur\nC'est la fin, c'est la fin,\nC'est la fin de la course.\nC'est la fin, c'est la fin,\nC'est la fin de toutes choses.\n\nEt voici que la Lumière du soir\nÀ l'ouest pour moi a paru.\nElle manifeste le Fils de l'homme.\nJe le crois, c'est vrai, je le crois.\n\nPèlerin, c'est la fin de la course,\nIl faut vaincre le monde et partir.\nAttention ! Monsieur,\nquelle heure est-il ?",
+      "langue": "fr"
+    },
+    {
+      "numero": 16,
+      "nom": "AMEN !",
+      "texte": "Amen ! Amen ! \nAmen ! Amen ! Amen!\n\nAllez-vous L'aimer ?  Amen !\nAllez-vous Le louer ? Amen !\nAllez-vous L'adorer ? Amen !\nAmen ! Amen !\n\nAllez-vous L'aimer ?    Amen !\nLe servirez-vous ?        Amen !\nCroyez-vous en Lui ?   \nAmen ! Amen ! Amen !\n\nLa Bible est vraie.      Amen !\nJ'ai la foi en Elle.         Amen !\nC'est la Parole de Dieu.   \nAmen ! Amen ! Amen !\n\nNous croyons que Tu viens.   Amen !\nNous sommes prêts\nà Te rencontrer.    Amen ! \nViens, Seigneur Jésus !     \nAmen ! Amen ! Amen !",
+      "langue": "fr"
+    },
+    {
+      "numero": 17,
+      "nom": "AMI DE JESUS",
+      "texte": "Ami de Jésus, oh quelle joie\nPour un ignoble comme moi,\nD’avoir toujours un tel ami\nPour me conduire au ciel!\n\nChœur\nAmi de Jésus, \nCommunion divine,\nOh, quelle bénie douce communion!\nJésus est bien mon ami.\n\nAmi quand d’autres amitiés\nCessent ou me déçoivent,\nAmi qui me donne joie et paix.\nAmi quand vient l’ennemi.\n\nUn Ami quand la maladie \nEt quand approche la mort,\nAmi quand je passe la vallée,\nIl m’aide et m’encourage.\n\nAmi quand ma courte vie s’arrête \nAmi quand passe la terre\nAmi à voir au seuil du ciel,\nAmi, enfin chez moi.",
+      "langue": "fr"
+    },
+    {
+      "numero": 18,
+      "nom": "AMOUR REDEMPTEUR",
+      "texte": "Si riche, si profond, insondable\nC’est l’amour divin,\nL’amour rédempteur.\n\nChœur\nPour moi, pour moi,\nIndigne, sauvé par grâce,\nPour moi, pour moi,\nL’amour rédempteur.\n\nImmuable, incomparable,\nInexprimable,\nC’est l’amour  divin,\nL’amour rédempteur.\n\nComme c’est beau, \nComme c’est doux\nDe fredonner  l’Amour Divin, \nL’amour rédempteur.",
+      "langue": "fr"
+    },
+    {
+      "numero": 19,
+      "nom": "APPORTANT LES FRUITS",
+      "texte": "Semant dès le matin, \nles semences d'amour,\nEn plein midi et dans la rosée du soir,\nAttendant la moisson, \nle temps de récolte,\nNous serons dans la joie, \napportant les fruits.\n\nChœur\nApportant les fruits, \napportant les fruits,\nNous serons dans la joie, \napportant les fruits.\nApportant les fruits, \napportant les fruits,\nNous serons dans la joie, \napportant les fruits. \n\nSemant sous le soleil, semant  dans les ombres,\nNe craignant ni nuages ni le froid d'hiver;\nBientôt la récolte et \nle travail finis, \nNous serons dans la joie, apportant les fruits.\n\nAvançant avec des pleurs,\nsemant pour le Maître,\nBien qu'endurant souffrances, \nnos esprits s'affligent ;\nQuand nos pleurs finiront,\nIl nous accueillera ;\nNous serons dans la joie, \napportant les fruits.",
+      "langue": "fr"
+    },
+    {
+      "numero": 20,
+      "nom": "APPRENDS-MOI, SEIGNEUR, À ATTENDRE",
+      "texte": "Apprends-moi, Seigneur, à attendre\nÀ genoux jusqu'à ce que Tu m'exauces,\nÀ me défier de ce que font les autres,\nEt à attendre de Toi une réponse en prière\n\nChœur \nCeux qui s’attendent au Seigneur renouvellent leurs forces,\nIls prendront l'envol comme \ndes aigles,\nIls courront sans se fatiguer, marcheront sans faiblir ;\nApprends-moi, Seigneur, à attendre.\n\nApprends-moi, Seigneur, à patienter,\nAide-moi à m'humilier, à T'invoquer ;\nRenouvelle ma foi et garde mes yeux sur Toi,\nAide-moi à être ce que Tu veux que je sois.",
+      "langue": "fr"
     }
   ]
 }
