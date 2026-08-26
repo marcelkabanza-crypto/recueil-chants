@@ -52,7 +52,7 @@ function CantiquePage() {
   return (
     <AppShell title={`Cantique ${cantique.numero}`} backTo="/">
       <article>
-        <h2 className="font-display text-2xl font-semibold leading-tight truncate">
+        <h2 className="font-display text-2xl font-semibold leading-tight">
           {cantique.numero}. {cantique.nom}
         </h2>
         <div className="bg-accent mt-3 h-px w-16" />
