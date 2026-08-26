@@ -185,7 +185,7 @@
 
 @utility cantique-text {
   font-family: var(--reading-font);
-  font-size: calc(1.0625rem * var(--reading-scale));
+  font-size: calc(1.25rem * var(--reading-scale));
   line-height: 1.85;
   white-space: pre-wrap;
 }
