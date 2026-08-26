@@ -1,6 +1,6 @@
 {
-  "version": 8,
-  "updatedAt": "2026-08-25",
+  "version": 9,
+  "updatedAt": "2026-08-26",
   "cantiques": [
     {
       "numero": 1,
@@ -174,6 +174,426 @@
       "numero": 30,
       "nom": "AUSSI LONGTEMPS",
       "texte": "Aussi longtemps qu'étranger \nsur la terre,\nJe foulerai les sentiers douloureux ;\nFais qu'en tout temps, à tout bien \nje préfère \nCe que Tu veux, Seigneur, ce que \nTu veux !\n\nOui, qu'en tout temps, \nsous la croix la plus dure,\nAux jours mauvais comme \naux jours radieux,\nJe puisse dire, éloignant tout murmure:\n“Comme Tu veux, Seigneur, \ncomme Tu veux !”\n\nJe ne demande, ô mon Dieu ! \nqu'une chose :\nSois mon trésor, mon appui précieux \nPour tout le reste ordonne, \nfais, dispose\nComme Tu veux, Seigneur, \ncomme Tu veux !\n\nÉtablis donc sur mon cœur \nTon  empire;\nRègne si bien et par de si doux nœuds,\nQue rien jamais ne m’empêche de dire:\n“Comme Tu veux, Seigneur, \ncomme Tu veux !”\n\nEt puis un jour sans trouble, \nsans alarmes,\nJe chanterai sur des bords\n plus heureux,\nL'hymne qu'ici je mêle avec mes larmes ;\nComme Tu veux, Seigneur,\n comme Tu veux !",
+      "langue": "fr"
+    },
+    {
+      "numero": 31,
+      "nom": "AU PIED DE LA CROIX",
+      "texte": "Au pied de la croix sanglante,\nOù Tu T'es donné pour moi,\nMon âme émue et tremblante,\nÔ Jésus, se livre à Toi.\n\nChoeur :\nLe parfait bonheur,\nLe parfait bonheur,\nC'est de mettre Tout mon être\nÀ Tes pieds, Seigneur !\n\nMe voici pour Ton service,\nJe ne garde rien pour moi,\nSur l'autel du sacrifice\nJe me place par la foi.\n\nÀ la gloire, aux biens du monde\nJe renonce pour jamais,\nQue le Saint Esprit m'inonde\nDe Ta joie et de Ta paix.\n\nSi ma faiblesse est bien grande,\nTa force est plus grande encore,\nÔ Jésus, qu'elle me rende \nFidèle jusqu'à la mort.\n\nÔ félicité suprême,\nTa grâce est mon bouclier,\nEt je T'appartiens, je T'aime,\nToi qui m'aimas le premier.",
+      "langue": "fr"
+    },
+    {
+      "numero": 32,
+      "nom": "AVEC ALLÉGRESSE",
+      "texte": "Avec allégresse \nMarcher vers le Ciel,\nRegarder sans cesse \nNotre Emmanuel ;\nPuiser foi nouvelle\nDans ce doux regard\nDe l'âme fidèle,\nC'est la sûre part.\n\nChœur \nFrères, frères !\nLes cœurs en haut !\nJésus nous appelle,\nIl viendra bientôt.\nJésus nous appelle,\nIl viendra bientôt.\n\nLes anges fidèles,\nLes saints rachetés,\nTroupes immortelles,\nDisent Tes bontés. \nJésus, Roi de gloire !\nTon amour vainqueur,\nGage de victoire,\nSauve le pécheur.\n\nLà, tout est lumière,\nPaix et sainteté ;\nLà, plus de misère,\nTout est charité !\nSur ce doux rivage\nOnt cessé les pleurs ;\nJésus, Ton image\nEst dans tous les cœurs.\n\nAmis, bon courage !\nL'étoile qui luit\nDissipe l'orage\nEt la sombre nuit.\nVeillons sur notre âme,\nJésus vient bientôt !\nLui seul nous réclame :\nTous les cœurs en haut !",
+      "langue": "fr"
+    },
+    {
+      "numero": 33,
+      "nom": "BAPTISÉ DANS LE CORPS",
+      "texte": "As-tu été baptisé dans le Corps,\nBaptisé du Saint Esprit ?\nIl n'y a qu'un seul moyen \npour Y entrer,\nComme ils le firent à la Pentecôte.\n\nChœur \nEs-tu dans l'Église triomphante\nEt dans l'Épouse du Sauveur ?\nÔ viens et sois baptisé dans le Corps\nEt demeure là pour toujours.\n\nIl n'y a qu'une Église, \nl'Épouse ou le Corps,\nEn Elle nous sommes baptisés \nPar le seul et vrai Saint Esprit \npromis,\nQuoique le monde nous méprise \ntous.\n\nChaque credo prétendait être le Corps ;\nLe fil d'aplomb déclare faux \nLeurs rêves, car Dieu tient \nà manifester\nL'authentique Épouse du Fils.\n\nPlusieurs pensaient qu'ils étaient\ndans le Corps,\nJusque quand vint l’Esprit Saint,\nQuand la Parole de Dieu \nleur fut ouverte,\nIls entrèrent ; 'y a encore des places.\n\nCeux qui sont morts avant que \nl'Esprit Saint\nNe descende d'en-haut sur nous,\nPeuvent, par la foi, avec \nles saints d'antan,\nSe lever pour Le voir au Ciel.\n\nLorsque l'Époux viendra, \nseras-tu prêt,\nTa lampe remplie, allumée ?\nTu seras compté parmi \nles vierges folles\nSi tu ne marches dans la Lumière.",
+      "langue": "fr"
+    },
+    {
+      "numero": 34,
+      "nom": "BENIS DIEU !",
+      "texte": "Ô mon âme, bénis Dieu\nEt que tout ce qui est en moi\nBénisse son saint nom.\nÔ mon âme, bénis Dieu\nEt que tout ce qui est en moi\nBénisse son saint nom.\nCar il a fait des prodiges, \nil a fait des prodiges,\nil a fait des prodiges,\nBénis son Saint Nom",
+      "langue": "fr"
+    },
+    {
+      "numero": 35,
+      "nom": "BENIE SOIT LE LIEN QUI UNIT",
+      "texte": "Bénit soit le lien qui \nqui unit d’amour nos cœurs ;\nla communion des âmes sœurs \nest comme celle d’en haut.\n\nDevant le trône du père\nnous versons nos prières ;\nnos peurs, espoirs,\nnos buts sont uns,\nréconforts et soucis\n\nnous partageons nos peines,\nainsi que nos fardeaux ;\net souvent coulent\npour l’un et l’autre \nles larmes de sympathie.",
+      "langue": "fr"
+    },
+    {
+      "numero": 36,
+      "nom": "BENI-SOIT LE NOM DU SEIGNEUR",
+      "texte": "Bénis- soit le nom!\nBénis- soit le nom!\nBénis- soit le nom!\nDu seigneur jésus,\nBénis- soit le nom!\nBénis- soit le nom!\nBénis- soit le nom!\nDu Seigneur.\n\nJésus Est le nom!\nJésus Est le nom!\nJésus Est le nom!\nDu seigneur,\nJésus Est le nom!\nJésus Est le nom!\nJésus Est le nom!\nDu seigneur,\n\nAlléluia, Alléluia!\nAlléluia, au Seigneur jésus\nAlléluia, Alléluia!\nAlléluia, au Seigneur jésus\nAlléluia, Alléluia!\nAlléluia, au Seigneur jésus\nAlléluia, Alléluia!\nAlléluia, au Seigneur jésus",
+      "langue": "fr"
+    },
+    {
+      "numero": 37,
+      "nom": "BIEN LOIN DE TOI,MON PÈRE",
+      "texte": "Bien loin de toi, mon père,\nJ’ai dissipé mes biens; \nDans ma douleur amère,\nJe reviens, je reviens. \n\nVois, mon âme souffrante,\nEt mon corps épuisé;\nSaisi ma tremblante,\nGuéris mon cœur brisé.\n\nLa honte et la misère \nOnt sillonnée mon front; \nJ’ai péché, tendre père,\nJ’implore ton pardon!\n\nNon, je ne suis pas digne\nD’être appelée ton fils;\nDe tes grâces, indigne.\nJ’ai méconnu le prix.    \n\nTraite moi, je te prie,\nComme ton serviteur;\nMon passé m’humilie,\nGrâce pour moi pécheur!  \n\nÔ bonheur! Tu me donnes\nLe baiser paternel,\nÔ bonheur! Tu pardonnes,\nEt tu m’ouvre le ciel!",
+      "langue": "fr"
+    },
+    {
+      "numero": 38,
+      "nom": "BIENTÔT DANS LA DOUCEUR",
+      "texte": "Y a un pays plus beau que le jour,\nEt par la foi nous pouvons le voir;\nLe Père attend de l’autre coté \nPour nous préparer là un palais.  \n\nChoeur\nBientôt dans la douceur, \nNous nous rencontrerons sur cette rive.\nBientôt dans la douceur, Nous nous rencontrerons sur cette rive. \n\nNous chanterons sur ce beau rivage \nLes chants mélodieux du Bienheureux\nNos esprit ne s’affligerons plus,\nEt plus de soupirs pour le repos\n\nA notre généreux Père céleste \nNous offrirons hommages et louanges\nPour le glorieux don de son amour \nEt les bienfaits consacrant nos jours",
+      "langue": "fr"
+    },
+    {
+      "numero": 39,
+      "nom": "BIENTÔT LE SEIGNEUR VA VENIR",
+      "texte": "Bientôt le seigneur va venir!\nEs-tu près?\nBientôt le ciel veux t’ouvrir!\nEs-tu près?\n\nChœur \nEs-tu près? Es-tu près?\nEs-tu près pour l’éternité? \nEs-tu près? Es-tu près?\nLe sauveur t’a-t-il racheté?\n\nBientôt l’appelle retentira! \nEs-tu près?\nBientôt la mort te surprendra!\nEs-tu près?\n\nBientôt Jésus va te juger!\nEs-tu près?\nOh! Devra-t-il te condamner? \nEs-tu près?\n\nBientôt dans le ciel enlevés! \nEs-tu près?\nTous les élus seront sauvés!\nEs-tu près?",
+      "langue": "fr"
+    },
+    {
+      "numero": 40,
+      "nom": "BIENTÔT, SEIGNEUR",
+      "texte": "Bientôt, seigneur, tu viendras !\nToi, notre chef, notre espérance!\nJour de bonheur, de délivrance! \nAu ciel tu nous introduiras:\nTu viendras!\n\nTu l’a promis: « plus qu’un instant, \nJe viens vous prendre dans ma gloireJusqu’au signal de la victoire, \nveillez, priez, en combattant,\nPlus qu’un instant! »  \n\n« ne tarde plus: reviens seigneur! »\nC’est le soupir de ton église\nElle est à toi, tu l’a acquise, \nMourant pour elle, ô rédempteur  \nReviens, seigneur!\n\nPour ton retour, oh! \nTiens-nous prêts!\nQue ton esprit nous sanctifie, \nQue nul des tiens, manquant  de vie, \nNe soit confus à ton aspect.\nOui, tiens nous prêts!",
+      "langue": "fr"
+    },
+    {
+      "numero": 41,
+      "nom": "BON SAUVEUR, BERGER FIDELE",
+      "texte": "Bon sauveur, berger fidèle \nConduit-nous par ton amour, \nEt, de ta mais paternelle,\nNourris-nous au jour le jour.\n\nChœur \nBénis sois-tu, tendre maître\nJésus, nous sommes à toi;\nÀ toi seul nous voulons être,\nBénis sois-tu, notre roi!\n\nDans tes riches pâturages \nApprend-nous à te chercher;\nQue sous tes divins ombrages\nNous sachions toujours marcher.\n\nToi qui nous reçus par grâce,\nBien que faibles et pécheurs, \nPar ta puissance efficacePurifie encore nos cœurs.\n\nEnfants, nous voulons te plaire,\nT’obéir garder ta loi.\nOh! Pour cela daigne faire\nQue nous vivions par la foi!\n\nBon sauveur, berger fidèle,\nPour que nous vivions tes pas,\nRemplis-nous d’un nouveau zèle \nEt porte nous dans tes bras.",
+      "langue": "fr"
+    },
+    {
+      "numero": 42,
+      "nom": "CE MONDE NE PEUT ME LIER",
+      "texte": "Ce vieux Monde ne peut me lier,\nJe m’en  irai n’importe quand\nParce que je me suis consacré\nEt je porte mon habit de noces.",
+      "langue": "fr"
+    },
+    {
+      "numero": 43,
+      "nom": "CE MONDE N’EST PAS CHEZ MOI",
+      "texte": "Ce monde n’est pas chez moi,\nJe suis juste un passant\nEt mes trésors s’entassent\nQuelque part là au Ciel\nLes anges me font signe\nDepuis la porte du Ciel;\nEt je ne me sens jamais\nComme chez-moi dans ce monde.\n\nSeigneur Tu sais,\nN’y a  point d’amis comme Toi\nSi le Ciel n’est pas chez-moi\nAlors que ferais-je ?\nLes anges me font signe\nDepuis la porte du Ciel\nEt je ne me sens jamais \nComme chez-moi dans ce monde.\n\nTous sont à mon attente,\nC’est tout ce que je sais,\nY a longtemps avec Christ\nJ’ai bien tout arrangé,\nBien que faible et pauvre,\nJe sais qu’il me soutient;\nEt je ne me sens jamais \nComme chez-moi dans ce monde.\n\nDans le Pays de gloire,\nNous vivrons à jamais,\nDe tout côté les saints \nCrient:» Victoire», dans des chants\nDe la plus douce louange\nQui monte depuis le Ciel\nEt je ne me sens jamais \nComme chez-moi dans ce monde.",
+      "langue": "fr"
+    },
+    {
+      "numero": 44,
+      "nom": "CE N’EST PAS SECRET",
+      "texte": "Ce n’est pas secret \nCe que dieu peut faire, Il fera pour toi \nCe qu’il fit pour d’autres.\nIl te pardonnera à bras large ouverts \nce n’est secret ce que dieu peut faire.\n\nCe n’est pas, je crois la parole \nMes yeux sont ouverts, \nMon cœur est ému.\nJe l’ai reconnu dès que j’ai suivi\nLa parole parlée par le prophète\n\nCe n’est pas secret là où j’ai été,\nJ’ai vu le prophète, il m’a fait entrer.\nDans mon cœur ouvert\nBrilla la lumière,\nCe n’est pas secret, moi je le suis \n\nCe n’est pas secret quant à Ce qu’ il est,\nBien plus qu’un prophète, j’en suis convaincu:\nC’est le septième ange, c’est un fils de l’homme, L’Élie",
+      "langue": "fr"
+    },
+    {
+      "numero": 45,
+      "nom": "C’EST A L’HOMBRE DE TES AILES",
+      "texte": "C’est à l’ombre de tes ailes \nQu’est le vrai repos;\nLà, plus de douleur cruelles,\nLà, plus d’angoisses mortelles,\nLà, plus d’écrasants fardeaux:\nC’est le vrai repos!\nLà, plus d’écrasants fardeaux:\nC’est le vrai repos!\n\nChœur \nVrai repos, paix parfaite et bonheur,\nSous les ailes du seigneur !\nVrai repos, paix parfaite et bonheur,\nSous les ailes du seigneur ! \n\nC’est à l’ombre de tes ailes \nQu’on trouve la paix…\nLes oiseaux dans leurs nids frêles,\nSous les plumes maternelles, \nNe s’épouvantent jamais:\nIls dorment en paix ! \nNe s’épouvantent jamais:\nIls dorment en paix !\n\nC’est à l’ombre de tes ailes \nQu’est le vrai bonheur.\nToutes choses sont nouvelles,\nEt c’est la vie éternelle  \nQue d’être près de ton cœur !\nC’est le vrai bonheur !\nQue d’être près de ton cœur !\nC’est le vrai bonheur !",
+      "langue": "fr"
+    },
+    {
+      "numero": 46,
+      "nom": "C’EST BIEN LE TEMPS DU SOIR",
+      "texte": "C’est bien le temps du soir,\nLe temps est avancé.\nL’épouse se prépare maintenant\nÀ rencontrer l’époux. \nTout est fin prêts maintenant \nEt  j’entends l’époux \nQue donc toute oreille entende:\nC’est bien le temps du soir",
+      "langue": "fr"
+    },
+    {
+      "numero": 47,
+      "nom": "C’EST COMME LE CIEL POUR MOI",
+      "texte": "Nous trouvons bien des gens \nQui ne peuvent comprendre \nPourquoi nous sommes \nSi heureux, libres; \nNous sommes passés du Jourdain \nAu beau Canaan: \nCeci est comme le ciel pour moi\n\nChœur \nCeci est comme le ciel pour moi, \n(gloire à Dieu !)\nOh ! Oui, c’est comme le ciel \npour moi !\nJe suis passé du Jourdain \nAu beau Canaan: \nCeci comme le ciel pour moi !\n\nOh ! Quand je suis heureux,\nJe chante et je crie !\nSatan  ne le croit pas,\n je sais: Mais je suis remplis de l’esprit,\nPoint de doutes, \nEt c’est bien cela mon problème",
+      "langue": "fr"
+    },
+    {
+      "numero": 48,
+      "nom": "C’EST LA BATAILLE !",
+      "texte": "C’est la bataille, \nla trompette Se fait entendre, \nLe cri « aux armes ! »\net est entendu partout;\nL’éternel des armées  marche \nvers la victoire, \nLe triomphe du juste apparaîtra.\n\nChœur \nC’est la bataille, \nô soldats chrétiens ! \nEt face à face en rangs serrés,\nAvec brillante armure, \nBannières flottantes,\nBien et mal s’affrontent \naujourd’hui; \n\nC’est la bataille, \nne vous lassez pas \nsoyez forts et fermes par sa force;\nSi Dieu est pour nous, \nSa bannière sur nous, \nChants de victoire nous \nchanterons.\n\nC’est la bataille, levez-vous, \nFidèles, braves soldats, \nJéhovah mène, assure la victoire;\nRevêtez l’armure qui vous \nEst donnée par Dieu,\nEt par sa force, endurez \nJusqu’au bout !\n\nLe seigneur conduit  à une victoire \nBien certaine, \nL’arc de la promesse \ncouvre l’orient,\nSon nom glorieux sera exalté \nEn tout lieu; Le matin vient,\nl’aube de la paix est proche !",
+      "langue": "fr"
+    },
+    {
+      "numero": 49,
+      "nom": "C’EST LA PROMESSE",
+      "texte": "C’est la promesse \nDe la dernière pluie !\nLève les yeux et vois le blé mûrir, \nSigne, puissant miracles\nAu nom de jésus !\nBois, oh! Bois Mon peuple: \nc’est la dernière pluie",
+      "langue": "fr"
+    },
+    {
+      "numero": 50,
+      "nom": "C’EST LE SEIGNEUR DE GLOIRE",
+      "texte": "Oh! Quel genre d’homme qui \nCalme mer en furie.\nGuérit malades, estropiés.\nBoiteux, fait voir l’aveugle,\nPortes de la prison, il ouvre\nEt libère les captifs;\nVoyez quel genre d’homme il est, \nQuel genre d’homme est-ce ?\n\nChœur \nC’est le seigneur de gloire, \nIl est le grand JE SUIS;\nIl est l’alpha, l’oméga,\nLe commencement et la fin;\nSon nom est merveilleux,\nC’est prince de paix ;\nIl est le père éternel \nDurant l’éternité !\n\nOh! Quel genre d’homme qui \nDit à la femme au puits;\n« vie éternelle, je te la donne,\nVie d’une immense richesse,\nEt quiconque boira l’eau du puits\nVivra éternellement. »\nVoyez quel genre d’homme il est,\nQuel genre d’homme est-ce ?\n\nOh! Voyez quel genre d’homme qui guérit boiteux, infirmes:\n« tes péchés sont pardonnés, \nprends ton lit, marche, »dit-il\nDebout en puissant guérisseur\n,Il crie: «aie foi en moi. »\nVoyez quel genre d’homme il est,\nQuel genre d’homme est-ce\n\nOh! Voyez quel genre d’homme qui\nEst entre dieu et l’homme !\nSes yeux sont comme une flamme \nde feu,\nVan, il a dans a main.\nJean le vit dans les sept églises\nComme un soleil radieux\nVoyez quel genre d’homme il est,\nQuel genre d’homme est-ce\n\nOh! Voyez quel genre d’homme qui\nEst assis son trône au ciel !\nDepuis le ciel, il règne et\nConduits ses bien-aimés ;\nLion de la tribut de Juda\nEt racine de David,  \nVoyez quel genre d’homme il est,\nQuel genre d’homme est-ce",
+      "langue": "fr"
+    },
+    {
+      "numero": 51,
+      "nom": "C’EST MON JOYEUX SERVICE",
+      "texte": "1. C’est mon joyeux service\nD’offrir a jésus christ,\nEn vivant sacrifice,\nMon corps et mon esprit.\n\n Chœur\nAccepte mon offrande,\nBien-aimé Fils de Dieu!\n Et que sur moi descende\nLa flamme du saint lieu!\n\n2. J’abandonne ma vie\nSans regret, ni frayeur\nA ta grâce infinie\nO mon Libérateur\n\n3.  Qu’un feu nouveau s’allume \nPar ton amour en moi,\nEt dans mon cœur consume\nCe qui n’est pas à toi\n\n4. Viens, Jésus  Sois mon Maître;\nPar ton sang racheté,\nA toi seul  je veux être \nEt pour l’éternité.",
+      "langue": "fr"
+    },
+    {
+      "numero": 52,
+      "nom": "C’EST UN REMPART",
+      "texte": "1. C’est un rempart que notre Dieu,\nUne invisible armure,\nNotre délivrance en tout lieu,\nNotre défense sure.\nL’ennemi contre nous\nRedouble de courroux ;\nVaine colère !\nQue pourrait l’adversaire\nL’éternel détourne ses coups.\n\n2. Seuls, nous bronchons a \nchaque pas,\nNotre force est faiblesse ;\nMais un héros dans les combats.\nPour nous lutte sans cesse.\nQuel est ce défenseur ?\nC’est toi, divin sauveur !\nDieu des armées !\nTes tribus opprimées\nConnaisse leur libérateur.\n\n3. Que le démon forge des fers\nPour accabler l’église ;\nTa Sion brave les enfers,\nSur ton rocher assise\nConstant dans son effort\nEn vain avec la mort\nSatan conspire :\nPour ruine son empire.\nIl suffit d’un mot du dieu fort.\n\n4. Dis-le ce mot victorieux,\nDans toutes nos détresses ;\nRépands sur nous du haut des cieux,\nTes divines largesses.\nQu’on ôte nos biens,\nQu’on serre nos liens,\nTa grâce est la plus forte,\nEt ton royaume est pour les tiens.",
+      "langue": "fr"
+    },
+    {
+      "numero": 53,
+      "nom": "CHAQUE INSTANT DE CHAQUE JOUR",
+      "texte": "1. Chaque instant de chaque jour,\nJésus prend soin de moi ;\nChaque instant de chaque jour,\nMon cœur est dans la joie\nDepuis que christ m’sauve,\nC’est le bonheur ;\nLibère de mon pèche,\nJ’ai la paix dans mon cœur.",
+      "langue": "fr"
+    },
+    {
+      "numero": 54,
+      "nom": "CHAQUE JOUR DE MA VIE",
+      "texte": "1. Chaque jour de ma vie,\nJe veux dire au seigneur :\nApprend-moi, je te prie,\nA te donner mon cœur.\n\n2. Dès que le jour commence,\nJe veux dire au seigneur :\nTiens-moi dans ta présence,\nMon Dieu, mon rédempteur !\n\n3. Souvent dans la journée,\nJe veux dire au seigneur :\nToi qui me l’as donnée\nSois en le bienfaiteur.\n\n4. Et quand vient la nuit sombre,\nJe veux dire au seigneur :\nTu me vois sous ton ombre,\nGarde moi ta faveur.",
+      "langue": "fr"
+    },
+    {
+      "numero": 55,
+      "nom": "CHAQUE PAS SUR LA ROUTE",
+      "texte": "1. Sur les traces de jésus :\nUn pas à la fois ;\nEt je vis maintenant,\nDans l’amour divin\nSans soucis du lendemain,\nA chaque jour sa peine ;\nSur les traces de jésus :\nChaque pas sur la route.\n\n2. Etroit est le sentier \nMais il m’y conduit ;\nA son ombre je marche,\nFinies toutes mes peurs.\nMon esprit devient fort,\nChaque instant, chaque jour,\nCar jésus dirige\nChaque pas sur la route.",
+      "langue": "fr"
+    },
+    {
+      "numero": 56,
+      "nom": "CHAQUE PROMESSE EST MIENNE",
+      "texte": "Chaque promesse dans le livre\nEst mienne,\nChaque chapitre, chaque verset \nChaque ligne.\nOui je crois en son amour divin,\nChaque promesse dans le livre \nEst mienne",
+      "langue": "fr"
+    },
+    {
+      "numero": 57,
+      "nom": "CHERCHEZ D’ABORD LE ROYAUME",
+      "texte": "1. Cherchez d’abord le royaume\nDe Dieu\nAinsi que sa justice.\nEt toutes ces choses, vous seront\nDonnées,\nAlléluia ! amen ! amen !\n\n2. L’homme ne vivra pas de pain\nSeulement\nMais de toute parole\nQui sort de la bouche de Dieu.\nAlléluia ! amen ! amen !\nDemandez, et il vous sera donne.\nCherchez, vous trouverez.\nFrappez a la porte, on vous ouvrira.\nAlléluia ! amen ! amen !",
+      "langue": "fr"
+    },
+    {
+      "numero": 58,
+      "nom": "CHRIST EST RESSUSCITE",
+      "texte": "1. Christ est ressuscite,\nQu’en des chants joyeux,\nSon triomphe en tous lieux\nSoit exalte\n\nChœur :\nA toi la gloire et l’honneur,\nO sauveur, ô puissant\nRédempteur !\nDu sépulcre tu sortis vainqueur,\nPrince de vie et prince de paix.\nGloire à toi, Gloire à toi,\nGloire à toi, gloire a jamais !\n\n2. Christ est ressuscite,\nCherche en lui toujours,\nO peuple racheté\nForce et secours !\n\n3. Christ est ressuscite,\nPar lui nous vivrons \nEt dans l’éternité\nNous régnerons",
+      "langue": "fr"
+    },
+    {
+      "numero": 59,
+      "nom": "COHERITIERS",
+      "texte": "1. Cohéritiers avec le fils,\nNous sommes héritiers du père.\nNous somme peuple de son royaume,\nNous sommes une famille, nous\nSomme un\n\n2. Nous sommes laves et sanctifies,\nNous sommes laves par son sang\nEt nous sommes nés, nés de\nL’esprit.\nNous sommes les enfants du seigneur.\n\n3. Nous sommes l’objet de\nSon amour,\nNous sommes membres de\nSon corps.\nNous partageons sa sainteté,\nNous sommes les citoyens du ciel\n\n4. Nous partageons sa souffrance\nEt nous partageons sa grâce.\nNous le verrons étant comme lui,\nEt nous le verrons face à face.\n\n5. Nous désirons tant sa venue !\nNous regardons vers les cieux\nNous surveillons, nous attendons,\nNous allons vivre avec lui\n\n6. Nous allons régner avec lui ;\nHommes, anges vont crier, chanter.\nCar, a toute la famille du roi,",
+      "langue": "fr"
+    },
+    {
+      "numero": 60,
+      "nom": "COMME TU VEUX SEIGNEUR",
+      "texte": "1. Comme tu veux, seigneur !\nComme tu le veux ! \nTu es le potier, Je suis l’argile.\nTaille-moi, façonne-moi,\nSelon ton gré,\nPendant que j’attends,\nCalme et soumis.\n\n2. Comme tu veux, seigneur !\nComme tu le veux !\nEprouve-moi, sonde-moi,\nMaitre aujourd’hui !\nRend-moi maintenant\nPlus blancs que neige,\nComme je me prosterne\nDans ta présence.\n\n3. Comme tu veux, seigneur !\nComme tu le veux !\nBlessé, fatigué, Aide-moi, je prie !\nPuissance, toute puissance,\nSurement est tienne !\nTouche et guéris-moi,\nSauveur divin !\n\n4. Comme tu veux, seigneur !\nComme tu le veux !\nTient tout mon être\nSous ta puissance.\nRempli-moi d’esprit\nAu point qu’on ne voie\nQue christ seul, vivant\nToujours en moi.",
+      "langue": "fr"
+    },
+    {
+      "numero": 61,
+      "nom": "COMME FLEUVE IMMENSE",
+      "texte": "1. Comme fleuve immense,\nEst la paix de Dieu.\nParfaite elle avance\nVainqueur en tout lieu ;\nParfaite elle augmente\nConstamment son cours ;\nParfaite sa pente\nS’abaisse toujours.\n\nChœur\nFondes sur Dieu même,\nNos cœurs a jamais\nOnt pour bien suprême\nSa parfaite paix.\n\n2. Sous ta main meurtrie,\nSe brise, o mon roi !\nToute arme ennemie\nQu’on forge pour moi !\nRien ne peut me nuire,\nNi troubler mon cœur ;\nTu veux me conduire,\nTu seras vainqueur.\n\n3. Tu traces ma voie.\nJ’y marche avec foi ;\nL’épreuve et la joie\nMe viennent de toi !\nCadran de nos vies,\nMarque, chaque jour,\nLes heures bénies\nDu soleil d’amour !\n\n4. Océan de gloire,\nPaix de mon sauveur !\nGage de victoire !\nTrésor de bonheur !\nTa grâce infinie,\nCoulant nuit et jour,\nInonde ma vie\nDe vagues d’amour",
+      "langue": "fr"
+    },
+    {
+      "numero": 62,
+      "nom": "COMME PHARE",
+      "texte": "1. Comme un phare sur la plage,\nPerçant l’ombre de la nuit,\nL’amour de Dieu, dans l’orage,\nCherche l’homme et le conduit.\n\nChœur\nO sauveur ! que ta lumière\nResplendisse sur les flots,\nEt, vers le ciel, qu’elle éclaire\nEt sauve les matelots\n\n2. Nulle Etoile n’étincelle\nPour vous guider o rochers !\nQui gardera la nacelle\nDes écueils et des rochers ?\n\n3. Dans la nuit qui m’environne,\nDe ton amour, ô jésus !\nQue par moi l’éclat rayonne\nAux  yeux de marins perdus.",
+      "langue": "fr"
+    },
+    {
+      "numero": 63,
+      "nom": "COMPTE LES BIENFAITS DE DIEU",
+      "texte": "1. Quand le vol de la tempête\nVient assombrir ton ciel bleu,\nAu lieu de baisse la tête,\nCompte les bienfaits de Dieu.\n\nChœur\nCompte les bienfaits de Dieu,\nMets- les tous devant tes yeux,\nTu verras, en adorant,\nCombien le nombre en est grand.\n\n2. Quand sur la route glissante \nTu chancelles sur la croix,\nPense a cette main puissante\nQui t’a bénie tant de fois.\n\n3. Si tu perds dans le voyage\nPlus d’un cher et doux trésor,\nPense au divin héritage\nQui là-haut te reste encore.\n\n4. Bénis donc, bénis sans cesse\nCe père qui chaque jour\nRépand sur toi la richesse\nDe son merveilleux amour.",
+      "langue": "fr"
+    },
+    {
+      "numero": 64,
+      "nom": "CONFIE –TOI SEULEMENT EN LUI",
+      "texte": "1. Viens, âme accablée des pêches,\nLa grâce est au seigneur,\nIl te donnera le repos,En croyant sa parole\n\nChœur\nConfie- toi seulement en lui,\nConfie-toi maintenant :\nIl te sauvera, il te sauvera,\nIl te sauve maintenant.\n\n2. Jésus versa son sang précieux\nPour te bénir richement :\nPlonge dans le flot cramoisi\nLequel rend blanc comme neige. \n\n3. Jésus, vérité et chemin\nQui t’amené au repos ;\nAinsi, crois en lui sans tarder,\nTu seras bien béni.\n\n4. Viens te joindre a cette \nSainte foule,\nAvance vers la gloire\nPour vivre au pays céleste\nOu joies immortelles coulent.",
+      "langue": "fr"
+    },
+    {
+      "numero": 65,
+      "nom": "CONNAIS-TU CETTE CITE ?",
+      "texte": "1. Connais-tu cette cite,\nLa cite céleste ?\nDans ses murs tout est clarté,\nPlus d’ombre funeste\nPèlerins et voyageurs\nIci-bas dans les douleurs,\nToujours ce trésor nous reste :\nLa cite céleste.\n\n2. Connais-tu cette cite, \nLa cite bénie\nOu tout est félicite,\nSublime harmonie ?L’agneau seul est son soleil,\nEt son éclat dans pareil\nIllumine et vivifie,\nLa cite bénie.\n\n3. D’or de perles et d’azur\nEst notre patrie !\nConnais-tu le fleure pur,\nL’arbre de vie ?\nPlus de fardeau n’a jamais,\nPour les élus, tout est paix !\nDe Dieu la cite chérie,\nC’est notre patrie !\n\n4. O Salem, repos si doux,\nMon cœur te désir !\nApres son chef, son époux\nL’épouse soupire !\nEtre a toujours devant toi,\nMon seigneur, mon divin roi,\nPour te chante et te dire :\n« Mon cœur te désire ! »",
+      "langue": "fr"
+    },
+    {
+      "numero": 66,
+      "nom": "CONTEMPLER MON DIEU",
+      "texte": "1. Contempler mon dieu sur son\nTrône,\nVivre avec jésus dans le ciel,\nJeter à ses pieds ma couronne,\nC’est là le bonheur éternel.\n\nChœur\nDans le ciel,\nDans le ciel,\nVivre avec jésus dans le ciel,\nDans le ciel, dans le ciel,\nDans le ciel\nC’est là le bonheur éternel.\n\n2. Unir ma voix aux chœurs\nDes anges,\nBénir, louer Emmanuel,\nChanter a jamais ses louanges,\nC’est là le bonheur éternel.\n\n3. Jouir d’une paix infinie,\nRevoir mes amis dans le ciel,\nPosséder l’immortelle vie,\nC’est le bonheur éternel.\n\n4. Retrouver les saints dans la gloire,\nPrès du trône de l’éternel,\nCélébrer la même victoire,\nC’est là le bonheur éternel.",
+      "langue": "fr"
+    },
+    {
+      "numero": 67,
+      "nom": "COULE EN MOI",
+      "texte": "1. Coule en moi, ô saint esprit,\nCoule en moi ;\nCoule en moi, o Saint-Esprit,\nCoule en moi \n\n2. Levant mes mains pour adorer\nEt pour glorifier ton nom,\nCoule en moi o Saint-Esprit,\nCoule en moi.",
+      "langue": "fr"
+    },
+    {
+      "numero": 68,
+      "nom": "CROIS SEULEMENT",
+      "texte": "1. Crains point, petit troupeau,\nDe la croix au trône,\nDe la mort a la vie, il cherchait\nLe siens ;\nTout pouvoir sur terre,\nTout pouvoir au ciel,\nLui est donne pour son troupeau\nBien aime.\n\nChœur\nCrois seulement,\nCrois seulement,\nTout est possible,\nCrois seulement ;\nCrois seulement,\nTout est possible,\nCrois seulement.\n(Seigneur, je crois…)\n(Dieu, je reçois…)\n(Jésus est la…)\n\n2. Crains point, petit troupeau,\nIl t’a précède,\nTon berger a choisi le sentier\nA suivre ;\nPour toi, il rendra pure l’eau\nDe mara,\nIl but toute l’amertume a\nGethsémané.\n\n3. Crains point, petit troupeau, peu\nImporte ton sort,\nIl entre dans les chambres aux\n« Portes fermées » ;\nIl n’abandonne point,\nIl n’est point absent,\nAinsi, compte sur sa présence\nLe jour, la nuit.",
+      "langue": "fr"
+    },
+    {
+      "numero": 69,
+      "nom": "DANS CETTE CITE, L’AGNEAU EST LA LUMIERE",
+      "texte": "1. Il y a un pays au de la des Etoile,\nIl y a une cite ou il n Ya point de\nNuit ;\nSi nous sommes fidèles, \nnous Irons-la bientôt, C’est la cite ou l’agneau est la lumière.\n\nChœur\nDans la cite ou l’agneau est\nLa lumière,\nCette cite ou il n’y à point de nuit\nJ’ai un beau palais la haut,\nEt libère des soucis,\nJe m’en irai ou l’agneau est la lumière.\n\n2. Ici nous sommes éclaires, mais\nNous savons\nQue ce soleil qui luit sur nous\nMaintenant,\nSe changera en nuages quand\nNous irons\nA la cite ou l’agneau est la lumière.\n\n3. Là, les fleurs s’épanouissent\nToujours et le jour\nSera un jour éternel point de nuit !\nNos larmes seront essuyées a jamais,\nDans cette cite ou l’agneau est la\nLumière.\n\n4. Ici nous avons toujours\nDes frustrations,\nEt nos espoirs rencontrent les\nDéceptions ;\nIci nous pleurons, là-bas sera \nLa joie\nDans cette cite ou l’agneau est la \nLumière.\n\n5. Que le soleil faiblisse ou qu’il y\nAit la nuit,\nMon cœur bienheureux n’a peurD’aucun ombrage,\nCar je sais que là au ciel j’ai une\nMaison,\nDans cette cite ou l’agneau est \nLa lumière.",
+      "langue": "fr"
+    },
+    {
+      "numero": 70,
+      "nom": "DANS LA PATRIE ETERNELLE",
+      "texte": "1. Dans la patrie éternelle\nLe repos enfin m’entend,\nJésus l’a pour moi, rebelle,\nConquis au prix de son sang.\n\nChœur\nJe sais, jésus m’y convie,\nPrès de l’arbre de la vie\nIl promet une patrie,\nUn repos pour moi.\n\n2. Au pèche je suis en butte,\nLa plus de mal, plus de chute,\nLe repos après la lutte.\nLe repos pour moi.\n\n3. Il prépare ma demeure \nPour toute l’éternité.\nQuand viendra ma dernière heure,\nTout sera félicite.\n\n4. Jamais ni douceur ni tristesse\nNe seront près du sauveur,\nTout sera chant d’allégresse,\nToute sainteté, tout bonheur.\n\n5. Nous verrons de christ la gloire\nEt mort ne sera plus.\nTriomphez de sa victoire,\nO rachetés de jésus !\n\n6. Chantez, éclatez de joie,\nHeureux héritiers du ciel !\nCar au terme de la voie\nEst un repos éternel !",
+      "langue": "fr"
+    },
+    {
+      "numero": 71,
+      "nom": "DANS LE CIEL, SEJOUR",
+      "texte": "1. Dans le ciel, séjour de la gloire,\nSeigneur jésus, nous verrons\nTa beauté.\nLà, nous chanterons ta victoire,\nNous exalterons ta bonté.\n\nChœur\nRegardons à jésus\nEn marchant vers le ciel.\nRegardons à jésus.\nIl est le sauveur éternel.\n\n2. Souvent les ennuis de la terre\nNous font désirer le repos du ciel.\nOui, c’est près de toi, notre père,\nQu’est notre héritage éternel.\n\n3. Devant nous brille la lumière\nAnnonçant l’aurore d’un jour nouveau.\nEn nous envolant de la terre\nNous entrerons dans le repos.\n\n4. En avant ! Avec confiance,\nLevons les yeux au ciel, \njésus est la ;\nD’un pas ferme, avec assurance,\nMarchons !\nmarchons !\nhâtons Nos pas.",
+      "langue": "fr"
+    },
+    {
+      "numero": 72,
+      "nom": "DANS MON BONHEUR IMMENSE",
+      "texte": "1. Dans mon bonheur immense,\nJe veux avec ferveur\nCélébrer la clémence,\nO mon sauveur !\n\n2. Pour moi, sur le calvaire,\nTon sang fut répandu,\nEt l’amour de ton père\nM’est apparu.\n\n3. Ton sanglant sacrifice,\nExpiant mes forfaits,\nMe valut ta justice,\nTa douce paix.\n\n4. Ce divin héritage,\nJe le prends par la foi,\nEt mon cœur sans partage\nSe donne à toi.\n\n5. A toi dans l’abondance\nOu dans la pauvreté,\nA toi dans la souffrance Ou la sante.\n\n6. A toi sur cette terre,\nOu j’attends ton retour,\nEt bientôt, près du père,\nA toi toujours.",
+      "langue": "fr"
+    },
+    {
+      "numero": 73,
+      "nom": "DANS MON CŒUR",
+      "texte": "1. Dans mon cœur chante une\nMélodie,\nDouce mélodie, sublime harmonie,\nDans mon cœur chante une\nMélodie\nA la gloire du sauveur.Jésus, jésus, jésus, O ce nom si doux,\nLe beau nom de jésus,\nJe veux le dire à gnous !",
+      "langue": "fr"
+    },
+    {
+      "numero": 74,
+      "nom": "DANS PEU DE TEMPS, LE MATIN VIENDRA",
+      "texte": "1. Nous sommes souvent ballottes\nSur la mer houleuse du temps,\nLes tempêtes et les cieux sombres\nSuccèdent au soleil brillant ;\nAu pays du jour parfait, quand\nLes brumes sont dissipées,\nOui, nous le comprendrons\nMieux dans peu de temps.\n\nChœur\nDans peu de temps, le matin Viendra,\nQuand tous les saints de Dieu\nSeront rassemblés,\nNous allons raconter comment\nNous vainquions,\nCar nous le comprendrons\nMieux dans peu de temps.\n\n2. Nous sommes souvent\nDépourvus des choses que\nCette vie demande ;\nAffames et sans abri, terres\nArides, collines desséchées ;\nNous nous confions au seigneur,\nEt ce selon sa parole,\nOui, nous le comprendrons\nMieux dans peu de temps.\n\n3. Nous avons partout d’épreuves\nEt nous ne comprenons pas\nLa manière dont notre Dieu nous\nConduit à  la terre promise ;Mais son œil veille sur nous,\nNous le suivrons jusqu’au bout,\nCar nous le comprendrons\nMieux dans peu de temps.\n\n4. Bien souvent les pièges cachent,\nLes tentations nous surprennent,\nNos cœurs sont amenés à saigner\nA cause des paroles vaines ;\nPourquoi sommes-nous éprouves\nQuand nous voulons faire le bien ?\nMais nous le comprendrons\nMieux dans peu de temps.",
+      "langue": "fr"
+    },
+    {
+      "numero": 75,
+      "nom": "DAVID N’AVAIT RIEN QUE SA FRONDE",
+      "texte": "1. David n’avait rien que sa fronde\nPour lutter contre le géant ;\nMais au fond de son cœur\nD’enfant\nHabitait une foi profonde.\nIl savait bien que l’éternel\nCombattrait avec lui pour\nSauver Israël !\n\n2. Il avançait ferme et tranquille\nContre le philistin puissant,\nQui, l’œil hautain et méprisant,\nRiait de son air juvénile,\nEt se moquait de l’éternel,\nQui choisissait David pour \nSauver Israël !\n\n3. Mais, sans trembler, d’une\nMain sure,\nL’enfant que son Dieu dirigeait,\nFit au colosse, d’un seul jet,\nUne inguérissable blessure.\nEt c’est ainsi que l’éternel,\nSelon son bon plaisir,\nDélivrait Israël !\n\n4. Comme David, tu nous appelles\nA de grands combats, ô seigneur !\nPour en sortir a ton honneur,\nComme David, rend-nous fidèles,\nEt l’on verra que l’éternel\nSe tient auprès de nous, comme\nAuprès d’Israël.\n\n5. ET si le mal nous environne,\nEt s’il devient plus fort que nous,\nNous t’implorerons a genoux\nToi qui ne rejettes personne !\nEt, répondant a notre appel,\nTu lutteras pour nous, ô sauveur\nÉternel",
+      "langue": "fr"
+    },
+    {
+      "numero": 76,
+      "nom": "DEBOUT POUR LA SAINTE GUERRE",
+      "texte": "1. Debout pour la sainte guerre !\nLe mal est grand encore ;\nPlus d’un ami, plus d’un frère\nSuit un chemin de mort.\n\nChœur\nEn avant ! Pour la sainte guerre !\nNotre chef est tout-puissant.\nNos armes sont la prière,\nL’amour persévérant.\n\n2. Debout pour la sainte guerre !\nRanimons notre ardeur,\nAvec la croix pour bannière,\nQui ne serait vainqueur ?\n\n3. Debout pour la sainte guerre !\nSoyons unis et fort !\nQu’une charité sincère\nPréside a nos efforts.\n\n4. O Dieu ! Pour la sainte guerre\nRevêts-nous tous en christ\nDes armes de la lumière,\nDes dons de ton esprit.",
+      "langue": "fr"
+    },
+    {
+      "numero": 77,
+      "nom": "DEBOUT, SAINTE COHORTE",
+      "texte": "1. Debout, sainte cohorte,\nSoldat du roi du roi !\nTenez d’une main forte\nL’étendard de la croix !\nAu sentier de la gloire\nJésus-Christ vous conduit ;\nDe victoire en victoire\nIl mené qui le suit.\n\n2. La trempette résonne ;\nDebout ! Vaillants soldats !\nL’immortelle couronne\nEst le prix de combats.\nSi l’ennemi fait rage,\nSoyez fermes et forts ;\nRedoublez de courage,\nS’il redouble d’efforts.\n\n3. Debout pour la bataille,\nPartez, n'hésitez plus !\nPour que nul ne défaille,\nRegardez à Jésus !\nDe l'armure invincible,\nSoldats, revêtez-vous !\nLe triomphe est possible\nPour qui lutte à genoux.\n\n4. Debout, debout encore !\nLuttez jusqu'au matin ;\nDéjà brille l'aurore\nÀ l'horizon lointain.\nBientôt jetant nos armes \nAux pieds du Roi des rois !\nLes chants après les larmes,\nLe trône après la croix !",
+      "langue": "fr"
+    },
+    {
+      "numero": 78,
+      "nom": "DEBOUT SUR LES PROMESSES",
+      "texte": "1. Debout sur les promesses de Christ, mon Roi,\nQue Ses louanges résonnent \nDans l'éternité ;\nGloire dans les Lieux très-hauts,\nJe chanterai,\nDebout sur les promesses de Dieu !\n\nChœur \nDebout, debout,\nDebout sur les promesses de Dieu,\nMon Sauveur,\nDebout, debout,\nJe me tiens sur les promesses \nDe Dieu.\n\n2. Debout sur les promesses \nInfaillibles,\nDans les tempêtes de doutes\net de peurs assaillent,\nPar la Parole vivante de Dieu \nje vaincrai,\nDebout sur les promesses de Dieu.\n\n3. Debout sur les promesses,\nMaintenant je vois,\nDans le Sang, la purification \nPour moi ;\nDebout dans la liberté qui vient \nDe Christ,\nDebout sur les promesses de Dieu.\n\n4. Debout sur les promesses \nde Christ, Seigneur,\nAttaché à Lui par la corde d'amour,\nToujours victorieux par l'Épée \nde l'Esprit,\nDebout sur les promesses de Dieu.\n\n5. Debout sur les promesses,\nJe ne peux tomber,\nToujours écoutant la Voix\nDu Saint Esprit;\nReposant en mon Sauveur, \nMon Tout en tout,\nDebout sur les promesses de Dieu.",
+      "langue": "fr"
+    },
+    {
+      "numero": 79,
+      "nom": "DÉJÀ L'ÉTOILE",
+      "texte": "1. Déjà l'étoile \nS'allume aux cieux,\nEt la nuit voile\nTout à mes yeux.\nMais, tendre Père,\nQuand tout s'endort,\nDans Ta Lumière\nJe suis encore\n\n2. Cette journée\nQui déjà meurt,\nJe l'ai donnée\nÀ Toi, Seigneur.\nJ'ai pris sans crainte,\nSerrant Ta main,De Ta loi sainte\nL'étroit chemin.\n\n3. Sonde mes voies\nEt mon amour,\nMes pleurs, mes joies\nPendant ce jour ;\nEt purifie,\nSauveur puissant,\nToute ma vie\nAvec Ton Sang.\n\n4. Jusqu'à l'aurore\nDu jour qui vient,\nOh ! Sois encore\nMon sûr Gardien !\nEt jusqu'à l'heure\nDe mon départ,\nJésus, demeure\nMon seul rempart !",
+      "langue": "fr"
+    },
+    {
+      "numero": 80,
+      "nom": "DEMEURE PAR TA GRACE",
+      "texte": "1. Demeure par ta grâce\nAvec nous, Dieu sauveur !\nQuoi que l’ennemi fasse,\nVeille sur notre cœur.\n\n2. Que ta sainte parole,\nChaque jour, ici-bas\nSoit la seule boussole\nQui dirige nos pas.\n\n3. Eternelle lumière,\nQue ta vive splendeur\nNous guide, nous éclaire\nEt nous garde d’erreur.\n\n4. Etends sur nous ton aile\nEt demeure a jamais\nAvec nous, Dieu fidèle !\nRépands sur nous ta paix.",
+      "langue": "fr"
+    },
+    {
+      "numero": 81,
+      "nom": "DERRRIERE LE RIDEAU DU TEMPS",
+      "texte": "1. Entre le ciel et la terre s’étale\nUn rideau,\nDerrière se trouve un beau pays,\nLà, les maux de cette vie ne\nPeuvent plus me toucher,\nDieu, puis-je voir derrière le\nRideau du temps !\n\nChœur\nDieu, puis-je voir derrière\nLe rideau de peines et de peur,\nPuis-je voir ce ciel ensoleille !\nCa fortifierait ma foi, bannirait\nToute peur\nDieu, puis-je voir derrière\nLe rideau du temps !\n\n2. Je suis seul, sans secours et\nJe veux voir jésus,\nEntendre les cloches du port\nSonner, \nLà où mes amis, mes chers\nBien-aimés m’attendent ;\nDieu puis-je voir derrière \nLe rideau du temps !\n\n3. Très nostalgique, très triste,\nJe désire voir jésus,\nEntendre les cloches du port\nSonner ;\nCa rendrait ma route agréable,\nOtant toute peur ;\nDieu puis-je voir derrière\nLe rideau du temps !",
+      "langue": "fr"
+    },
+    {
+      "numero": 82,
+      "nom": "DES AUJOURD’HUI JE VEUX",
+      "texte": "1. Dès aujourd’hui je veux aimer\nDe tout mon cœur le bon berger ;\nPuisqu’en son amour il m’appelle,\nje veux saisir sa main fidèle.\nSeigneur jésus, je viens a toi,\nDu mal pour toujours garde moi !\nDu mal pour toujours garde moi !\n\n2. Dès ce jour je veux obéir\nA mon sauveur et le servir,\nPuisqu’a le suivre il me convie,\nJe veux lui consacrer ma vie.\nSeigneur jésus, je Viens  à toi,\nA ton service accepte-moi !\nA ton service accepte-moi !\n\n3. Des aujourd’hui je suis heureux,\nMon nom est écrit dans les cieux.\nBientôt je quitterai la terre\nPour le pays de la lumière.\nSeigneur jésus, je suis à toi,\nJusqu’à ton trône porte moi !\nJusqu’à ton trône porte moi !",
+      "langue": "fr"
+    },
+    {
+      "numero": 83,
+      "nom": "DESCENDS, DOUX CHARIOT",
+      "texte": "1. Je regardais, je vis, au-delà \nDu Jourdain,\nVenant m'emmener à la Maison,\nMaison Une cohorte d'anges venant après moi,\nVenant m'emmener à la maison.\n\nChœur \nDescends, doux chariot,\nVenant m’emmener à la Maison ;\nDescends, doux chariot,\nVenant m’emmener à la Maison.\n\n2. Si tu entres là-bas avant \nMon arrivée,\nVenant m'emmener à la Maison ;\nDis à tous mes amis \nQue je viendrai aussi,\nVenant m'emmener à la Maison.",
+      "langue": "fr"
+    },
+    {
+      "numero": 84,
+      "nom": "DIEU EST SI BON",
+      "texte": "1. Dieu est si bon,\nDieu est si bon,\nDieu est si bon,\nSi bon envers moi.\n\n2. Il a sauvé mon âme,\nLibéré mon esprit,\nGuéri mon cœur brisé,\nIl est bon envers moi.\n\n3. Il exauce les prières,\nIl exauce les prières,\nIl exauce les prières,\nIl est bon envers moi.\n\n4. Oh, je L'aime tant,\nOh, je L'aime tant,\nOh, je L'aime tant,\nIl est bon envers moi.\n\n5. Il vient bientôt,\nIl vient bientôt,\nIl vient bientôt,\nIl est bon envers moi.",
+      "langue": "fr"
+    },
+    {
+      "numero": 85,
+      "nom": "DIEU NOUS CONDUIT",
+      "texte": "1. Dans de verts pâturages,\nsi doux, si riches,\nDieu conduit Ses précieux enfants ;\nLà où coule l'Eau qui ravive \nLes fatigués,\nDieu conduit Ses précieux enfants.\n\nChœur \nCertains par les eaux \nOu par les vagues,\nD’autres par le feu, mais tous \nPar le Sang;\nCertains par les peines, mais Dieu\nDonne un chant,\nPendant la nuit et tout au long\nDu jour.\n\n2. Des fois sur le mont où le soleil\nBrille fort,\nDieu conduit Ses précieux enfants ;\nDes fois dans la vallée au cœur \nDe la nuit\nDieu conduit Ses précieux enfants.\n\n3. Qu'il nous arrive des peines,\nQue Satan s'oppose,\nDieu conduit Ses précieux enfants ;\nPar la grâce nous pouvons \nVaincre l'ennemi,\nDieu conduit Ses précieux enfants.\n\n4. Bien loin de la boue et bien loin\nDe l'argile,\nDieu conduit Ses précieux enfants ;\nLà-haut dans la Gloire,\nô jour d’éternité !\nDieu conduit Ses précieux enfants.",
+      "langue": "fr"
+    },
+    {
+      "numero": 86,
+      "nom": "DIEU SOIT AVEC VOUS",
+      "texte": "1. Dieu soit avec vous jusqu’à\nNous revoir !\nPar ses conseils, vous \nSoutenant,\nDans sa bergerie vous gardant ;\nDieu soit avec vous jusqu’à\nNous revoir !\n\nChœur\nAu revoir, au revoir !\nRendez-vous aux pieds de jésus ;\nAu revoir, au revoir !\nDieu soit avec vous jusqu’à\nNous revoir !\n\n2. Dieu soit avec vous jusqu’à\nNous revoir !\nVous protégeant sous ses ailes,\nVous donnant la manne\nQuotidienne,\nDieu soit avec vous jusqu’à\nNous revoir !\n\n3. Dieu soit avec vous jusqu’à\nNous revoir !\nQuand les périls vous confondent,\nEntourez-vous de ses bras surs ;\nDieu soit avec vous jusqu’à\nNous revoir\n\n4. Dieu soit avec vous jusqu’à\nNous revoir !\nRestez sous la bannière d’ amour,\nBrisez la vague de la mort ;\nDieu soit avec vous jusqu’à\nNous revoir !",
+      "langue": "fr"
+    },
+    {
+      "numero": 87,
+      "nom": "DIVIN SAUVEUR",
+      "texte": "1. Divin sauveur, toi qui vins sur \nla terre\nPour y mourir sur un infâme bois,\nLe cœur ému, j approches du calvaire ;\nQue ton esprit m’enseigne  à\nContempler ta croix.\n\nChœur\nTa grâce infinie\nVaut mieux que la vie\nMon cœur s’attache à toi\nPour te suivre avec toi\n\n2. Là, je puis voir la grandeur de l’abime\nOu, par amour, jésus est descendu,\nEt les tourments de la sainte victime\nMe disent qu’a jamais, sans\nChrist, j’étais perdu.\n\n3. Mon seul refuge est dans sa\nMeurtrissure ;\nLà, j’ai trouvé le pardon et la paix,\nEt, sous le sang qui lava ma souillure,\nJe puis de tout pèche rester libre a\nJamais.\nAutrefois seul, tombant de chute en\nChute,\n\n4. J’étais vaincu par le grand tentateur,\nMais aujourd’hui, mon sauveur\n Pour moi lutte,\nEt son bras tout-puissant me rend\nPlus que vainqueur.\n\n5. Jusqu’ à la fin, jésus, ma confiance\nSera toujours dans le sang de ta croix,\nScelle en mon cœur cette ferme\nAssurance\nEt que toujours aussi j’obéisse a\nTa voix",
+      "langue": "fr"
+    },
+    {
+      "numero": 88,
+      "nom": "DOUCEMENT ET TENDREMENT",
+      "texte": "1. Doucement et tendrement \nJésus appelle,\nIl nous appelle toi et moi,\nVois- le aux portails, il attend\nEt il veille,\nVeillant pour toi et pour moi.\n\nChœur\nReviens, reviens,\nA la maison, o toi, fatigue ;\nArdemment, tendrement\nJésus appelle :\n« Pécheur, entre à la maison. »\n\n2. Pourquoi tarde quand jésus\nNous implore,\nNous implorant toi et moi,\nPourquoi donc trainer et négliger\nSa grâce,\nSa grâce pour toi et pour moi ? \n\n3. Maintenant le temps s’enfuit,\nLes moments passent,\nS’éloignant de toi et moi ;\nLes ombres s’assemblent\nLa nuit de mort vient,\nVenant pour toi et pour moi.\n\n4. OH ! Quel merveilleux amour\nIl a promis, Promis à toi et a moi ;\nMalgré nos pèches, il donne\nGrace et pardon,\nPardon à toi et à moi",
+      "langue": "fr"
+    },
+    {
+      "numero": 89,
+      "nom": "DOUX JESUS",
+      "texte": "1. Doux jésus, doux jésus,\nQue tu es merveilleux !\nTu brilles plus que l’Etoile du matin,\nTu es si beau, plus beau\n\n2. Que le lys qui pousse en bordure\nDe route,\nPrécieux, plus précieux que l’or ;\nJuste comme la rose de Sharon,\nTu demeures le plus beau,\n\n3. Tu es tout le désir de mon cœur\nDoux jésus, doux jésus,\nQue tu es merveilleux !\nTu es précieux, plus précieux Que l’or.",
+      "langue": "fr"
+    },
+    {
+      "numero": 90,
+      "nom": "DU MIEL SUR LE ROC",
+      "texte": "1. Oh ! Toi mon frère, connais-tu\nLe sauveur,\nQui est merveilleux, bon, fidèle ?\nIl est « le rocher de ton salut »\nY a du miel pour toi sur le roc  \n\nChœur\nOh! Mon frère, y a du miel sur le roc\nY a du miel pour toi sur le roc ;\nLaisse le sang couvrir tous tes pêchés\nY a du miel pour toi sur le roc.\n\n2. As-tu goute que le seigneur\nEst bon ?\nMarches-tu sur la voie nouvelle ?\nAs-tu bu à la fontaine vivante ?\nY a du miel pour toi sur le roc\n\n3. Demandes-tu à Dieu le père\nEn prière :\n« Qu’est-ce que tu veux que je\nPuisse faire ? »\nNe crains point, surement il\nRépondra ;\nY a du miel pour toi sur le roc.\n\n4. Alors parcours les artères et \nLes rues,\nPrêche au petit ou grand nombre ;\nEt dis à chaque frère qui est tombe,\nY a du miel pour toi sur le roc.",
+      "langue": "fr"
+    },
+    {
+      "numero": 91,
+      "nom": "ECLAIRE-MOI",
+      "texte": "1. Eclaire-moi, seigneur,\nEclaire-moi,\nLaisse la lumière du phare\nM’éclairer ;\nEclaire-moi, seigneur,\nEclaire-moi,\nLaisse la lumière du phare\nM’éclairer.",
+      "langue": "fr"
+    },
+    {
+      "numero": 92,
+      "nom": "ECCUTEZ PETITS ET GRANDS",
+      "texte": "1. Nous instruit et nous console,\nApprochez- vous du sauveur,\nIl vous porte sur son cœur.\nApprochez-vous du sauveur,\nIl vous porte sur son cœur.\n\n2. Dans peu de temps il viendra\nEnlever sa chère  église ;\nDans son ciel, il la prendra :\nDes longtemps elle est acquise.\nPour gouter ce vrai bonheur\nIl faut venir au sauveur.\nPour gouter ce vrai bonheur\nIl faut venir au sauveur.\n\n3. La part de tous ici –bas,\nEst une part de souffrance ;\nDe ce combat je suis las,\nMais une douce espérance\nVient fortifier mon cœur\nEt l’inonder de bonheur.\nVient fortifier mon cœur\nEt inonder de bonheur.\n\n4. Plus haut que ces tristes lieux,\nDans une joie éternelle,\nBien au de la du ciel bleu\nEt des cite du Dieu fort\nOu ne règne plus la mort.\nC’est la cite du Dieu fort\nOu ne règne plus la mort.\n\n5. Là, réunis  tous un jour\nEt pour toujours dans la gloire,\nDans la paix et dans l’amour,\nChantant l’homme de victoire,\nAvec jésus dans les cieux,\nNous serons toujours joyeux.\nAvec jésus dans les cieux,\nNous serons toujours joyeux.",
+      "langue": "fr"
+    },
+    {
+      "numero": 93,
+      "nom": "ELEVEZ-LE",
+      "texte": "1. Comment joindre la foule, les\nHommes de toutes couches ?\nEn réponse, jésus donna la clé :\n« Et moi, si je suis élevé de la\nTerre,\nJ’attirerai les hommes à moi.»\n\nChœur\nElevez-le, élevez-le,\nDepuis l’éternité il dit :\n« Et moi, si je suis élevé de la terre,\nJ’attirerai les hommes à moi. »\n\n2. Oh ! Le monde a faim du pain\nDe la vie !\nElevez le sauveur qu’ils le voient ;\nCroyez-le, ne doutez pas de\nSes paroles :\n« J’attirerai les hommes à moi. »\n\n3. N’exaltez ni église, ni prédicateur,\nPrêchez le plein évangile gratuit ;\nLe, vous verrez cette\nPromesse vraie :\n« J’attirerai les hommes à moi. »\n\n4. Elevez-le en vivant comme\nUn chrétien,\nQu’en vous le monde voie\nLe sauveur,\nEt joyeux, les hommes suivront\nCelui qui dit :\n« J’attirerai les hommes à moi. »",
+      "langue": "fr"
+    },
+    {
+      "numero": 94,
+      "nom": "EMBARQUEZ !",
+      "texte": "1. C’est le vieux bateau de Sion,\nC’est le vieux bateau de Sion,\nC’est le vieux bateau de Sion,\nEmbarquez ! Embarquez !\nIl fit arriver mon vieux père,\nIl fit arriver mon vieux père,\nIl fit arriver mon vieux père,\nEmbarquez ! Embarquez !",
+      "langue": "fr"
+    },
+    {
+      "numero": 95,
+      "nom": "EMMANUEL",
+      "texte": "1. Emmanuel, Emmanuel,\nEt Il S'appelle Emmanuel :\n\"Dieu avec nous.\" Révélé en nous,\nEt Il S'appelle Emmanuel.",
+      "langue": "fr"
+    },
+    {
+      "numero": 96,
+      "nom": "EN AVANT, SOLDATS CHRÉTIENS !",
+      "texte": "1. En avant, soldats chrétiens !\nMarchant au combat\nAvec la Croix de Jésus,\nAllant de l'avant !\nChrist, le Royal Maître,\nMène contre l'ennemi ;\nTout droit dans la bataille,\nRegardez Ses bannières !\n\n2. Comme une puissante armée\nS'avance l'Église ;\nFrères, nous sommes en marche\nSur les traces des Saints ;\nNous ne sommes pas divisés,\nNous sommes un seul corps,\nUn dans l'espérance, la doctrine\nEt la charité !\n\n3. Couronnes et trônes peuvent périr,\nEt royaumes tombé ;\nMais l'Église de Jésus\nRestera constante ;\nLes portes de l'enfer ne peuvent\nPrévaloir contre Elle ;\nNous avons la promesse\nInfaillible de Christ.\n\n4. Au signal de triomphe, Satan s'enfuira ; Alors, soldats chrétiens,\nÀ nous la victoire !\nLes fondements de l'enfer\nS'ébranlent aux louanges ;\nFrères, élevez vos voix, et\nQue vos hymnes montent !\n\n5. En avant, vous les peuple,\nJoignez l'heureuse foule ;\nMêlez vos voix aux nôtres\nEn chants de victoire ;\n\"Gloire, honneur et louange\nSoient à Christ le Roi !\"\nChantent les hommes et les anges\nDans les âges éternels.",
+      "langue": "fr"
+    },
+    {
+      "numero": 97,
+      "nom": "ENFERMÉ AVEC DIEU",
+      "texte": "1. Avec Dieu enfermé dans le secret,\nLà, dans l'Esprit, \nje contemple Sa face,\nTirant de nouvelles forces \npour faire la course, \nOh ! J’aime m'enfermer avec Dieu !",
+      "langue": "fr"
+    },
+    {
+      "numero": 98,
+      "nom": "ENFIN JESUS A TRIOMPHE",
+      "texte": "1. Enfin jésus a triomphe\nDe tant de résistance,\nEt du joug il m’a libère,\nOh ! Gloire à sa puissance !\n\nChœur\nPrince de la victoire,\nJésus, ressuscite,\nA toi seule est la gloire,\nEt pour l’éternité !\n\n2. Oh !par quel douloureux chemin\nDe retard être de luttes,\nCelui qui repousse ta main\nS’égare, et que de chutes !\n\n3. Mon berger, dans son grand Amour,\nM’a remis sur la voie ;\nIl m’a pardonne…quel beau jour !\nEt je chante avec joie :\n\n4. Mon seul désir, Dieu tout-puissant,\nPour mon âme ravie :\nC’est  qu’elle soit des maintenant,\nToujours à christ unie !",
+      "langue": "fr"
+    },
+    {
+      "numero": 99,
+      "nom": "ENTENDS-TU ? JÉSUS T'APPELLE",
+      "texte": "1. Entends-tu ? Jésus t'appelle ;\nViens, ô pécheur ! Il t'attend.\nÀ cette voix si fidèle\nTu résistas trop souvent.\n\nChœur \nLaisse entrer le Roi de gloire,\nOuvre ton cœur à Jésus !\nLaisse entrer le Roi de gloire,\nHâte-toi, ne tarde plus.\n\n2. Pour le péché, pour le monde,\nTu trouves place en ton cœur,\nPoint pour le Sauveur du monde,\nRien pour l'Homme de douleur !\n\n3. Jésus frappe, Il frappe encore;\nOuvre à ton Libérateur,\nEt pour toi luira l'aurore\nDu véritable bonheur.\n\n4. Aujourd'hui c'est jour de grâce ;\nNe compte pas sur demain.\nPendant que ton Sauveur passe,\nSaisis Sa puissante main !",
+      "langue": "fr"
+    },
+    {
+      "numero": 100,
+      "nom": "ENTRE TES MAINS J’ABANDONNE",
+      "texte": "1. Entre tes mains j’abandonne\nTout ce que j’appelle mien.\nOh ! Ne permet à personne,\nSeigneur de n’en reprendre rien !\nOui prend tout, seigneur !\nOui, prend  tout, seigneur !\nEntre ta main j’abandonne\nTout avec bonheur\n\n2. Je n’ai pas peur de te suivre\nSur le chemin de la croix.\nC’est pour toi que je veux vivre,\nJe connais’ aime ta voix.\nOui, prends tout, seigneur !\nOui, prends tout, seigneur !\nSans rien garder, je te livre\nTout avec bonheur\n\n3. Tu connais mieux que moi-même\nTous  les besoins de mon cœur ;\nEt pour mon bonheur suprême,\nTu veux me rendre vainqueur.\nOui, prends tout, seigneur !\nOui, prend tout, seigneur !\nMais pour mon sauveur\n\n4. Prends mon corps et prends\nMon âme,\nQue tout en moi soit a toi.\nQue par ta divine flamme\nTout mal soit détruit en moi !\nOui, prends tout, seigneur !\nOui, prends tout seigneur !\nPrends mon corps et prends\nMon amé :\nRègne sur mon cœur",
       "langue": "fr"
     }
   ]
