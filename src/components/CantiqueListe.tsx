@@ -25,7 +25,7 @@ export function CantiqueListe({ cantiques }: { cantiques: Cantique[] }) {
             <span className="bg-primary text-primary-foreground font-display flex size-11 shrink-0 items-center justify-center rounded-full text-base font-semibold">
               {c.numero}
             </span>
-            <span className="font-display text-lg leading-snug">{c.nom}</span>
+            <span className="font-display truncate text-lg leading-snug">{c.nom}</span>
           </Link>
         </li>
       ))}

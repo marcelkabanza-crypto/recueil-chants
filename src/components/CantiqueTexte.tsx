@@ -24,7 +24,7 @@ export function CantiqueTexte({ texte, className }: Props) {
                 ? "text-primary font-bold italic"
                 : undefined
             }
-            style={i > 0 ? { marginTop: "0.75em" } : undefined}
+            style={i > 0 ? { marginTop: "0.5em" } : undefined}
           >
             {bloc}
           </p>
