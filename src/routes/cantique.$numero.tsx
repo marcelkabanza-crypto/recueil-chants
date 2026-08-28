@@ -45,6 +45,8 @@ function CantiquePage() {
     );
   }
 
+  const reference = cantique.reference?.trim() || null;
+  const referenceNumero = reference ? Number(reference.match(/^\d+/)?.[0] ?? NaN) : NaN;
   const index = liste.findIndex((c) => c.numero === cantique.numero);
   const prev = liste[index - 1];
   const next = liste[index + 1];
