@@ -65,7 +65,16 @@ export function CantiqueListe({ cantiques }: { cantiques: Cantique[] }) {
               <span className="bg-primary text-primary-foreground font-display flex size-11 shrink-0 items-center justify-center rounded-full text-base font-semibold">
                 {c.numero}
               </span>
-              <span className="font-display truncate text-lg leading-snug">{c.nom}</span>
+              <span className="min-w-0 flex-1">
+                <span className="font-display block truncate overflow-hidden text-ellipsis whitespace-nowrap text-lg leading-snug">
+                  {c.nom}
+                </span>
+                {c.reference?.trim() ? (
+                  <span className="text-primary block truncate text-xs font-medium">
+                    REFERENCE FRANCAIS : {c.reference.trim()}
+                  </span>
+                ) : null}
+              </span>
             </Link>
           </li>
         ))}
