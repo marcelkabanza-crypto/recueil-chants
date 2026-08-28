@@ -45,6 +45,8 @@ function CantiquePage() {
     );
   }
 
+  const reference = cantique.reference?.trim() || null;
+  const referenceNumero = reference ? Number(reference.match(/^\d+/)?.[0] ?? NaN) : NaN;
   const index = liste.findIndex((c) => c.numero === cantique.numero);
   const prev = liste[index - 1];
   const next = liste[index + 1];
@@ -55,6 +57,22 @@ function CantiquePage() {
         <h2 className="font-display text-2xl font-semibold leading-tight">
           {cantique.numero}. {cantique.nom}
         </h2>
+        {reference ? (
+          <p className="mt-2 text-sm">
+            {referenceNumero ? (
+              <Link
+                to="/cantique/$numero"
+                params={{ numero: String(referenceNumero) }}
+                search={{ langue: "fr" as Langue }}
+                className="text-primary font-medium underline underline-offset-4"
+              >
+                REFERENCE FRANCAIS : {reference}
+              </Link>
+            ) : (
+              <span className="text-muted-foreground">REFERENCE FRANCAIS : {reference}</span>
+            )}
+          </p>
+        ) : null}
         <div className="bg-accent mt-3 h-px w-16" />
         <CantiqueTexte texte={cantique.texte} className="mt-5" />
       </article>

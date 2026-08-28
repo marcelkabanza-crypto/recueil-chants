@@ -8,6 +8,8 @@ export type Cantique = {
   texte: string;
   /** "fr" (défaut), "ln" (lingala), "sw" (swahili), "lu" (tshiluba). */
   langue?: string;
+  /** Référence du chant correspondant dans le recueil français. */
+  reference?: string | null;
 };
 
 export type Recueil = {
