@@ -1,6 +1,6 @@
 {
-  "version": 11,
-  "updatedAt": "2026-08-28T17:47:03.904748+00:00",
+  "version": 12,
+  "updatedAt": "2026-08-28T17:56:27.961629+00:00",
   "cantiques": [
     {
       "numero": 1,
@@ -3827,6 +3827,111 @@
       "nom": "EZALI NGAI MOPAYA",
       "texte": "Ezali ngai mopaya awa nse, Nakotambola na nzela’a mpasi, \nNtango nyonso naluka bobele \nMokano na Yo, mokano na Yo.\n\nNtango nyonso na nse y’ekulusu, \nNa mikolo y’esengo to mpasi, \nNalobaka, wana nakosenga : \nMokano na Yo, mokano na Yo.\n\nNzambe nasengi eloko moko : \nZala bozwi mpe’ekimelo na ngai; \nMpo na nyonso sala mpe kokisa \nMokano na Yo, mokano na Yo.\n\nTia bokonzi na Yo na motema; \nKonza na bolingo mpe bopolo, \nMpe napekisama te koloba : \nMokano na Yo, mokano na Yo.\n\nMpe mokolo moko, ngai na kimia, Nakoyemba na mboka ya nkembo, Nzembo nayembi awa kolela : \nMokano na Yo, mokano na Yo.",
       "langue": "ln",
+      "reference": null
+    },
+    {
+      "numero": 1,
+      "nom": "NZAMBI WA BRANHAM",
+      "texte": "1.\nnzambi wa Branham kutu musua bubi,  ungumbusha katoba ne munyengu, umpeshe bukole bua kukuata nabu bibi bionso bia muena lukuna  umpeshe bukole bua kukuata nabu bibi bionso bia muena lukuna  \n \nChœur  \noh! Wa tshendelela mufuki, wa tshendelela kutu muanji kukudimuka to, udi Nzambi utu wamba Bulelela ne bobu buina budi munda muebe \n \nOh! Wa tshendelela mufuki, Uvua mulaya ndelanganyi ya abalapama,  Ne ikuate bibi bia muena lukuna Nzambi suaku ukumbaje \n \n2.\nDituku adji ku gologotha,  Wa kafuta mushinga  bua bualu buanyi, Wewe E kuela lubila kuamba ne : “bionso bia kukumbana” Wewe E kuela lubila kuamba ne : “bionso bia kukumbana” \n \n3.\nMema tshiena mua kukandamena diyi dieba ne bulombodi buebe Mfumu wa tshendelela ushale Muena lukuna wa baluishi banyi Mfumu wa tshendelela ushale Muena lukuna wa baluishi banyi",
+      "langue": "lu",
+      "reference": null
+    },
+    {
+      "numero": 2,
+      "nom": "TSHILOBO",
+      "texte": "1.\nMumanyi Munene Wa Nvita, Mutshimuni Wa Kale Kale Tshilobo Tshikole Mu Nvita Yesu Ukena Kutshimune. \n \nChœur  \nTshilobo We ! Juka Wenda Madiunda Mu Baluishi Bebe Bana Bebe Babandila Luendu  Luebe Lua Butshimunyi \n \n2.\nMisumba Yonso Ya Mu Diulu Idi Panyima Pebe Wewe Bua Kutumbisha Dina Diebe Mumanyi Munene Wa Nvita \n \n3.\nDiboko Diebe Dia Bukole, Didi Dibandishibue mulu Pamutu Pa Makola Onso Ne Mamanya Onso A Nvita \n \n4.\nWewe Mukemeshi Wa Bantu Bua Dimanya Diebe Dia Nvita Ne Mishindu Ya Ditshimuna  Nganyi Wakapalakana N’ebe \n \n5.\nDituku Dikadi Pabuipi, Diwabutula Bantu Babi Ne Muambi Wabo Wa mashimi Popamue Ne Nyama Wa Lonji",
+      "langue": "lu",
+      "reference": null
+    },
+    {
+      "numero": 3,
+      "nom": "TSHINYI TSHIWAPANGILA",
+      "texte": "1.\nTshinyi Tshiwapangila Yesu We \nDiulu ne buloba mbintu biebe\nNganyi Wakuela Mpata Yesu We \nMukemeshi Wa Bantu \n \nChoeur  \nMukelenge Wa Luse \nNzambi Wakuenda Nenda\nTshilobo Yesu Tumbaku \n \n2.\nBakambila Balama Bua Ela \nBana Ba Isalela Mulau \nPakasuaye Kuakula \nYeye Wa kabenesha Yakobo \n \n3.\nTshisamba Tshisungila Ku Mashi  \nA Mushinga Mukole A Yesu \nMuntu Watshibenesha Yeye \nNa beneshibue Kashidi.",
+      "langue": "lu",
+      "reference": null
+    },
+    {
+      "numero": 4,
+      "nom": "KUPETA KILISTO",
+      "texte": "1.\nButumbi Bonso Bua Pa Buloba Bonso Mbua Tshianana Kilisto Mbutumbi Bulelela Ne Bua Tshiendelela. \n \nChœur  \nKupeta Kilisto, Nkutamba Malu Onso, Muanetu Imansha Biudi Nabi Wangata Kilisto. \n \n2.\nBubanji Bonso Bua Pa Buloba Bonso Mbua Tshianana Kilisto Mbubanji Bulelela Ne Bua Tshiendelela. \n \n3.\nDitalala Dia Pa Buloba Ebu Didi Dia Tshianana Kilisto Yezu Ke Ditalala\nNe Dia Tshiendelela. \n \n4.\nDisanka Dionso Dia Pa Buloba Dionso Ndia Tshianana Kilisto Ndisanka Dilelela Ne Dia Tshiendelela.",
+      "langue": "lu",
+      "reference": null
+    },
+    {
+      "numero": 5,
+      "nom": "NDI NKUTEKEMENA NZAMBI WANYI",
+      "texte": "1.\nPa Buloba Ndipu Tshitupa Tshikese Ndi Muenyi Ne Muena Luendu Pa Buloba Dituku Dikuabu Ne Pingana  Kuetu Nenshalaku Tshiendelela \n \nChœur  \nNdi Nkutekemena Wewe Nzambi Wanyi Ndi Ngindila Bianyi Dikuatshisha Diebe Mesu Anyi Adi Matangila Kudi Wewe Tshieyemenu Tshianyi\n\n2.\nPandi Ngeyemena Muntu Yeye Neafue Pangeyemena Dibue Ne Dipandike Pandi Ngeyemena Mutshi Neupuke Ne Ngeyemena Tshinganyi \n \n3.\nPandi Nkueyemena Wewe Nzambi Wanyi Tshiena Mfuishibue Mbundu Kakese \nMudituku Dibi Panakubikila Kuena Umbengela Nasha \n \n4.\nNzambi Wanyi Wewe Udi Bionso Kundi Wewe Ke Udi Ne Diyi Dia Ndekelu Tshiwudi Wamba Ke Tshidi Tshienzekibua Ndi Ndifila Kudi Wewe",
+      "langue": "lu",
+      "reference": null
+    },
+    {
+      "numero": 6,
+      "nom": "LUBUEBUE LUA BIKONDO",
+      "texte": "1.\nLubuebue lua bikondo Nsokoma munda muebe, Mayi ne mashi bya mu Mputa yebe bikale Buanga bua kunsungila Ne kunkezula byanyi. \n \n2.\nBinsonji byanyi byonso Nansha tshisumi tshianyi Kabiena binsungila Wewe ke Musungidi Tshiena ne tshia kukupa Ndi nkuata ku nkuluse. \n \n3.\nPajika luendu luanyi, Pangalala mu lufu Pangajuka mu lufu Nenkumona mu nkuas, Lubuebue lua bikondo Nsokoma munda muebe.",
+      "langue": "lu",
+      "reference": null
+    },
+    {
+      "numero": 7,
+      "nom": "MUNGANGA MUNENE",
+      "texte": "1.\nMunganga Munene nyau, Muena dinanga Yesu Udi ukukankamika Teleja diyi dyende \n \nKolus  \nMuyenga wa banjelo, Dina dilengela be Musambu muimpe kuimba, Mubenesha Yesu. \n \n2.\nMmu kujimijila mibi, Teleja diyi dya Yesu\nBanda kulu talala ne Vuala nende tshifulu. \n\n3.\nMuan’a Mukoko atumbe Ndi muitabuja Yesu Ndi munanga Musungidi Musua Dina dia Yesu. \n \n4.\nMibi ne bowa byumusha Ku Din’edi dya Yesu, Moyo udi usanka bua Kumvua Dina dya Yesu.",
+      "langue": "lu",
+      "reference": null
+    },
+    {
+      "numero": 8,
+      "nom": "KU NKULUSE",
+      "texte": "1.\nKu Nkuluse undama,  \nMpokolo muakane \nMusulu wa londapu \nWa ku Gologota. \n \nKolus  \nNkuluse, Nkuluse \nKe buanyi butumbi \nToo ne pangaya kulu \nMu dikisha dyanyi. \n \n2.\nKu Nkuluse ne bowa \nNgasa kulua kundi \nKe Mutoto wa dinda \nE, kunkenkeshila. \n \n3.\nWe Mukoko wa Nzambi \nSuaku umvuluija  \nMakenga ebe onso, \nNgenda n’au konso. \n \n4.\nKu Nkuluse muindila \nNtabala ngitaba \nNe panafika muamua \nKu kala kua mayi.",
+      "langue": "lu",
+      "reference": null
+    },
+    {
+      "numero": 9,
+      "nom": "DITUKU DINENE",
+      "texte": "1.\nDituku dyakulua \nNzambi mmutusamba \nMalu’akudimuku \nTuimbila Mukoko. \nKilisto mmutupa \nTshiakatulayaye, \nNyuma Muimpe nyeu \n \nKolus  \nNyuma Muimpe nyeu (2x) \nLufu luajiminyi, \nLupandu luakulua. \nPa buloba bonso \nDituku dyakulua \nNyuma Muimpe nyeu. \n \n2.\nMidima yakuya, \nBukenka buakulua \nMbuipata bupidya \nBua mu myoyo yetu. \nMfumu wa ba mfumu \nMmutupa ditaba \nNyuma Muimpe nyeu. \n \n3.\nMusambi Munene \nUdi uwuja myoyo  \nNyuma Mulelela \nWakutupikula. \nNya ukosa nkanu,  \nUfila dyondopa \nNyuma Muimpe nyeu. \n \n4.\nBapikula bonso \nTuimbai bupikudi \nKristo mmuenza byonso, \nMmutupesha Nyuma. \nNgena nya ukanka \nBualu panu ponso \nNyuma Muimpe nyeu.",
+      "langue": "lu",
+      "reference": null
+    },
+    {
+      "numero": 10,
+      "nom": "JUKAYI KULU",
+      "texte": "1.\nJukayi kulu bua Yesu \nNuenu masalayi \nDibendele dibande \nKabaditshimunyi. \nKu bulombodi buende \nTuatshimunyi konso \nNe baluishi bajiki, \nKilisto ke Mfumu. \n \n2.\nJukayi kulu bua Yesu \nMpungi nya wadidi \nBualu mvita ya lelu  \nMmitamba bukole \nBaluma ba mukaba \nKuatayi baluishi \nKanupingi tshyanyima \nFuayi nabo lelu. \n \n3.\nJukayi kulu bua Yesu \nMmunupa bukole \nBu bantu nenupange \nKanudyeyemenyi \nLuatayi lumu luimpe \nNe nutendelela \nIkala diba dyonso  \nPa mudimu webe. \n \n4.\nJukayi kulu bua mvita \nIkadi ijika \nLelu myadi ya mvita  \nPatshyabu netuimba \nWatshimuna n’ apete \nTshifulu tshia moyo \nYe neakokeshe ne \nMukelenge kashidi",
+      "langue": "lu",
+      "reference": null
+    },
+    {
+      "numero": 11,
+      "nom": "PABIKILABO DYA MUAMUA",
+      "texte": "1.\nPadila mpungi wa Nzambi \nPajika malu onso \nDinda dimpe dya kashidi  Ne dilue Patuilangana basungula Dishiya dya mayi Nenkitaba ku dibikila muamua \n \nKolus  \nPabikilabo dya muamua (3x) Pabikilabo muamua nengitabe \n \n2.\nDinda adi dimpe dyabika Bafue mu Kilisto Babanyangana  Dibishibua dyende \nNe patuilangana basungula Mu nzubu kulu Nenkitaba ku dibikila muamua. \n \n3.\nDinda ne dilolo tuenzelayi Mfumu mudimu Tuamba bua luse  Ne dinanga byende Nunku pajika bya panuapa Ne mudimu onso Nenkitaba ku dibikila muamua.",
+      "langue": "lu",
+      "reference": null
+    },
+    {
+      "numero": 12,
+      "nom": "NDI MPINGA",
+      "texte": "1.\nMvua muya kule ne \nNzambi Nkadi mpingana \nMvua munenga mu mibi be \nMfumu ngapingi. \n \nKolus \nNdi mpinga  (2x) \nMpinga kashidi \nNgakidila bua luse \nNdi mpinga kûdi. \n \n2.\nNdi munyanga mvula mingi \nNkadi mpingana \nNdi ndila nyingalala be \nMfumu ngapingi. \n \n3.\nLuendu lua mibi nduntonda \nNkadi mpingana \nNdi nkueyemena nkuitaba \nMfumu ngapingi. \n \n4.\nNdi nsama mu moyo wanyi \nNkadi mpingana \nMpingajiluila bukole \nMfumu ngapingi.",
+      "langue": "lu",
+      "reference": null
+    },
+    {
+      "numero": 13,
+      "nom": "KUNDEKEDI TO",
+      "texte": "1.\nMusungidi kundekedi \nUmvua dî dyanyi \nPawabikila bakuabo \nKundekedi to. \n \nKolus  \nMusungidi  \nUmvua dî dyanyi \nPawabikila bakuabo \nKundekedi to. \n \n2.\nKu nkuasa webe wa ngasa \nMpeta dikisha \nNdi ntua binu nyingalala \nNgumusha mpata. \n \n3.\nMueyemena bimpe byebe \nNgenda nkukeba \nNyuma wanyi ondapibue \nNgas’ansungila. \n \n4.\nWe Mpokolo wa busambi \nMutamba byonso \nTshyena ne munga bu wewe \nMulu ne panshi.",
+      "langue": "lu",
+      "reference": null
+    },
+    {
+      "numero": 14,
+      "nom": "TUMUPA BINTU",
+      "texte": "1.\nTukuna mu dinda \nMaminu a buimpe \nTukuna lunkelu \nNansha mu mvula \nBindila dipola \nDiba dya kunowa \nNetumupa bintu  Ne disanka be. \n \nKolus \nTumupa bintu (2x) \nNetumupa bintu  \nNe disanka be (bis) \n \n2.\nTukuna pa munya \nNansha mu dileji \nKatutshinyi mvula \nNansha lumuma \nMu tshitupa tshipi \nKunowa nekulua \nNetumupa bintu  \nNe disanka be. \n \n3.\nNansha ne binsoji \nNansha ne ditshyoka \nTuyai kumpala \nTukunyina Mfumu \nPajika binsoji \nNeatuakidila \nNetumupa bintu \nNe disanka be.",
+      "langue": "lu",
+      "reference": null
+    },
+    {
+      "numero": 20,
+      "nom": "LUBUEBUE LUA BIKONDO",
+      "texte": "1. Lubuebue lua bikondo \nNsokoma munda muebe, \nMayi ne mashi bya mu \nMputa yebe bikale \nBuanga bua kunsungila \nNe kunkezula byanyi. \n\n2. Binsonji byanyi byonso \nNansha tshisumi tshianyi \nKabiena binsungila \nWewe ke Musungidi \nTshiena ne tshia kukupa \nNdi nkuata ku nkuluse. \n\n3. Pajika luendu luanyi, \nPangalala mu lufu \nPangajuka mu lufu \nNenkumona mu nkuas, \nLubuebue lua bikondo \nNsokoma munda muebe.",
+      "langue": "lu",
       "reference": null
     }
   ]
