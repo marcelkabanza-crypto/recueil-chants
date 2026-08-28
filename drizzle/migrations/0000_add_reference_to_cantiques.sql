@@ -1,0 +1,1 @@
+ALTER TABLE public.cantiques ADD COLUMN IF NOT EXISTS reference text;

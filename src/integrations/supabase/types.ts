@@ -21,6 +21,7 @@ export type Database = {
           langue: string
           nom: string
           numero: number
+          reference: string | null
           texte: string
           updated_at: string
         }
@@ -30,6 +31,7 @@ export type Database = {
           langue?: string
           nom: string
           numero: number
+          reference?: string | null
           texte: string
           updated_at?: string
         }
@@ -39,6 +41,7 @@ export type Database = {
           langue?: string
           nom?: string
           numero?: number
+          reference?: string | null
           texte?: string
           updated_at?: string
         }
