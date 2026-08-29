@@ -79,9 +79,15 @@ export function AppShell({
             size="icon"
             className="text-sidebar-foreground hover:bg-white/10"
           >
-            <Link to={backTo} aria-label="Retour">
-              <ArrowLeft />
-            </Link>
+            {typeof backTo === "string" ? (
+              <Link to={backTo} aria-label="Retour">
+                <ArrowLeft />
+              </Link>
+            ) : (
+              <Link to={backTo.to} params={backTo.params} aria-label="Retour">
+                <ArrowLeft />
+              </Link>
+            )}
           </Button>
         ) : null}
         <Sheet open={open} onOpenChange={setOpen}>
