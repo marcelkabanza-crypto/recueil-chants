@@ -56,7 +56,7 @@ export function AppShell({
 }: {
   title: string;
   children: ReactNode;
-  backTo?: string | { to: string; params?: Record<string, string> };
+  backTo?: string;
   /** Recueil affiché : il est masqué dans le menu de droite. */
   langueCourante?: Langue;
 }) {
