@@ -52,7 +52,7 @@ function CantiquePage() {
   return (
     <AppShell
       title={`Cantique ${cantique.numero}`}
-      backTo={{ to: "/recueil/$langue", params: { langue } }}
+      backTo={`/recueil/${langue}`}
     >
       <article>
         <h2 className="font-display text-2xl font-semibold leading-tight">
