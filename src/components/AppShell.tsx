@@ -56,7 +56,7 @@ export function AppShell({
 }: {
   title: string;
   children: ReactNode;
-  backTo?: string;
+  backTo?: string | { to: string; params?: Record<string, string> };
   /** Recueil affiché : il est masqué dans le menu de droite. */
   langueCourante?: Langue;
 }) {
@@ -79,9 +79,15 @@ export function AppShell({
             size="icon"
             className="text-sidebar-foreground hover:bg-white/10"
           >
-            <Link to={backTo} aria-label="Retour">
-              <ArrowLeft />
-            </Link>
+            {typeof backTo === "string" ? (
+              <Link to={backTo} aria-label="Retour">
+                <ArrowLeft />
+              </Link>
+            ) : (
+              <Link to={backTo.to} params={backTo.params} aria-label="Retour">
+                <ArrowLeft />
+              </Link>
+            )}
           </Button>
         ) : null}
         <Sheet open={open} onOpenChange={setOpen}>

@@ -50,7 +50,10 @@ function CantiquePage() {
   const next = liste[index + 1];
 
   return (
-    <AppShell title={`Cantique ${cantique.numero}`} backTo="/">
+    <AppShell
+      title={`Cantique ${cantique.numero}`}
+      backTo={{ to: "/recueil/$langue", params: { langue } }}
+    >
       <article>
         <h2 className="font-display text-2xl font-semibold leading-tight">
           {cantique.numero}. {cantique.nom}

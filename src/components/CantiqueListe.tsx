@@ -70,8 +70,8 @@ export function CantiqueListe({ cantiques }: { cantiques: Cantique[] }) {
                   {c.nom}
                 </span>
                 {c.reference?.trim() ? (
-                  <span className="text-primary block truncate text-xs font-medium">
-                    REFERENCE FRANCAIS : {c.reference.trim()}
+                  <span className="block truncate text-xs italic text-blue-500">
+                    {c.reference.trim()}
                   </span>
                 ) : null}
               </span>
