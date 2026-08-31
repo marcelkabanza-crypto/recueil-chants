@@ -37,15 +37,12 @@ function Index() {
     const term = q.trim().toLowerCase();
     // Sans recherche : uniquement le recueil français.
     if (!term) return cantiques.filter((c) => langueDe(c) === "fr");
-    // Avec recherche : toutes les versions (français, lingala, swahili, tshiluba).
+    // Recherche uniquement sur le numéro et le titre, toutes versions confondues.
     return cantiques.filter(
-      (c) =>
-        c.nom.toLowerCase().includes(term) ||
-        c.texte.toLowerCase().includes(term) ||
-        String(c.numero) === term ||
-        String(c.numero).startsWith(term),
+      (c) => c.nom.toLowerCase().includes(term) || String(c.numero).startsWith(term),
     );
   }, [q, cantiques]);
+
 
   return (
     <AppShell title="Recueil des Chants TESP" langueCourante="fr">

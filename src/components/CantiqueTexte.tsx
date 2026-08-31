@@ -3,7 +3,7 @@ type Props = {
   className?: string;
 };
 
-const REFRAIN = /^\s*(refrain|chorus|choeur|chœur)\b/i;
+const REFRAIN = /^\s*(refrain|chorus|choeur|chœur|kolus|koluse|kolusi|kolas)\b/i;
 
 /**
  * Affiche le texte d'un cantique en mettant automatiquement
