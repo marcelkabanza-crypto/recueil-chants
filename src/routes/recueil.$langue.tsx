@@ -36,14 +36,12 @@ function RecueilPage() {
     const duRecueil = cantiques.filter((c) => langueDe(c) === code);
     const term = q.trim().toLowerCase();
     if (!term) return duRecueil;
+    // Recherche uniquement sur le numéro et le titre du cantique.
     return duRecueil.filter(
-      (c) =>
-        c.nom.toLowerCase().includes(term) ||
-        c.texte.toLowerCase().includes(term) ||
-        String(c.numero) === term ||
-        String(c.numero).startsWith(term),
+      (c) => c.nom.toLowerCase().includes(term) || String(c.numero).startsWith(term),
     );
   }, [cantiques, code, q]);
+
 
   return (
     <AppShell title={labelLangue(code)} backTo="/" langueCourante={code}>
