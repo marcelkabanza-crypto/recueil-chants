@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ListMusic, Plus, Trash2 } from "lucide-react";
-import { useState } from "react";
+import { ListMusic, Plus, Search, Trash2 } from "lucide-react";
+import { useMemo, useState } from "react";
 
 import { AppShell } from "@/components/AppShell";
 import { Button } from "@/components/ui/button";
@@ -57,6 +57,13 @@ const sections = [
 function LivreConducteur() {
   const { lists, createList, deleteList } = usePlaylists();
   const [nom, setNom] = useState("");
+  const [q, setQ] = useState("");
+
+  const listesAffichees = useMemo(() => {
+    const term = q.trim().toLowerCase();
+    if (!term) return lists;
+    return lists.filter((l) => l.nom.toLowerCase().includes(term));
+  }, [lists, q]);
 
   const submit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -85,8 +92,21 @@ function LivreConducteur() {
           </Button>
         </form>
 
+        {lists.length > 1 ? (
+          <div className="relative mt-4">
+            <Search className="text-muted-foreground absolute left-3 top-1/2 size-5 -translate-y-1/2" />
+            <Input
+              value={q}
+              onChange={(e) => setQ(e.target.value)}
+              placeholder="Rechercher une liste"
+              className="h-12 pl-10 text-base"
+              aria-label="Rechercher une liste de chants"
+            />
+          </div>
+        ) : null}
+
         <ul className="mt-4 space-y-2">
-          {lists.map((l) => (
+          {listesAffichees.map((l) => (
             <li
               key={l.id}
               className="bg-card shadow-soft flex items-center gap-3 rounded-lg border p-3"
@@ -118,9 +138,9 @@ function LivreConducteur() {
           ))}
         </ul>
 
-        {lists.length === 0 ? (
+        {listesAffichees.length === 0 ? (
           <p className="text-muted-foreground py-6 text-center text-sm">
-            Aucune liste pour le moment.
+            {lists.length === 0 ? "Aucune liste pour le moment." : "Aucune liste ne correspond."}
           </p>
         ) : null}
       </section>
