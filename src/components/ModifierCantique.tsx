@@ -18,8 +18,6 @@ import type { Cantique } from "@/data/cantiques";
 import { useCantiques } from "@/lib/cantiques-store";
 import { labelLangue, langueDe } from "@/lib/langues";
 
-const nomLangue = (code: string) => labelLangue(code as never);
-
 /**
  * Modification d'un cantique (réservé au concepteur).
  * Ouvert par un appui long sur le titre dans la liste.
@@ -116,7 +114,7 @@ export function ModifierCantique({
         <DialogHeader>
           <DialogTitle>
             Modifier le cantique {cantique?.numero}
-            {cantique ? ` — ${nomLangue(langueDe(cantique))}` : ""}
+            {cantique ? ` — ${labelLangue(langueDe(cantique))}` : ""}
           </DialogTitle>
           <DialogDescription>
             Réservé au concepteur. La correction sera envoyée à tous les utilisateurs.
