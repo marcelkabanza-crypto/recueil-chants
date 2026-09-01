@@ -18,7 +18,6 @@ import { Route as ParametresRouteImport } from './routes/parametres'
 import { Route as CantiqueNumeroRouteImport } from './routes/cantique.$numero'
 import { Route as ListeIdRouteImport } from './routes/liste.$id'
 import { Route as RecueilLangueRouteImport } from './routes/recueil.$langue'
-import { Route as ApiPublicReimportTshilubaRouteImport } from './routes/api/public/reimport-tshiluba'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -65,12 +64,6 @@ const RecueilLangueRoute = RecueilLangueRouteImport.update({
   path: '/recueil/$langue',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ApiPublicReimportTshilubaRoute =
-  ApiPublicReimportTshilubaRouteImport.update({
-    id: '/api/public/reimport-tshiluba',
-    path: '/api/public/reimport-tshiluba',
-    getParentRoute: () => rootRouteImport,
-  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -82,7 +75,6 @@ export interface FileRoutesByFullPath {
   '/cantique/$numero': typeof CantiqueNumeroRoute
   '/liste/$id': typeof ListeIdRoute
   '/recueil/$langue': typeof RecueilLangueRoute
-  '/api/public/reimport-tshiluba': typeof ApiPublicReimportTshilubaRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -94,7 +86,6 @@ export interface FileRoutesByTo {
   '/cantique/$numero': typeof CantiqueNumeroRoute
   '/liste/$id': typeof ListeIdRoute
   '/recueil/$langue': typeof RecueilLangueRoute
-  '/api/public/reimport-tshiluba': typeof ApiPublicReimportTshilubaRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -107,7 +98,6 @@ export interface FileRoutesById {
   '/cantique/$numero': typeof CantiqueNumeroRoute
   '/liste/$id': typeof ListeIdRoute
   '/recueil/$langue': typeof RecueilLangueRoute
-  '/api/public/reimport-tshiluba': typeof ApiPublicReimportTshilubaRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -121,7 +111,6 @@ export interface FileRouteTypes {
     | '/cantique/$numero'
     | '/liste/$id'
     | '/recueil/$langue'
-    | '/api/public/reimport-tshiluba'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -133,7 +122,6 @@ export interface FileRouteTypes {
     | '/cantique/$numero'
     | '/liste/$id'
     | '/recueil/$langue'
-    | '/api/public/reimport-tshiluba'
   id:
     | '__root__'
     | '/'
@@ -145,7 +133,6 @@ export interface FileRouteTypes {
     | '/cantique/$numero'
     | '/liste/$id'
     | '/recueil/$langue'
-    | '/api/public/reimport-tshiluba'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -158,7 +145,6 @@ export interface RootRouteChildren {
   CantiqueNumeroRoute: typeof CantiqueNumeroRoute
   ListeIdRoute: typeof ListeIdRoute
   RecueilLangueRoute: typeof RecueilLangueRoute
-  ApiPublicReimportTshilubaRoute: typeof ApiPublicReimportTshilubaRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -226,13 +212,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof RecueilLangueRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/api/public/reimport-tshiluba': {
-      id: '/api/public/reimport-tshiluba'
-      path: '/api/public/reimport-tshiluba'
-      fullPath: '/api/public/reimport-tshiluba'
-      preLoaderRoute: typeof ApiPublicReimportTshilubaRouteImport
-      parentRoute: typeof rootRouteImport
-    }
   }
 }
 
@@ -246,7 +225,6 @@ const rootRouteChildren: RootRouteChildren = {
   CantiqueNumeroRoute: CantiqueNumeroRoute,
   ListeIdRoute: ListeIdRoute,
   RecueilLangueRoute: RecueilLangueRoute,
-  ApiPublicReimportTshilubaRoute: ApiPublicReimportTshilubaRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
