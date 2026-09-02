@@ -5,6 +5,7 @@ import { toast } from "sonner";
 import { AppShell } from "@/components/AppShell";
 import { Button } from "@/components/ui/button";
 import { useCantiques } from "@/lib/cantiques-store";
+import { APP_VERSION } from "@/lib/app-version";
 
 export const Route = createFileRoute("/a-propos")({
   head: () => ({
@@ -62,6 +63,9 @@ function APropos() {
         <p className="font-display text-2xl font-semibold">Recueil des Chants TESP</p>
         <p className="text-muted-foreground mt-1 text-sm">Tabernacle de l'Espérance</p>
         <p className="text-muted-foreground mt-4 text-xs">
+          Version {APP_VERSION}
+        </p>
+        <p className="text-muted-foreground mt-1 text-xs">
           {cantiques.length} cantiques — recueil version {version}
         </p>
       </section>
@@ -74,6 +78,16 @@ function APropos() {
           prière ou la méditation personnelle. Les nouveaux cantiques ajoutés par
           l'administrateur arrivent automatiquement dès que votre téléphone est connecté à
           Internet.
+        </p>
+      </section>
+
+      <section className="bg-card shadow-soft mt-4 rounded-lg border p-4">
+        <h2 className="font-display text-lg font-semibold">Concepteur</h2>
+        <p className="mt-1 text-sm leading-relaxed">
+          <span className="font-semibold">Vision Informatique</span> est le concepteur de cette
+          application. Entreprise informatique, elle propose des solutions digitales : conception
+          d'applications web et mobiles, sites internet, gestion de bases de données et
+          accompagnement numérique des organisations.
         </p>
       </section>
 
