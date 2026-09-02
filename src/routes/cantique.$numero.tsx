@@ -55,12 +55,21 @@ function CantiquePage() {
       backTo={`/recueil/${langue}`}
     >
       <article>
-        <h2 className="font-display text-2xl font-semibold leading-tight">
-          {cantique.numero}. {cantique.nom}
-        </h2>
+        <div className="flex items-start justify-between gap-3">
+          <h2 className="font-display text-2xl font-semibold leading-tight">
+            {cantique.numero}. {cantique.nom}
+          </h2>
+          <ShareButton
+            cantique={cantique}
+            size="icon"
+            variant="default"
+            className="size-11 shrink-0 rounded-full bg-blue-600 text-white shadow-lg hover:bg-blue-700"
+          />
+        </div>
         <div className="bg-accent mt-3 h-px w-16" />
         <CantiqueTexte texte={cantique.texte} className="mt-5" />
       </article>
+
 
       <div className="mt-8 flex items-center justify-between gap-2">
         {prev ? (
