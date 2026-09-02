@@ -62,7 +62,11 @@ function LivreConducteur() {
   const listesAffichees = useMemo(() => {
     const term = q.trim().toLowerCase();
     if (!term) return lists;
-    return lists.filter((l) => l.nom.toLowerCase().includes(term));
+    return lists.filter(
+      (l) =>
+        l.nom.toLowerCase().includes(term) ||
+        l.numeros.some((n) => String(n).includes(term)),
+    );
   }, [lists, q]);
 
   const submit = (e: React.FormEvent) => {
