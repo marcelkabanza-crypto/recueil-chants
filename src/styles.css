@@ -19,8 +19,8 @@
  */
 
 @theme inline {
-  --font-display: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  --font-body: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-body: "Karla", system-ui, sans-serif;
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -186,6 +186,6 @@
 @utility cantique-text {
   font-family: var(--reading-font);
   font-size: calc(1.25rem * var(--reading-scale));
-  line-height: 1.25;
+  line-height: 1.5;
   white-space: pre-wrap;
 }
