@@ -91,12 +91,6 @@ function CantiquePage() {
           <span />
         )}
       </div>
-
-      <ShareButton
-        cantique={cantique}
-        size="icon"
-        className="fixed bottom-4 right-4 z-50 h-14 w-14 rounded-full shadow-lg"
-      />
     </AppShell>
   );
 }
