@@ -96,7 +96,7 @@ function LivreConducteur() {
           </Button>
         </form>
 
-        {lists.length > 1 ? (
+        {lists.length > 0 ? (
           <div className="relative mt-4">
             <Search className="text-muted-foreground absolute left-3 top-1/2 size-5 -translate-y-1/2" />
             <Input
