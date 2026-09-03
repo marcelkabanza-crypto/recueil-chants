@@ -95,13 +95,13 @@ export function AppShell({
               <Menu />
             </Button>
           </SheetTrigger>
-          <SheetContent side="left" className="w-[17rem] overflow-y-auto bg-sidebar p-0 text-sidebar-foreground">
+          <SheetContent side="left" className="flex w-[17rem] flex-col bg-sidebar p-0 text-sidebar-foreground">
             <div className="hero-gradient px-5 py-6">
               <p className="font-display text-lg leading-tight">Recueil des chants</p>
               <p className="text-gold font-display text-2xl font-semibold">TESP</p>
               <p className="mt-1 text-xs opacity-80">Tabernacle de l'Espérance</p>
             </div>
-            <nav className="flex flex-col gap-1 p-3">
+            <nav className="flex flex-1 flex-col gap-1 overflow-y-auto p-3">
               {navItems.map((item) => (
                 <Link
                   key={item.to}
@@ -128,20 +128,22 @@ export function AppShell({
               </a>
 
 
+              <InstallButton className="mt-3 w-full" />
+            </nav>
+
+            <div className="border-sidebar-border border-t p-3">
               <button
                 type="button"
                 onClick={() => {
                   setOpen(false);
                   setQuitOpen(true);
                 }}
-                className={`${linkClass} text-left`}
+                className={`${linkClass} w-full text-left`}
               >
                 <LogOut className="size-4" />
                 Quitter
               </button>
-
-              <InstallButton className="mt-3 w-full" />
-            </nav>
+            </div>
           </SheetContent>
         </Sheet>
         <h1 className="font-display truncate text-lg font-semibold">{title}</h1>
