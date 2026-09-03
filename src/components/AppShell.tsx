@@ -95,7 +95,7 @@ export function AppShell({
               <Menu />
             </Button>
           </SheetTrigger>
-          <SheetContent side="left" className="w-[17rem] overflow-y-auto bg-sidebar p-0 text-sidebar-foreground">
+          <SheetContent side="left" className="flex w-[17rem] flex-col bg-sidebar p-0 text-sidebar-foreground">
             <div className="hero-gradient px-5 py-6">
               <p className="font-display text-lg leading-tight">Recueil des chants</p>
               <p className="text-gold font-display text-2xl font-semibold">TESP</p>
