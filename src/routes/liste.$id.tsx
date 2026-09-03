@@ -19,6 +19,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useCantiques } from "@/lib/cantiques-store";
 import { usePlaylists } from "@/lib/playlists";
+import { langueDe } from "@/lib/langues";
 
 export const Route = createFileRoute("/liste/$id")({
   head: () => ({
