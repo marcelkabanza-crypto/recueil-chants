@@ -57,18 +57,22 @@ const sections = [
 
 function LivreConducteur() {
   const { lists, createList, deleteList } = usePlaylists();
+  const { getCantique } = useCantiques();
   const [nom, setNom] = useState("");
   const [q, setQ] = useState("");
 
   const listesAffichees = useMemo(() => {
     const term = q.trim().toLowerCase();
     if (!term) return lists;
-    return lists.filter(
-      (l) =>
-        l.nom.toLowerCase().includes(term) ||
-        l.numeros.some((n) => String(n).includes(term)),
-    );
-  }, [lists, q]);
+    return lists.filter((l) => {
+      if (l.nom.toLowerCase().includes(term)) return true;
+      return l.numeros.some((n) => {
+        if (String(n).includes(term)) return true;
+        const chant = getCantique(n);
+        return chant?.nom.toLowerCase().includes(term) ?? false;
+      });
+    });
+  }, [lists, q, getCantique]);
 
   const submit = (e: React.FormEvent) => {
     e.preventDefault();
