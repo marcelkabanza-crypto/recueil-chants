@@ -57,7 +57,9 @@ function ListePage() {
   const results = useMemo(() => {
     const term = q.trim().toLowerCase();
     const base = cantiques.filter((c) => !liste?.numeros.includes(c.numero));
-    if (!term) return base;
+    // Sans recherche : uniquement le recueil français (comme la page d'accueil).
+    if (!term) return base.filter((c) => langueDe(c) === "fr");
+    // Recherche globale : toutes les versions, sur le numéro et le titre.
     return base.filter(
       (c) => c.nom.toLowerCase().includes(term) || String(c.numero).startsWith(term),
     );
