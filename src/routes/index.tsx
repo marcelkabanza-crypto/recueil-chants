@@ -43,10 +43,15 @@ function SplashScreen({ onFinished }: { onFinished: () => void }) {
         alt="Tabernacle de l'Espérance"
         className="max-h-[60vh] w-auto max-w-full animate-in fade-in zoom-in duration-700"
       />
-      <p className="mt-6 text-center font-display text-lg text-white/90">
-        Recueil des Chants TESP
-      </p>
-      <p className="text-gold mt-1 text-center text-sm">Tabernacle de l'Espérance</p>
+
+      <div className="absolute bottom-8 flex flex-col items-center gap-1">
+        <p className="text-center font-display text-lg text-white/90">
+          Recueil des Chants TESP.
+        </p>
+        <p className="text-center text-sm italic text-white/70">
+          copyright (@) VisApp 2026
+        </p>
+      </div>
     </div>
   );
 }
