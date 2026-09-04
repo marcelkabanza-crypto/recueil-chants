@@ -9,7 +9,7 @@ import { NouveauCantique } from "@/components/NouveauCantique";
 import { Input } from "@/components/ui/input";
 import { useCantiques } from "@/lib/cantiques-store";
 import { langueDe } from "@/lib/langues";
-import logoAsset from "@/assets/logo-tabernacle.png.asset.json";
+import logoAsset from "@/assets/logo-tabernacle-white.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
