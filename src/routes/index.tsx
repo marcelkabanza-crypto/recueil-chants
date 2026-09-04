@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Search } from "lucide-react";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 import { AppShell } from "@/components/AppShell";
 import { CantiqueListe } from "@/components/CantiqueListe";
@@ -9,6 +9,7 @@ import { NouveauCantique } from "@/components/NouveauCantique";
 import { Input } from "@/components/ui/input";
 import { useCantiques } from "@/lib/cantiques-store";
 import { langueDe } from "@/lib/langues";
+import logoAsset from "@/assets/logo-tabernacle.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
