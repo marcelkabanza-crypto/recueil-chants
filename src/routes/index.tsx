@@ -37,7 +37,7 @@ function SplashScreen({ onFinished }: { onFinished: () => void }) {
   }, [onFinished]);
 
   return (
-    <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-[#0d2b2b] p-6">
+    <div className="bg-splash-bg fixed inset-0 z-50 flex flex-col items-center justify-center p-6">
       <img
         src={logoAsset.url}
         alt="Tabernacle de l'Espérance"
