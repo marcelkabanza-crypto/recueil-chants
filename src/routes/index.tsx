@@ -30,8 +30,30 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
+function SplashScreen({ onFinished }: { onFinished: () => void }) {
+  useEffect(() => {
+    const timer = setTimeout(onFinished, 3000);
+    return () => clearTimeout(timer);
+  }, [onFinished]);
+
+  return (
+    <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-[#0d2b2b] p-6">
+      <img
+        src={logoAsset.url}
+        alt="Tabernacle de l'Espérance"
+        className="max-h-[60vh] w-auto max-w-full animate-in fade-in zoom-in duration-700"
+      />
+      <p className="mt-6 text-center font-display text-lg text-white/90">
+        Recueil des Chants TESP
+      </p>
+      <p className="text-gold mt-1 text-center text-sm">Tabernacle de l'Espérance</p>
+    </div>
+  );
+}
+
 function Index() {
   const [q, setQ] = useState("");
+  const [showSplash, setShowSplash] = useState(true);
   const { cantiques } = useCantiques();
 
   const results = useMemo(() => {
@@ -44,6 +66,9 @@ function Index() {
     );
   }, [q, cantiques]);
 
+  if (showSplash) {
+    return <SplashScreen onFinished={() => setShowSplash(false)} />;
+  }
 
   return (
     <AppShell title="Recueil des Chants TESP" langueCourante="fr">
