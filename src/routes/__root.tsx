@@ -93,7 +93,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         name: "description",
         content: "Les cantiques du Tabernacle de l'Espérance : numéro, nom et texte complet.",
       },
-      { name: "theme-color", content: "#0d2b2b" },
+      { name: "theme-color", content: "#5C4A3A" },
       { name: "mobile-web-app-capable", content: "yes" },
       { name: "apple-mobile-web-app-capable", content: "yes" },
       { name: "apple-mobile-web-app-status-bar-style", content: "black-translucent" },
