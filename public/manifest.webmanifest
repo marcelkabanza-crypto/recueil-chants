@@ -10,8 +10,8 @@
   "display": "standalone",
   "display_override": ["standalone", "minimal-ui"],
   "orientation": "portrait",
-  "background_color": "#0d2b2b",
-  "theme_color": "#0d2b2b",
+  "background_color": "#5C4A3A",
+  "theme_color": "#5C4A3A",
   "categories": ["books", "music", "lifestyle"],
   "icons": [
     { "src": "/images/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
