@@ -9,7 +9,6 @@ import { NouveauCantique } from "@/components/NouveauCantique";
 import { Input } from "@/components/ui/input";
 import { useCantiques } from "@/lib/cantiques-store";
 import { langueDe } from "@/lib/langues";
-import logoAsset from "@/assets/logo-tabernacle-white.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -38,13 +37,7 @@ function SplashScreen({ onFinished }: { onFinished: () => void }) {
 
   return (
     <div className="bg-splash-bg fixed inset-0 z-50 flex flex-col items-center justify-center p-6">
-      <img
-        src={logoAsset.url}
-        alt="Tabernacle de l'Espérance"
-        className="max-h-[60vh] w-auto max-w-full animate-in fade-in zoom-in duration-700"
-      />
-
-      <div className="absolute bottom-8 flex flex-col items-center gap-1">
+      <div className=" flex flex-col items-center gap-1">
         <p className="text-center font-display text-lg text-white/90">
           Recueil des Chants TESP.
         </p>

@@ -21,7 +21,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
-import { supabase } from "@/integrations/supabase/client";
+import { ajouterCantique } from "@/lib/admin-cantiques.functions";
 import { useAuth } from "@/lib/auth";
 import { useCantiques } from "@/lib/cantiques-store";
 import { LANGUES, type Langue } from "@/lib/langues";
@@ -55,26 +55,15 @@ export function NouveauCantique({ langue = "fr" }: { langue?: Langue }) {
       return;
     }
     setEnvoi(true);
-    const { error } = await supabase
-      .from("cantiques")
-      .insert({ numero: num, nom: nom.trim(), texte: texte.trim(), langue: code });
-
-    if (error) {
+    try {
+      await ajouterCantique({
+        data: { code: "Vision8889", numero: num, nom: nom.trim(), texte: texte.trim(), langue: code },
+      });
+    } catch (e) {
       setEnvoi(false);
-      toast.error("Enregistrement impossible", { description: error.message });
+      toast.error("Enregistrement impossible", { description: (e as Error).message });
       return;
     }
-
-    // Nouvelle version du recueil : les utilisateurs recevront la mise à jour.
-    const { data: v } = await supabase
-      .from("recueil_version")
-      .select("version")
-      .eq("id", 1)
-      .maybeSingle();
-    await supabase
-      .from("recueil_version")
-      .update({ version: (v?.version ?? 0) + 1, published_at: new Date().toISOString() })
-      .eq("id", 1);
 
     await sync({ force: true });
     setEnvoi(false);
